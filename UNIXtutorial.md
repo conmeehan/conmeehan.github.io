@@ -237,4 +237,5 @@ Here we see the flag/option -n is used to denote the number of lines we want fol
 
 ### Advanced UNIX tutorial
 If you wish to learn more about the expansive uses and advanced commands in UNIX, you can go to the [UNIX tutorial advanced](https://conmeehan.github.io/advancedUNIXtutorial.html).  \
+
 **NOTE:** this is not a requirement for the course, just extra information.
