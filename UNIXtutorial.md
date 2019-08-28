@@ -15,7 +15,7 @@ This tutorial outlines the basics needed for working with the UNIX environment. 
 
 ## Useful Material
 
-A UNIX cheat sheet like [this one] (https://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet) might be helpful as a reference.
+A UNIX cheat sheet like [this one](https://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet) might be helpful as a reference.
 For more info on using the unix shell check out [Software Carpentry tutorial](http://swcarpentry.github.io/shell-novice/).
 
 
@@ -209,32 +209,32 @@ To print the entire contents of a file to screen you can use the command
 ```console
 cat filename
 ```
-This will display all the contents at once. This is ok for small files (a few lines) but larger files will run on and on.<br>
-For large files it is better to use interactive viewers. One such viewer is less, invoked by typing<br>
-<pre style="font-size: 1.25em">
+This will display all the contents at once. This is ok for small files (a few lines) but larger files will run on and on.  \
+For large files it is better to use interactive viewers. One such viewer is less, invoked by typing  \
+```console
 less filename
-</pre>
-the file is then displayed one screen length at a time. <br>
+```
+the file is then displayed one screen length at a time.  \
 Certain commands are then used to go back and forward through the file:
 
-*space bar: display the next page
-*b: display the previous page
-*enter/return: display the next line
-*k: display the previous line
-*q: quit the viewer<br>
+* space bar: display the next page
+* b: display the previous page
+* enter/return: display the next line
+* k: display the previous line
+* q: quit the viewer<br>
 
 If a file contains very long lines, these lines will wrap to fit the screen width. This can result in a confusing display, especially if there are, for example, long sequences in your file. To stop this we can use
-<pre style="font-size: 1.25em">
+```console
 less -S <filename>
-</pre>
-which will stop the text wrapping. You can scroll horizontally across lines using the arrow keys.
+```
+which will stop the text wrapping. You can scroll horizontally across lines using the arrow keys.  \
 
 To view a certain number of lines at the start or end of a file we use head and tail. For example, to view the file 50 lines of a file type
-<pre style="font-size: 1.25em">
+```console
 head -n 50 filename
-</pre>
+```
 Here we see the flag/option -n is used to denote the number of lines we want followed by the number itself. The same can be done using tail to view the last lines of a file.
 
 ### Advanced UNIX tutorial
-If you wish to learn more about the expansive uses and advanced commands in UNIX, you can go to the [[UNIX tutorial advanced]].<br>
-'''NOTE:''' this is not a requirement for the course, just extra information.
+If you wish to learn more about the expansive uses and advanced commands in UNIX, you can go to the [UNIX tutorial advanced](https://conmeehan.github.io/advancedUNIXtutorial.html).  \
+**NOTE:** this is not a requirement for the course, just extra information.
