@@ -51,7 +51,7 @@ The parent of a directory is referred to using ``..`` <br>
 
 **What is the relative path from ‘Adobe’ to ‘Desktop’?**
 
-### Important obscure keys
+## Important obscure keys
 
 There are some keys that are used a lot in UNIX commands but can be difficult to find on many keyboards. Try to find now the following keys:\
 * ~ (tilde)
@@ -62,7 +62,7 @@ There are some keys that are used a lot in UNIX commands but can be difficult to
 * $ (dollar sign)
 * \* (asterisk)
 
-### Basic Syntax
+## Basic Syntax
 Unix commands follow the general format of: 
 ```console
 command -options target
@@ -87,14 +87,14 @@ Not all commands need options (sometimes called flags, and generally preceded by
 * Avoid spaces in script and filenames (use underscores, dots, or hyphens, use "CamelBack" notation). You can see above that commands, options and targets are separated by spaces, so spaces in filenames confuse this.
 * Do not use "weird" characters (#@!*&^, etc., especially ?, *, \, or /)
 
-### Don't Panic
+## Don't Panic
 When it all goes south, `control-c` is your friend. It breaks whatever processes are running, and gives you your prompt back. Or, failing that, just close the Terminal and start again.
 
-### Helpful typing shortcuts
+## Helpful typing shortcuts
 * Tab will auto complete text for you (see full description in the advanced tutorial).
 * The up arrow will bring up commands you typed previously.
 
-### Print to the screen (Our first command)
+## Print to the screen (Our first command)
 Lets start with a very basic command: `echo`. Echo just prints to the screen whatever text we put after it. E.g.
 ```console
 echo "Hello World!"
@@ -102,7 +102,7 @@ echo "Hello World!"
 will print `Hello World!`. Try it now.
 
 
-### Navigating
+## Navigating
 In order to navigate around the directory structure you first need to know where you are in that structure currently. This is done using the command
 ```console
 pwd
@@ -158,7 +158,7 @@ cd
 ```
 Try using the up arrow to browse through the commands that you just used.
 
-### Creating directories and files
+## Creating directories and files
 mkdir is the command to make a directory. Type
 ```console
 mkdir myfolder
@@ -176,7 +176,7 @@ Save the file by pressing ctrl-o. This will prompt you at the bottom of the scre
 Exit nano by pressing ctrl-x (and hitting return). This will return you to your prompt.  \
 If you list the contents of your current directory (using ls) you should see file1.txt is now there.  \
 
-### Copying, renaming, and moving files
+## Copying, renaming, and moving files
 The copy command (`cp`) is used to copy files to new places. This command has 2 targets: the file you want to copy and where you want to copy it to. The command basic syntax is 
 ```console
 cp source_file destination_file
@@ -209,7 +209,7 @@ has the effect of moving example.txt to the subdirectory myfolder but keeping th
 * NOTE: Do not move files that are not in your home directory or a subdirectory of this. All files in shared or root folders are to be copied, never moved.
 
 
-### Viewing file contents
+## Viewing file contents
 You can use a text editor like nano to view the contents of text files but this can be tedious and difficult for very large files.  \
 There are several commands for viewing files without an editor, depending on how you wish to view them.  \
 To print the entire contents of a file to screen you can use the command
@@ -242,7 +242,7 @@ head -n 50 filename
 ```
 Here we see the flag/option -n is used to denote the number of lines we want followed by the number itself. The same can be done using tail to view the last lines of a file.
 
-### Advanced UNIX tutorial
+## Advanced UNIX tutorial
 If you wish to learn more about the expansive uses and advanced commands in UNIX, you can go to the [UNIX tutorial advanced](https://conmeehan.github.io/advancedUNIXtutorial.html). 
 
 **NOTE:** this is not a requirement for the course, just extra information.
