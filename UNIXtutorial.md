@@ -94,6 +94,13 @@ When it all goes south, `control-c` is your friend. It breaks whatever processes
 * Tab will auto complete text for you (see full description in the advanced tutorial).
 * The up arrow will bring up commands you typed previously.
 
+### Print to the screen (Our first command)
+Lets start with a very basic command: `echo`. Echo just prints to the screen whatever text we put after it. E.g.
+```console
+echo "Hello World!"
+```
+will print `Hello World!`. Try it now.
+
 
 ### Navigating
 In order to navigate around the directory structure you first need to know where you are in that structure currently. This is done using the command
