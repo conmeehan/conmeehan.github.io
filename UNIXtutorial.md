@@ -227,7 +227,7 @@ If a file contains very long lines, these lines will wrap to fit the screen widt
 ```console
 less -S <filename>
 ```
-which will stop the text wrapping. You can scroll horizontally across lines using the arrow keys.  \
+which will stop the text wrapping. You can scroll horizontally across lines using the arrow keys.
 
 To view a certain number of lines at the start or end of a file we use head and tail. For example, to view the file 50 lines of a file type
 ```console
@@ -236,6 +236,6 @@ head -n 50 filename
 Here we see the flag/option -n is used to denote the number of lines we want followed by the number itself. The same can be done using tail to view the last lines of a file.
 
 ### Advanced UNIX tutorial
-If you wish to learn more about the expansive uses and advanced commands in UNIX, you can go to the [UNIX tutorial advanced](https://conmeehan.github.io/advancedUNIXtutorial.html).  \
+If you wish to learn more about the expansive uses and advanced commands in UNIX, you can go to the [UNIX tutorial advanced](https://conmeehan.github.io/advancedUNIXtutorial.html). 
 
 **NOTE:** this is not a requirement for the course, just extra information.
