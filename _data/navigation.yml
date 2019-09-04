@@ -1,25 +1,13 @@
-header:
-- title: Teaching
-  url: /UNIXtutorial.html
-  children:
-    - title: UNIX tutorial
-      url: /UNIXtutorial.html
-    - title: adv. UNIX tutorial
-      url: /advancedUNIXtutorial.html
-    
+header:   
 - title: About
   url: /about.html
   
 side:
-  - title:      Start
+  - title:      teaching
     children:
-      - title:  Quick Start
-        url:    /docs/en/quick-start
-      - title:  Structure
-        url:    /docs/en/structure
-  - title:      Customization
-    children:
-      - title:  Configuration
-        url:    /docs/en/configuration
-      - title:  Navigation
-        url:    /docs/en/navigation
+    - title: UNIX tutorial
+      url: /UNIXtutorial.html
+    - title: adv. UNIX tutorial
+      url: /advancedUNIXtutorial.html
+  - title: About
+    url: /about.html
