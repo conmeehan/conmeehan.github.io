@@ -1,7 +1,7 @@
 ---
 layout: article
 titles:
-  en      : &EN       UNIX tutorial
+  en      : &EN       Advanced UNIX tutorial
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
