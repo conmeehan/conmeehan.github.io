@@ -107,12 +107,12 @@ In order to navigate around the directory structure you first need to know where
 ```console
 pwd
 ```
-This will print your working directory (the directory you are currently in).  \
+This will print your working directory (the directory you are currently in).<br>
 Next, type:
 ```console
 ls
 ```
-This lists the contents of your working directory (which is likely empty).  \
+This lists the contents of your working directory (which is likely empty).<br>
 You can also look at the contents of any other directory by supplying the path (absolute or relative). For instance:
 ```console
 ls ..
@@ -150,8 +150,8 @@ We can move into the parent of the folder you are currently in by typing
 ```console
 cd ..
 ```
-If you type ls you can see your home directory is listed here.  \
-You can use pwd to confirm you've moved and are now in a new working directory. You can move back to your home directory by typing cd with no arguments.  \
+If you type ls you can see your home directory is listed here.<br>
+You can use pwd to confirm you've moved and are now in a new working directory. You can move back to your home directory by typing cd with no arguments.<br>
 This is a handy trick if you are lost in the filesystem and want to get home!
 ```console
 cd 
@@ -163,18 +163,18 @@ mkdir is the command to make a directory. Type
 ```console
 mkdir myfolder
 ```
-to make a new folder called myfolder. Type ls and then enter. You should now see 'myfolder' in the list.  \
+to make a new folder called myfolder. Type ls and then enter. You should now see 'myfolder' in the list.<br>
 
-Creating files can be done in many ways. The most common method is to use a command line text editor. Here we will use nano but there are many others (emacs, vi etc) that are more powerful.  \
-Create a file called file1.txt in the unix folder by typing  \
+Creating files can be done in many ways. The most common method is to use a command line text editor. Here we will use nano but there are many others (emacs, vi etc) that are more powerful.<br>
+Create a file called file1.txt in the unix folder by typing<br>
 ```console
 nano file1.txt
 ```
-This will launch the nano text editor and allow you to edit file1.txt. If file1.txt doesn't exist, it will create it for you; if it does exist, it will edit the document.  \
-Write in here ‘this is the contents of file1.txt’.  \
-Save the file by pressing ctrl-o. This will prompt you at the bottom of the screen to confirm the file name and you can press return to confirm this.  \
-Exit nano by pressing ctrl-x (and hitting return). This will return you to your prompt.  \
-If you list the contents of your current directory (using ls) you should see file1.txt is now there.  \
+This will launch the nano text editor and allow you to edit file1.txt. If file1.txt doesn't exist, it will create it for you; if it does exist, it will edit the document.<br>
+Write in here ‘this is the contents of file1.txt’.<br>
+Save the file by pressing ctrl-o. This will prompt you at the bottom of the screen to confirm the file name and you can press return to confirm this.<br>
+Exit nano by pressing ctrl-x (and hitting return). This will return you to your prompt.<br>
+If you list the contents of your current directory (using ls) you should see file1.txt is now there.<br>
 
 ## Copying, renaming, and moving files
 The copy command (`cp`) is used to copy files to new places. This command has 2 targets: the file you want to copy and where you want to copy it to. The command basic syntax is 
@@ -189,14 +189,14 @@ We can also cp a file from the shared directory using absolute and relative path
 ```console
 cp /class/shared/testfile.txt .
 ```
-The period (`.`) at the end of the command is important. This states that the target location is the current directory (we told you it had some uses!).  \
-This command will copy a file named "testfile.txt" to your current directory but will not change its name. Use ls to verify.  \ 
+The period (`.`) at the end of the command is important. This states that the target location is the current directory (we told you it had some uses!).<br>
+This command will copy a file named "testfile.txt" to your current directory but will not change its name. Use ls to verify.<br>
 
 The move command (`mv`) can be used to both move or rename files. The command syntax is 
 ```console
 mv source destination
 ```
-If you give a filename as the destination, the file will be moved to this new filename. If you give a folder name as the destination, this file will be moved to that folder, but keep the same name.  \
+If you give a filename as the destination, the file will be moved to this new filename. If you give a folder name as the destination, this file will be moved to that folder, but keep the same name.<br>
 For example
 ```console
 mv testfile.txt example.txt
@@ -210,18 +210,18 @@ has the effect of moving example.txt to the subdirectory myfolder but keeping th
 
 
 ## Viewing file contents
-You can use a text editor like nano to view the contents of text files but this can be tedious and difficult for very large files.  \
-There are several commands for viewing files without an editor, depending on how you wish to view them.  \
+You can use a text editor like nano to view the contents of text files but this can be tedious and difficult for very large files.<br>
+There are several commands for viewing files without an editor, depending on how you wish to view them.<br>
 To print the entire contents of a file to screen you can use the command
 ```console
 cat filename
 ```
-This will display all the contents at once. This is ok for small files (a few lines) but larger files will run on and on.  \
-For large files it is better to use interactive viewers. One such viewer is less, invoked by typing  \
+This will display all the contents at once. This is ok for small files (a few lines) but larger files will run on and on.  <br>
+For large files it is better to use interactive viewers. One such viewer is less, invoked by typing <br>
 ```console
 less filename
 ```
-the file is then displayed one screen length at a time.  \
+the file is then displayed one screen length at a time.  <br>
 Certain commands are then used to go back and forward through the file:
 
 * space bar: display the next page
