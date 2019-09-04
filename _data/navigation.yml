@@ -1,10 +1,10 @@
 header:
 - title: Teaching
   url: /UNIXtutorial.html
-  subcategories:
-    - subtitle: UNIX tutorial
+  children:
+    - title: UNIX tutorial
       url: /UNIXtutorial.html
-    - subtitle: adv. UNIX tutorial
+    - title: adv. UNIX tutorial
       url: /advancedUNIXtutorial.html
     
 - title: About
