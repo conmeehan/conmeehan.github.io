@@ -23,8 +23,6 @@ baseurl : # does not include hostname
 title   : Conor Meehan
 description: > # this means to ignore newlines until "Language & timezone"
   Overview of my work, presentations and teaching material
-sidebar:
-  nav: side
 
 ## => Language and Timezone
 ##############################
@@ -203,6 +201,13 @@ exclude:
   - /vendor
 
 defaults:
+  - scope:
+      path: ""
+      type: home
+    values:
+      layout: home
+      sidebar:
+        nav: side  
   - scope:
       path: ""
       type: posts
