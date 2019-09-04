@@ -3,11 +3,15 @@ header:
   url: /about.html
   
 side:
-  - title:      teaching
+  - title: Teaching
     children:
     - title: UNIX tutorial
       url: /UNIXtutorial.html
     - title: adv. UNIX tutorial
       url: /advancedUNIXtutorial.html
-  - title: About
-    url: /about.html
+  - title: Info
+    children:
+    - title: About
+      url: /about.html
+    - title: Publications
+      url: /publications.html
