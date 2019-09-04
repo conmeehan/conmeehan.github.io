@@ -18,6 +18,6 @@ titles:
 key: page-about
 ---
 
-[University of Bradford page](https://scholar.google.com/citations?user=hsM549AAAAAJ&hl=en)<br> 
+[University of Bradford page](https://www.bradford.ac.uk/staff/cmeehan2)<br> 
 [Google Scholar page](https://scholar.google.com/citations?user=hsM549AAAAAJ&hl=en)<br>
 [Twitter account](https://twitter.com/con_meehan)<br>
