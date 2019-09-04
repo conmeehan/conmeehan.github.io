@@ -203,11 +203,11 @@ exclude:
 defaults:
   - scope:
       path: ""
-      type: home
     values:
-      layout: home
+      articles:
+        excerpt_type: html
       sidebar:
-        nav: side  
+        nav: side   
   - scope:
       path: ""
       type: posts
