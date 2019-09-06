@@ -17,5 +17,4 @@ titles:
   ko-KR   : *KO
 key: page-phylogenetics_intro
 ---
-
-http://speakerdeck.com/oembed.json?url=https://speakerdeck.com/coneire/an-introduction-to-phylogenetics-and-phylodynamics
+![Phylogenetics slides](https://speakerdeck.com/oembed.json?url=https://speakerdeck.com/coneire/an-introduction-to-phylogenetics-and-phylodynamics)
