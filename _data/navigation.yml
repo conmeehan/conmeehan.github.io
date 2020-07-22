@@ -6,9 +6,11 @@ side:
   - title: Teaching
     children:
     - title: UNIX tutorial
-      url: /UNIXtutorial.html
+      url: /UNIXtutorial
     - title: adv. UNIX tutorial
-      url: /advancedUNIXtutorial.html
+      url: /advancedUNIXtutorial
+    - title: BLAST+ tutorial
+      url: /blast+tutorial
   - title: Info
     children:
     - title: About
