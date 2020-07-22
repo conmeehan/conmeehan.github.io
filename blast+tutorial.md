@@ -59,8 +59,52 @@ blastp -query proteins.fasta -db pdbaa/pdbaa -out proteins_blastp.txt
 
 This will perform a blastp search, using all the sequences in proteins.fasta as queries, using the pdbaa database and output the results to proteins_blastp.txt. You will see the output looks quite like the website output with the overview first and the individual alignments next.
 
-Q. What sequences do we appear to have?
+Q. Look at the file proteins_blastp.txt. What sequences do we appear to have?
 
 
 
+There are many ways to modify how this is run. Type
+```console
+blastp -help
+```
+This will print to the screen a large amount of text, detailing all the flags (options) we can change during the BLAST search. We will modify some of these now.
 
+## Exercise 3: modifying the defaults and output types
+
+Often if we are working with many sequences we want to make it easier to get the best results in an easy to read format. We can do this by limiting the number of results returned. Often this is performed by changing the number of alignments displayed and/or the e-value cut-off.
+
+Lets run BLASTp, keeping all the overviews but only displaying the top hit alignment. We change the number of alignments displayed with the **-num_alignments** flag. To keep only the top hit alignment we can use
+```console
+blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1align.txt -num_alignments 1
+```
+If you look in this file we can see that all the descriptions are retained but now we only have 1 alignment per query sequence. Another way to limit the results is to set an e-value cut-off. In the help output of each program you can see the default e-value (listed under ‘general search options’). You can see it is quite high (10). We will retain only those hits with an e-value of 1e-30 or higher. We use the **-evalue** flag for this. Lets combines the above alignment display restriction with an evalue restriction. This done by typing:
+```console
+blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1align_1e-30.txt -num_alignments 1 -evalue 1e-30
+```
+You can see now that we have a smaller number of hits, hopefully including only those we are certain are likely to be correct.
+
+Often we dont need the output alignments but want all the details of each hit (e-value, bit score, percent identity etc) on 1 line. This is achieved by changing the output type. So far we have used the default output type but we can change this with the **-outfmt** flag. There are 11 output types (listed in the help output) but we shall use type 6: tabular output. This gives you a line per hit with 12 columns:
+
+* Query id
+* Subject id
+* % identity
+* alignment length
+* mismatches
+* gap openings
+* query start
+* query end
+* subject start
+* subject end
+* e-value
+* bit score
+
+This saves a lot of space in the output but does not separate queries into separate sections. We no longer need to limit the number of alignments with this output format (as none are displayed) but we may still want to limit the e-value. We can do this by typing:
+```console
+blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1e-30_table.txt -evalue 1e-30 -outfmt 6
+```
+
+We can see the output is much more compressed with queries all together, only separated by the name in the first column. You may notice however that the subject name (column 2) is truncated, with the information we want having been cut off. This is a known problem in the tabular output that supposedly NCBI are working on. You can see we do happen to have the GI included in the description which we can search the NCBI website for. When we create our own database we may wish to try have short names so that this is less of a problem. There is a way to switch between some output types even after you have run the analysis which I will outline briefly later.
+
+ 
+
+A small note ( we will not do an exercise on this): There are different types of BLAST searches within the basic types. For example in blastn you can perform standard blastn, megablast or discontiguous megablast. These options are changed with the **-task** flag. Note that megablast is the default for blastn, not standard blastn.
