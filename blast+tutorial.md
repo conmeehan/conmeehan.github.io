@@ -9,7 +9,9 @@ titles:
 key: page-BLast
 ---
 
-# BLAST+ tutorial
+
+
+
 
 ## Expected learning outcomes
 
@@ -108,3 +110,57 @@ We can see the output is much more compressed with queries all together, only se
  
 
 A small note ( we will not do an exercise on this): There are different types of BLAST searches within the basic types. For example in blastn you can perform standard blastn, megablast or discontiguous megablast. These options are changed with the **-task** flag. Note that megablast is the default for blastn, not standard blastn.
+
+## Excerise 4: Extracting the sequences from a BLAST database
+If you want to extract the sequences that are contained in a BLAST database, you can use the **blastdbcmd** command to do this. Lets extract all the sequences from the pdb database we have downloaded. Navigate to the folder that contains the database file (pdbaa in the above examples) and run:
+```console
+blastdbcmd -entry all -db pdbaa -out pdbaa.fasta
+```
+This will extract all the sequences from the database named pdbaa and place them into a Fasta file named pdbaa.fasta.
+
+## Exercise 5: creating a custom database
+
+Often we do not want to use all of NR or any of the pre-made databases supplied by NCBI. We may want to use a custom database of only species or genes we are interested in. If we have a fasta format file (unaligned) of these sequences we can create a database from this with the **makeblastdb** command. Lets create the pdb amino acid database from a fasta file, resulting in the database we already used.
+
+Create a new folder called db2. Copy the file pdbaa.fasta you just created from the pdbaa folder to the db2 folder. Navigate into the db2 folder and create a protein database by typing:
+```console
+makeblastdb -in pdbaa.fasta -title pdbaa -dbtype prot -out pdbaa -parse_seqids
+```
+The **-in** flag states the fasta file to create the database from, the **-title** flag gives the database a title, **-dbtype** says whether it is protein (prot) or nucleotide (nucl), **-out** is the name of the database and **-parse_seqids** states we want to retain the full names of each sequence. You will now see in db2 we have exactly the same files as in the db folder. We can use this as our database in exactly the same way we did for the original pdbaa database, just remember to use db2/pdbaa for the database instead of pdbaa/pdbaa.
+
+ 
+## Exercise 6: BLASTing against a remote database
+
+Instead of having to download the entirety of NR or other NCBI databases, we can BLAST against the version held on the website. This ensures we have the most up to date version but is also significantly slower. We use the **-remote** command to do this. Lets BLAST our sequences against NR held on the NCBI website by typing:
+```console
+blastp -query proteins.fasta -remote -db nr -out proteins_nr.txt -outfmt 6 -evalue 1e-30
+```
+Q. Did weget the same sequences back from the nr database as we did from the pdb database?
+ 
+## Exercise 7: Extracting hits from the BLAST database
+
+Once we have our BLAST results we may wish to go back and get the sequences for the hits from the database. For this we require a file of the sequence names of the hits (or parts of it, such as the section output from type 6 output) and the database used for the original BLAST (which must have been created with the -parse_seqids flag). Lets take 2 sequences from our hits against the pdbaa database. Copy the following into a file called hits.txt
+
+gi|1942986|pdb|1OCC|A
+gi|40889823|pdb|1V54|A
+
+This is portions of 2 names of sequences we found to be good hits to our first query sequence. We will use the **blastdbcmd** program to get these sequences from the pdbaa database. Type:
+```console
+blastdbcmd -db db/pdbaa -dbtype prot -entry_batch hits.txt -outfmt %f -out hits.fasta 
+```
+
+This command is similar to in excerise 4 but instead of getting all the sequences in the database, we are getting a subselection. The **-db**, **-dbtype** and **-out** we have seen before, **-entry_batch** is the file containing the sequence names and **-outfmt** here says we want fasta formatted sequences (%f). If you now open hits.fasta you should see the 2 sequences we requested.
+
+ 
+## Exercise 8: Converting output format types
+
+If you wish to change output formats after you have run a BLAST search we can use **blast_formatter**. This requires that the original run used **-outfmt 11** (archive type) and the database was made with the **-parse_seqids** flag. If we ran a BLAST such as
+```console
+blastp -query proteins.fasta -db db/pdbaa -out protein_archive.txt -outfmt 11
+```
+We could retrieve the results in out format 6 by typing
+```console
+blast_formatter -archive protein_archive.txt -outfmt 6 -out proteins_tabular.txt
+```
+
+**Thus a good way to run BLAST+ is to use -outfmt 11 and then after that use blast_formatter to change the output to different formats as needed.**
