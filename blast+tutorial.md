@@ -10,12 +10,7 @@ key: page-BLast
 ---
 
 
-
-
-
-## Expected learning outcomes
-
-The objective of this lab is to get accustomed with performing BLAST searches from the command line. We will cover basic BLAST searching, modifying parameters, modifying output files, creating your own database, online searching and hit sequence extraction.
+The objective of this lab is to get accustomed with performing BLAST searches from the command line (called BLAST+). We will cover basic BLAST searching, modifying parameters, modifying output files, creating your own database, online searching and hit sequence extraction.
 
 ## BLAST+ overview
 
