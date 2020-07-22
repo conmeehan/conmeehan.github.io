@@ -1,7 +1,7 @@
 ---
 layout: article
 titles:
-  en      : &EN       Blast+ tutorial
+  en      : &EN       BLAST+ tutorial
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
