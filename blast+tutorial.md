@@ -6,8 +6,10 @@ titles:
   en-US   : *EN
   en-CA   : *EN
   en-AU   : *EN
-key: page-UNIX
+key: page-BLast
 ---
+
+# BLAST+ tutorial
 
 ## Expected learning outcomes
 
