@@ -18,7 +18,8 @@ The command line (UNIX or Windows) version of BLAST is named BLAST+. You can dow
 
 ## Exercise 1: BLAST+ installation and using a pre-formatted a database
 
-In order to run BLAST+ we must download it, install it and set our Path to point to it. I strongly suggest using conda for this, which you can get from [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/). It will do all this automatically for you. If you wish to use the NCBI files, you can do the following:
+In order to run BLAST+ we must download it, install it and set our Path to point to it. I strongly suggest using conda for this, which you can get from [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) amd then get the BLAST package [here](https://anaconda.org/bioconda/blast). It will do all the installations automatically for you. 
+If you wish to use the NCBI files, you can do the following:
 
 First go [here](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/) and download the appropriate version. For OSX and Windows, follow the instructions on the downloaded exe or dmg and this should do the installation. For Linux we need to do some extra steps. For example, for an Ubuntu installation we want the ncbi-blast-2.10.1+-x64-linux.tar.gz file. Once downloaded, extract to a tools folder inside your home directory. You should now have a folder called ncbi-blast-2.10.1+ (or whatever version you downloaded). For this example, we will say the path (found with pwd) is ~/tools/ncbi-blast-2.10.1+/
 
@@ -32,15 +33,15 @@ source .bashrc
 
 This tells the operating system to add the directory containing the BLAST programs to our path. Make sure you change this to whatever path you set for the installed files.
 
-TNo matter what approach you used for installation, test that this works by typing
+No matter what approach you used for installation, test that this works by typing
 
 blastn
 
 If you get an output like “BLAST query/options error: Either a BLAST database or subject sequence(s) must be specified” then BLAST+ is installed correctly
 
-Most often when using BLAST+ we wish to ether create a custom database or a local version of a pre-made database to BLAST against. Several pre-made databases are provided by NCBI [here](ftp://ftp.ncbi.nlm.nih.gov/blast/db/). These are often very large and are split into several files (take a look at the amount of files needed for nr). A smaller one is the pdb database. This is a dataset containing all the protein sequences associated with PDB files (protein structure files). We will use this database for this tutorial.
+Most often when using BLAST+ we wish to ether create a custom database or a local version of a pre-made database to BLAST against. Several pre-made databases are provided by NCBI [here](ftp://ftp.ncbi.nlm.nih.gov/blast/db/). These are often very large and are split into several files (take a look at the amount of files needed for nr). One such database is the pdb database. This is a dataset containing all the protein sequences associated with PDB files (protein structure files). We will use a subsection of this database for this tutorial.
 
-Download the zip file [here](ftp://ftp.ncbi.nlm.nih.gov/blast/db/pdbaa.tar.gz). Inside there is a folder called pdbaa which contains many files, all of which begin with ‘pdbaa’. Each of these allows for a different type of search to be performed. You will notice each has a ‘p’ after the period. This denotes that a protein database has been created. We will see later how to create this database ourselves.
+Download the zip file [here](https://raw.githubusercontent.com/conmeehan/conmeehan.github.io/master/pdbaa.zip). Inside there is a folder called pdbaa which contains many files, all of which begin with ‘pdbaa’. Each of these allows for a different type of search to be performed. You will notice each has a ‘p’ after the period. This denotes that a protein database has been created. We will see later how to create this database ourselves.
 
 ## Exercise 2: performing a basic BLASTp search
 
