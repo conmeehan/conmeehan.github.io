@@ -230,3 +230,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+  
+## => Analytics
+analytics:
+  provider: "custom"
