@@ -18,6 +18,6 @@ titles:
 key: page-about
 ---
 
-[University of Bradford page](https://www.bradford.ac.uk/staff/cmeehan2)<br> 
+[Nottingham Trent University page](https://www.ntu.ac.uk/staff-profiles/science-technology/conor-meehan)<br> 
 [Google Scholar page](https://scholar.google.com/citations?user=hsM549AAAAAJ&hl=en)<br>
 [Twitter account](https://twitter.com/con_meehan)<br>
