@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 titles:
   en      : &EN       Publications
   en-GB   : *EN
@@ -18,7 +18,7 @@ titles:
 key: page-publications
 ---
 Full citations and indices can be found on my [Google Scholar page](https://scholar.google.it/citations?user=hsM549AAAAAJ&hl=en)<br><br>
-
+Current indices: H-index 29
 2019<br><br>
 * [GWAS for quantitative resistance phenotypes in Mycobacterium tuberculosis reveals resistance genes and regulatory regions; MR Farhat, L Freschi, R Calderon, T Ioerger, M Snyder, CJ Meehan, ...; Nature communications; 10 (1), 2128; 2019](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hsM549AAAAAJ&citation_for_view=hsM549AAAAAJ:GnPB-g6toBAC)<br><br>
 * [Mycobacterium ulcerans population genomics to inform on the spread of Buruli ulcer across central Africa; K Vandelannoote, DM Phanzu, K Kibadi, M Eddyani, CJ Meehan, ...; mSphere; 4 (1), e00472-18; 2019](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hsM549AAAAAJ&citation_for_view=hsM549AAAAAJ:bEWYMUwI8FkC)<br><br>
