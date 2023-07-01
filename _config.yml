@@ -16,6 +16,7 @@
 
 ## => Site Settings
 ##############################
+remote_theme: pages-themes/hacker@v0.2.0
 text_skin: dark # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
@@ -230,7 +231,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
-  
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
 ## => Analytics
 analytics:
   provider: "custom"
