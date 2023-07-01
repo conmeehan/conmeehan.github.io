@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 titles:
   en      : &EN       Publications
   en-GB   : *EN
