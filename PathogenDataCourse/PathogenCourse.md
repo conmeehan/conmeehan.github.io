@@ -17,5 +17,5 @@ It is suggested that you do these in order, or at least the concepts in computer
 ### [Concepts in computer programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming)
 ### [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial)
 ### [UNIX shell tutorial (advanced)](https://conmeehan.github.io/advancedUNIXtutorial)
-### [Setting up and using conda]()
+### [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse)
 
