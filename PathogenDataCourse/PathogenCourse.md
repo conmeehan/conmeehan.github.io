@@ -18,7 +18,7 @@ It is suggested that you do these in order, or at least the concepts in computer
 ### [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial)
 ### [UNIX shell tutorial (advanced)](https://conmeehan.github.io/advancedUNIXtutorial)
 ### [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse)
-### [Introduction to R](https://conmeehan.github.io/PathogenDataCourse/IntroToR.md)
-### [Experimental design and statistics](https://conmeehan.github.io/PathogenDataCourse/Statistics.md)
-### [Data tidying and figure generation](https://conmeehan.github.io/PathogenDataCourse/DataTidyingAndPresentation.md)
+### [Introduction to R](https://conmeehan.github.io/PathogenDataCourse/IntroToR)
+### [Experimental design and statistics](https://conmeehan.github.io/PathogenDataCourse/Statistics)
+### [Data tidying and figure generation](https://conmeehan.github.io/PathogenDataCourse/DataTidyingAndPresentation)
 
