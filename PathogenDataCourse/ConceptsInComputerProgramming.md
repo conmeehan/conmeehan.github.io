@@ -1,12 +1,14 @@
 ---
 layout: default
+---
+layout: article
 titles:
   en      : &EN       Concepts in computer science
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
   en-AU   : *EN
-key: page-UNIX
+key: page-Concepts
 ---
 
 

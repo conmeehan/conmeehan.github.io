@@ -6,7 +6,7 @@ titles:
   en-US   : *EN
   en-CA   : *EN
   en-AU   : *EN
-key: page-UNIX
+key: page-PathogenCourse
 ---
 
 
@@ -14,8 +14,8 @@ This workshop contains a set of tutorials for undertaking basic data analytics f
 Each tutorial has a lecture or explanation of the topic with associated practice tasks and sample asnwers.<br />
 It is suggested that you do these in order, or at least the concepts in computer programming, UNIX tutorials and R tutorial before the other topics. <br />
 ## Topics (each is a hyperlink to its own page):
-### [Concepts in computer programming](PathogenDataCourse/ConceptsInComputerProgramming.md)
-### [UNIX tutorial (basics)](UNIXtutorial.md)
-### [UNIX shell tutorial (advanced)](advancedUNIXtutorial.md)
+### [Concepts in computer programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming)
+### [UNIX tutorial (basics)](Uhttps://conmeehan.github.io/UNIXtutorial)
+### [UNIX shell tutorial (advanced)](https://conmeehan.github.io/advancedUNIXtutorial)
 ### [Setting up and using conda]()
 
