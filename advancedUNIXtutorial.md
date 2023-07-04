@@ -64,6 +64,16 @@ The same will work for commands such as `cd`, `less`, etc. and programs that are
 
 Tab completion is also explained well in [this video](https://www.youtube.com/watch?v=k5A12buZ8To&ab_channel=AverageLinuxUser).
 
+## Arithmetic
+It is possible to do basic arithhmetic operations in the UNIX shell with the `expr` command.
+To add two variables together we can do the following:
+```console
+var1=1; var2=2;
+expr ${var1} + ${var2}
+```
+Note the lack of space between the var1 = and 1 for the assignment but that there is a space between ${var1} + ${var2} in the expression.<br />
+The various arithmetic operations are outlined in the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenGenomicsCourse/ConceptsInComputerProgramming.md) tutorial.<br />
+
 ## Repeating commands using loops
 
 The real power of the shell is the ability to repeat commands on multiple targets. This is useful for example for creating multiple folders, moving files into each folder, running pipeline on multiple samples etc.<br>
@@ -170,8 +180,36 @@ for name in `cat sampleList.txt`; do mkdir ${name}; done
 ```
 Note that the file had no spaces on any of the lines. If there is a space, the loop will treat it as a new item (i.e. "sample1" is one item but "sample 1" is 2 items).
 
+## If/else statements and logic (boolean) operators
+Conditional control of tasks can be achieved in UNIX using the if else statements. It is suggested you familiarise yourself with selection statements as outlined in the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenGenomicsCourse/ConceptsInComputerProgramming.md) tutorial.<br />
+The basic syntax of the statement is 
+```console
+if [[ logic check ]]; then <task if true>; else <task if false>; fi
+```
+For example, to check if a variable named var1 contains the word "hello" the following statement can be used
+```console
+if [[ ${var1} == "hello" ]];then echo "it does"; else echo "it doesn't";fi
+```
 
-## Practise tasks for loops
+These statements can also be used for logic operators. A good guide to this can be found [here](https://www.tutorialspoint.com/unix/unix-basic-operators.htm).<br />
+The primary operators are:
+`!` for NOT<br />
+`-a` for AND<br />
+`-o` for OR<br />
+`-eq` for equal (== will also usually work)<br />
+`-lt` for less than<br />
+`-gt` for great than<br />
+
+As an example, we can check if one variable is less than the other
+```console
+if [[ ${var1} -lt ${var2} ]];then echo "it is less"; else echo "it is not less";fi
+```
+Arithmetic can be done in such statements with ` ticks around the expr
+```console
+if [[ `expr ${var1} + ${var2}` -eq 3 ]];then echo "the sum is 3"; else echo "the sum is not 3";fi
+```
+
+## Practise tasks for loops and statements
 ### Task 1
 Create a loop that starts at 1 and ends at 50 and prints number_x to the screen where x is the number in that current iteration
 
@@ -182,9 +220,15 @@ gene2<br />
 gene3 <br />
 2. Loop over this file and create a file called var.txt where var is the line in the file (e.g. gene1.txt).
 
+### Task 3
+1. Initialise a variable to contain a number
+2. Write a statement that prints "even" if the number is a multiple of 2 and "odd" if it is not (hint, use the modulo arithmetic operator)
+
 ## Grep
 
-Grep is a tool for searching files for a specific content, allowing for regular expressions to be used in the search. It has many powerful applications, the basics of which will be explained here. It is suggested you familiarise yourself with regular expressions as outlined in the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenGenomicsCourse/ConceptsInComputerProgramming.html) tutorial.<br />
+Grep is a tool for searching files for a specific content, allowing for regular expressions to be used in the search. It has many powerful applications, the basics of which will be explained here. It is suggested you familiarise yourself with regular expressions as outlined in the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenGenomicsCourse/ConceptsInComputerProgramming.md) tutorial.<br />
+
+A good guide to basic to grep can also be found [here](https://ostechnix.com/the-grep-command-tutorial-with-examples-for-beginners/).
 
 The basic syntax of grep is
 ```console
@@ -248,8 +292,8 @@ Thus you can see how grep and regular expressions are useful for searching large
 
 ## Sed
 
-Another useful tool for file manipulation is sed. This tool has many powerful applications including the replacement of one block of text with another.<br>
-The syntax for this is
+Another useful tool for file manipulation is sed. This tool has many powerful applications including the replacement of one block of text with another (we will only cover this functionality here). Regular expressions can also be used in sed as in with grep. It is suggested you familiarise yourself with regular expressions as outlined in the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenGenomicsCourse/ConceptsInComputerProgramming.md) tutorial.<br />
+The syntax for sed searching is
 ```console
 sed ‘s/<pattern to find>/<text to replace it with>/g’ <filename>
 ```
@@ -269,6 +313,19 @@ ls| grep ‘result’
 ```
 Note we do not specify anything as the input to `grep` since the pipe takes the output of `ls` and automatically puts it as the input to `grep`.<br>
 Piping commands together as input to grep, sed, less, etc can become very useful for sorting, modifying and searching files and folders, especially within loops.
+
+## Practise tasks for grep, sed and pipe
+### Task 1
+1. Print the following list of species to a file:
+Staphylococcus aureus<br />
+Streptococcus pyogenes<br />
+Pseudomonas aeruginosa<br />
+Escherichia coli <br />
+2. Count the number of Escherichia in the file
+3. Replace all Pseudomonas with P. and save to a new file
+4. Count the number of coccus in the file and then print to the screen "multiple found" if 1 or more occurrences are in the file. (hint use an if statement. You can the value output from the statement before a pipe is stored in $?)
+
+
 
 ## .bash_profile, alias and PATH
 
@@ -337,20 +394,20 @@ Now if you use `echo $PATH` you will see the /home/ubuntu/bin added to the end o
 ## Other useful commands
 
 Below is a brief overview of some other useful commands. I suggest looking at these in more detail yourself.<br>
-wc counts words or lines in a file or output.<br>
+`wc` counts words or lines in a file or output.<br>
 e.g.<br>
 * `wc -m file.txt` will output the number of characters in the file<br>
 * `wc -l file.txt` will output the number of lines in the file<br>
 * `ls|wc -l` will take the output from ls and then pipe to wc, resulting in a count of items in the directory
 
-cut undertakes basic text processing by cutting a text file in specific ways.<br>
+`cut` undertakes basic text processing by cutting a text file in specific ways.<br>
 e.g.
-* cut -c2 file.txt will return the second character of each line in the file
-* cut -c3-5 file.txt will return the 3rd, 4th and 5th character of each line in the file
-* cut -c2- file.txt will return from the 2nd character to the end of the line for each line in the file
-* cut -d’:’ -f1 file.txt will take a file, cut each line by the : character and return the first field resulting from this split on each line
+* `cut -c2 file.txt` will return the second character of each line in the file
+* `cut -c3-5 file.txt` will return the 3rd, 4th and 5th character of each line in the file
+* `cut -c2- file.txt` will return from the 2nd character to the end of the line for each line in the file
+* `cut -d’:’ -f1 file.txt` will take a file, cut each line by the : character and return the first field resulting from this split on each line
 
-rm is the remove command. It will completely remove the file from the system and does not ask for confirmation before doing so.<br>
+`rm` is the remove command. It will completely remove the file from the system and does not ask for confirmation before doing so.<br>
 **NOTE:** rm removes the file and does not send it to the trash. Thus, once you use rm on a file it is gone and irretrievable.<br>
 **NOTE2:** be VERY careful using rm inside loops. If you make a mistake it may end up removing multiple files you did not want removed without asking for confirmation. This is very dangerous when using in loops that use cd to step in and out of directories.<br>
 Always test loops you wish to use for rm with echo commands instead first.<br>

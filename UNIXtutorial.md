@@ -259,7 +259,6 @@ Here we see the flag/option -n is used to denote the number of lines we want fol
 2. Copy the file to testFile2.txt
 3. Rename testFile2.txt to testFile3.txt, keeping it within the same folder
 4. Move testFile3.txt to the parent directory and rename it testFile4.txt
-5. Remove testFile1.txt
 
 ## Advanced UNIX tutorial (shell scripting)
 If you wish to learn more about the expansive uses and advanced commands in UNIX, you can go to the [UNIX tutorial advanced](https://conmeehan.github.io/advancedUNIXtutorial.html). 
