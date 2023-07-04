@@ -11,14 +11,22 @@ key: page-UNIX
 
 This page outlines some more advanced uses of UNIX that are very useful for research.<br>
 
+## Using printf instead of echo
+`echo` is a very sueful command for printing strings to screen. However, it adds a newline character to the end of th string automatically, which can be annoying when printing to file (see below). It also does not allow for multiple liens to be printed together. <br />
+A more powerful tool for printing to screen or file is `printf`. For example, to print a string to screen with multiple newlines (\n characters are used for this) you can use
+```console
+printf "hello\nworld\n"
+```
+It is suggested that you use printf instead of echo if printing to file. A longer guide to printf can be found [here](https://www.computerhope.com/unix/uprintf.htm).
+
 ## Redirect output to file
 
-If a command prints information to the screen (standard out) such as `cat`, `echo`, `ls`, `grep` etc. this output can instead be redirected to a file.<br>
+If a command prints information to the screen (standard out) such as `cat`, `printf`, `ls`, `grep` etc. this output can instead be redirected to a file.<br>
 The `>` symbol is used to overwrite the contents of the file with whatever output you specify to redirect to it.<br>
 The `>>` is used to append instead of overwrite.<br>
 Thus, to place the sentence “this is redirected output” into a file ‘redir.txt’ we type<br>
 ```console
-echo “this is redirected output” >redir.txt
+printf “this is redirected output\n” >redir.txt
 ```
 If we then want to add the contents of a file called ‘file1.txt’ to that file we type<br>
 ```console
@@ -54,6 +62,8 @@ cp file1.txt ~/Desktop/
 and then hit tab twice. This will then list the folder contents as per the `ls` command, and allow you to see what options are available to you for subdirectories etc.<br>
 The same will work for commands such as `cd`, `less`, etc. and programs that are installed such as `raxml` and `migrate-n`.<br>
 
+Tab completion is also explained well in [this video](https://www.youtube.com/watch?v=k5A12buZ8To&ab_channel=AverageLinuxUser).
+
 ## Repeating commands using loops
 
 The real power of the shell is the ability to repeat commands on multiple targets. This is useful for example for creating multiple folders, moving files into each folder, running pipeline on multiple samples etc.<br>
@@ -63,14 +73,23 @@ This is accomplished by using a tool called the for loop. In order to use these 
 
 A variable is a placeholder for some text such as a directory name, filename, number, sentence etc. These allow for the contents of the variable to be changed within a loop without manually having to do so yourself.<br>
 A variable is always initialised using the name you designate for the variable (e.g. file, direc, superman, x, etc.) It can be whatever you want once it is a single word without spaces or special characters.<br>
-The variable is then called using a ${} around the name. Thus is the variable is named direc it is referenced using ${direc}.
-
+The variable is then called using a \${} around the name. Thus if the variable is named direc it is referenced using ${direc}.<br/>
+For example, to initialse a variable called num1 and assign it the value of 1 we would do so like this
+```console
+num1=1
+```
+Note there is no space between the variable name (num1), the = and the value.<br/>
+We can then print that value to the screen using echo
+```console
+echo ${num1}
+```
 ### Wildcards
 
-The asterisk (\*) is referred to as a wildcard symbol in unix. This allows for matching of filenames, directories etc that all have a certain sections of their name in common.<br>
+The asterisk (\*) is referred to as a wildcard symbol in UNIX. This allows for matching of filenames, directories etc that all have a certain sections of their name in common.<br>
 For example, if all your files start with ‘result’ (e.g. result.txt, result.tree, result.nexus, resultFile, result) these will all be recognised using result*.<br>
 Alternatively if they all end with .txt you can loop over them all using the *.txt
 
+### Writing loops
 Both variables and wildcards are used in for loops to maximise their power. A for loop has the syntax:
 ```console
 for <variable> in <list>
@@ -78,12 +97,13 @@ do
 <tasks to repeat for each item in list>
 done
 ```
-Each section is written on a separate line (e.g. after `do` hit enter’) and instead of a prompt the terminal will display a > to designate you are in a multi-line command.<br>
+Each section is written on a separate line (e.g. after `do` hit enter) and instead of a prompt the terminal will display a > to designate you are in a multi-line command.<br>
 Alternatively you can place a loop all on one line using `;` to separate the commands (except for the line break after the `do` where there is no `;` included).
 
-For example, we can use the command `echo` to print something to the screen. This is used like<br>
+For example, we can use the command `echo` to print something in a variable to the screen. This is used like<br>
 ```console
-echo hello
+var1="hello"
+echo ${var1}
 ```
 which will print hello to the terminal.<br>
 We can use a for loop to print the number 1 to 10 to screen by typing
@@ -94,7 +114,11 @@ echo ${num}
 done
 ```
 This loop starts at 1, places the number in the variable num which can then be accessed inside the loop through `${num}`.<br>
-(this can be done on one line by writing `for num in {1..10};do echo $num;done;` Note the lack of semi-colon after `do`)
+This can also be done on one line by writing 
+```console
+for num in {1..10};do echo $num;done;
+```
+Note the lack of semi-colon after `do`
 
 This becomes more useful when we want to create, move, modify etc. files and directories.<br>
 Lets use a for loop to create 3 directories which will be named run1, run2 and run3
@@ -118,7 +142,7 @@ cd ..
 done
 ```
 This loop goes into each directory that starts with ‘run’, creates a file called ‘results.txt’, goes back out of the directory and then to the next in the list etc. Thus, the loop is stepping in (using `cd ${direc}`) and out (using `cd ..`) of each folder and issuing commands within the folders without you having to do so manually.<br>
-**NOTE:** this loop will operate on every folder or file that starts with ‘run’. Thus if you happen to have a file that starts with ‘run’ in the same directory, the loop will attempt to step into this file, print an error saying it can’t but then continue the loop and create a file called ‘results.txt’ and `cd ..` meaning it goes into the directory above. Therefore you must be careful that if you are stepping in and out of folders with these loops there are no files that would be put into your list due to matching the text with the wildcard. The best way to test this is to create your loops that step in and out of folders and use pwd commands to check it is the right path at each step.
+**NOTE:** this loop will operate on every folder or file that starts with ‘run’. Thus if you happen to have a file that starts with ‘run’ in the same directory, the loop will attempt to step into this file, print an error saying it can’t but then continue the loop and create a file called ‘results.txt’ and `cd ..` meaning it goes into the directory above. Therefore you must be careful that if you are stepping in and out of folders with these loops there are no files that would be put into your list due to matching the text with the wildcard. The best way to test this is to create your loops that step in and out of folders and use `pwd` commands to check it is the right path at each step before executing your final loop.
 
 Loops are then most useful when running a pipeline on multiple samples. For example if you wish to run mafft and raxml on files contained in folders that start with ‘sample’ you could use a command such as
 ```console
@@ -131,11 +155,37 @@ cd ..
 done
 ```
 This will then run the programs on each sample in sequence, saving you from having to manually start these programs on every sample yourself.<br>
-Anther use is to take all the .txt files in a directory and concatenate their contents into one large file using a for loop. Try this as an exercise.
+
+### Using file contents as list for loop
+If you have a list of items in a file (one per line) you can loop over these using the cat command. <br />
+Lets first create a file that has text over multiple lines
+```console
+printf "sample1\nsample2\nsample3\n" >sampleList.txt
+```
+You can see that this now has 3 lines, with one sample name on each (view this with `cat sampleList.txt`)
+
+We can now, for example, use a loop to go through this file, line by line, and make directories from these names. This is done like so:
+```console
+for name in `cat sampleList.txt`; do mkdir ${name}; done
+```
+Note that the file had no spaces on any of the lines. If there is a space, the loop will treat it as a new item (i.e. "sample1" is one item but "sample 1" is 2 items).
+
+
+## Practise tasks for loops
+### Task 1
+Create a loop that starts at 1 and ends at 50 and prints number_x to the screen where x is the number in that current iteration
+
+### Task 2
+1. Create a file (using `printf`) that looks like the following:<br />
+gene1<br />
+gene2<br />
+gene3 <br />
+2. Loop over this file and create a file called var.txt where var is the line in the file (e.g. gene1.txt).
 
 ## Grep
 
-Grep is a tool for searching files for a specific content. It has many powerful applications, the basics of which will be explained here.
+Grep is a tool for searching files for a specific content, allowing for regular expressions to be used in the search. It has many powerful applications, the basics of which will be explained here. It is suggested you familiarise yourself with regular expressions as outlined in the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenGenomicsCourse/ConceptsInComputerProgramming.html) tutorial.<br />
+
 The basic syntax of grep is
 ```console
 grep <search pattern> <filename>
