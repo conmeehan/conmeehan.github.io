@@ -82,7 +82,7 @@ Check that the string ends after these 6 digits
   - Read in 5 separate numbers
   - Calculate the average of the five numbers
   - Find the smallest (minimum) and largest (maximum) of the five entered numbers.
-  - Write out the three results found with a message describing what they are 
+  - Write out the three results found with a message describing what they are
 ```console
 Create 5 real type variables and store numbers in each
 Add all five numbers to each other and divide that answer by 5 to get the average
@@ -95,7 +95,6 @@ Starting with the first number, store it in a variable called mamimum
 Now go number by number through the other 4 and at each number check if it is larger than the number stored in maximum
   If so, replace the number stored in maximum by that number
 Once finished, print to screen "The maximum of the 5 numbers is" followed by the number stored in the maximum variable
-
 ```
 #### Regular expressions
 These should be done in Notepad++ or BBEdit
