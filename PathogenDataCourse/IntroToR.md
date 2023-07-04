@@ -27,6 +27,7 @@ It is strongly encouraged to use RStudion when learning R. Installation instruct
 * [A psychologists guide to R](https://github.com/seanchrismurphy/A-Psychologists-Guide-to-R/tree/master)
 
 ## Example tasks as pseudocode
+A set of example tasks can be found on the [W3 resource webpage](https://www.w3resource.com/r-programming-exercises/)
 ### Task 1
 ```console
 Create a dataframe comprised of 3 rows and 3 columns
