@@ -325,6 +325,17 @@ Escherichia coli <br />
 3. Replace all Pseudomonas with P. and save to a new file
 4. Count the number of coccus in the file and then print to the screen "multiple found" if 1 or more occurrences are in the file. (hint use an if statement. You can the value output from the statement before a pipe is stored in $?)
 
+## Creating and running shell scripts
+Any shell commands (e.g. `cd`, `pwd`, loops, if statements, `grep` etc) can be placed in a file and run separately. Such files tend to end in the suffix `.sh` to denote a shell script.<br />
+For example, we could write a script that goes into every folder starting with sample and print out the contents
+```console
+for dir in sample*;do cd ${dir}; ls; cd ..;done
+``` 
+If we save this to a file called dirNav.sh we can then run those commands like so
+```console
+sh dirNav.sh
+```
+This allows us to build complex sets of commands together to run as a programming script. 
 
 
 ## .bash_profile, alias and PATH
