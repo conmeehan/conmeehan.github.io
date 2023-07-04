@@ -15,7 +15,7 @@ Each tutorial has a lecture or explanation of the topic with associated practice
 It is suggested that you do these in order, or at least the concepts in computer programming, UNIX tutorials and R tutorial before the other topics. <br />
 ## Topics (each is a hyperlink to its own page):
 ### [Concepts in computer programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming)
-### [UNIX tutorial (basics)](Uhttps://conmeehan.github.io/UNIXtutorial)
+### [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial)
 ### [UNIX shell tutorial (advanced)](https://conmeehan.github.io/advancedUNIXtutorial)
 ### [Setting up and using conda]()
 
