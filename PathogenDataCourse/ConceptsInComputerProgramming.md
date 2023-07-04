@@ -1,6 +1,4 @@
 ---
-layout: default
----
 layout: article
 titles:
   en      : &EN       Concepts in computer science
