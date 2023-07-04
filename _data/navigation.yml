@@ -2,12 +2,12 @@ header:
 - title: About
   url: /about.html
 - title: Pathogen genomics course
-  url: /PathogenCourse.html
+  url: /PathogenDataCourse/PathogenCourse.html
 side:
   - title: Teaching
     children:
     - title: Pathogen genomics course
-      url: /PathogenCourse.html
+      url: /PathogenDataCourse/PathogenCourse.html
     - title: UNIX tutorial
       url: /UNIXtutorial
     - title: adv. UNIX tutorial

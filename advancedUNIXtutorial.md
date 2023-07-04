@@ -11,8 +11,6 @@ key: page-UNIX
 
 This page outlines some more advanced uses of UNIX that are very useful for research.<br>
 
-**NOTE:** this is not required for the course but are useful tools for general working within the unix environment.<br>
-
 ## Redirect output to file
 
 If a command prints information to the screen (standard out) such as `cat`, `echo`, `ls`, `grep` etc. this output can instead be redirected to a file.<br>
