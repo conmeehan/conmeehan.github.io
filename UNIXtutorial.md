@@ -1,7 +1,7 @@
 ---
 layout: article
 titles:
-  en      : &EN       UNIX tutorial
+  en      : &EN       UNIX shell tutorial (navigation, creation and viewing)
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
@@ -10,19 +10,19 @@ key: page-UNIX
 ---
 
 
-This tutorial outlines the basics needed for working with the UNIX environment. These are UNIX commands and thus they apply to Linux and Mac operating systems. Windows machines cannot run UNIX commands locally and will require additional software to do so (see below).
+This tutorial outlines the basics needed for working with the UNIX shell environment. These are UNIX commands and thus they apply to Linux and Mac operating systems. Windows machines cannot run UNIX commands locally and will require additional software to do so (see below).
 
 
 ## Useful Material
 
-A UNIX cheat sheet like [this one](https://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet) might be helpful as a reference.
-For more info on using the unix shell check out [Software Carpentry tutorial](http://swcarpentry.github.io/shell-novice/).
-
+A UNIX cheat sheet like [this one](https://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet) might be helpful as a reference.<br />
+For more info on using the unix shell check out [Software Carpentry tutorial](http://swcarpentry.github.io/shell-novice/).<br />
+[Sandbox.io](https://sandbox.bio/tutorials?id=terminal-basics) has a web-based UNIX shell for praqctise a wealth of tutorials to follow
 
 ## Accessing the command line/terminal
 ### Windows Users
 
-Windows computers do not natively run UNIX. In order to follow the tutorial, please install [https://git-for-windows.github.io/ Git for Windows], a software system that emulates UNIX. Accept the default install settings. To access the program, search for 'Git for Windows' in your Windows Explorer. The Git for Windows folder should contain a program called 'Git Bash.' Double-click this to execute. You can now follow the rest of the tutorial.
+Windows computers do not natively run UNIX. In order to follow the tutorial, please install [Git for Windows](https://git-for-windows.github.io/), a software system that emulates UNIX. Accept the default install settings. To access the program, search for 'Git for Windows' in your Windows Explorer. The Git for Windows folder should contain a program called 'Git Bash.' Double-click this to execute. You can now follow the rest of the tutorial.
 
 ### OSX Users
 
@@ -31,6 +31,10 @@ Apple computers natively run UNIX (except for a few commands like wget). To do t
 ### Linux Users
 
 Linux computers are built upon UNIX and so you can run this tutorial locally if you wish. The easiest way to find the terminal is to search for 'terminal' in the search bar. The terminal is where you can then input the commands for the tutorial.
+
+### Web-based practice environment
+
+If none fo the above work for you, you can use the [Sandbox.io](https://sandbox.bio/tutorials?id=terminal-basics) web-based environment to practise. 
 
 ## Directory structure
 A computer file system is laid out as a hierarchical multifurcating tree structure. This may sound confusing but it is easy to think of it as boxes of boxes where each box is a directory.<br />
@@ -80,7 +84,7 @@ Not all commands need options (sometimes called flags, and generally preceded by
 ### Notes on syntax for directory structure
 * Two dots (`..`) indicates the parent directory of the present working directory. So, for example, `cd ..` will move you back one directory.
 * One dot (`.`) indicates the present working directory. So, for example, `cd .` will keep you where you are. There are times where the single dot can be more useful than this...
-* The tilde (`~`) refers to your home directory (your user profile in your laptop). The tilde is very helpful if you get lost while using the terminal: just type `cd ~` and you'll be back in your home directory.
+* The tilde (`~`) refers to your home directory (your user profile in your laptop). If you want to refer to something in that directory(e.g. the Desktop in the image example above) you can use ~/Desktop as the path.
 * A forward slash (`/`) by itself or at the start of a path refers to the root of the filing system -- the folder that contains all other folders.
 
 ### Some suggestions concerning file and folder names
@@ -151,7 +155,8 @@ We can move into the parent of the folder you are currently in by typing
 cd ..
 ```
 If you type ls you can see your home directory is listed here.<br>
-You can use pwd to confirm you've moved and are now in a new working directory. You can move back to your home directory by typing cd with no arguments.<br>
+You can use pwd to confirm you've moved and are now in a new working directory. <br>
+You can move back to your home directory by typing cd with no arguments.
 This is a handy trick if you are lost in the filesystem and want to get home!
 ```console
 cd 
@@ -242,7 +247,22 @@ head -n 50 filename
 ```
 Here we see the flag/option -n is used to denote the number of lines we want followed by the number itself. The same can be done using tail to view the last lines of a file.
 
-## Advanced UNIX tutorial
+## Tasks to practice
+### Navigating and creating
+1. Navigate to your home directory
+2. Create a fodler called UNIXtest
+3. Navigate into that folder
+4. Create an empty file called testFile1.txt
+
+### Renaming and moving
+1. Create an empty file called testFile1.txt
+2. Copy the file to testFile2.txt
+3. Rename testFile2.txt to testFile3.txt, keeping it within the same folder
+4. Move testFile3.txt to the parent directory and rename it testFile4.txt
+5. Remove testFile1.txt
+
+## Advanced UNIX tutorial (shell scripting)
 If you wish to learn more about the expansive uses and advanced commands in UNIX, you can go to the [UNIX tutorial advanced](https://conmeehan.github.io/advancedUNIXtutorial.html). 
 
-**NOTE:** this is not a requirement for the course, just extra information.
+## Setting up conda
+For installing programs in a UNIX environment, conda is suggested as the package management system. Follow the [Conda tutorial](https://conmeehan.github.io/PathogenGenomicsCourse/condaSetupTutorial.html) for details on how to do this.
