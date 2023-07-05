@@ -45,7 +45,7 @@ if var1 < 10
   var1 = var1/10 
 ```
 
-</details></br>
+</details><br />
 
 2. Write a for loop that will iterate from 1 to 10 and at each stage get the modulus 2 of the variable
 
@@ -56,7 +56,7 @@ for variable between 1 and 10
  print variable%2 
 ```
 
-</details></br>
+</details><br />
 
 3. Initialise a variable to be value 1. Write a while loop that continues until that variable is 100. Inside the loop, if the number is less than 10, get the number to the power of itself. If it is between 10 and 50, take away 5 from the number. If it is above 50, add 1 to the number
 <details><summary>Click here for answer</summary>
@@ -71,7 +71,7 @@ while var1 <=100
    else if var1 > 50
     var1 = var1 + 1 
 ```
-</details></br>
+</details><br />
 
 ### Pseudocode
 1. Ask the user for 2 numbers and print out their product (i.e. multiply them together)
