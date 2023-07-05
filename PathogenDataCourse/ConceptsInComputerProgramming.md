@@ -37,15 +37,13 @@ Once finished the tutorial, take the post-learing quiz.<br>
 
 <details>
 
-<summary>Click here for answer</summary>
-
 ## Header
 
-Some text
+Some text <br />
 
 Text again
 
-```ruby
+```js
 real var1 = 11.0
 if var1 < 10
   var1 = var1+10
