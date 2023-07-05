@@ -9,7 +9,7 @@ titles:
 key: page-DataHandling
 ---
 
-This tutorial outlines the basics concepts in data handling and tidying and also in figure generation.<br>
+This tutorial outlines the basics concepts in data handling (including tidying) and also in figure generation.<br>
 ## Learning outcomes
 * Identify the steps in the research cycle
 * Describe selection bias
@@ -30,3 +30,6 @@ Once finished the tutorial, take the post-learing quiz.<br>
 
 ## Presentation
 * [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/DataHandlingAndPresentation.pptx)
+
+## Additional videos
+*	[An understanding of tidy data](https://www.youtube.com/watch?v=KW1laBLEiw0 )
