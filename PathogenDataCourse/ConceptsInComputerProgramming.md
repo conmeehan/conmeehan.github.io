@@ -36,51 +36,51 @@ Once finished the tutorial, take the post-learing quiz.<br />
 {:start="1"}
 1. Initialise a variable with a certain real value. Write a statement that will add 10 to the variable if it is less than 10 and divide the variable by 10 if it is greater than or equal to 10
 
-    <details> <summary>Click here for answer</summary>
+<details> <summary>Click here for answer</summary>
 
-    {% highlight console %}
-    real var1 = 11.0
-    if var1 < 10
-      var1 = var1+10
-    else
-      var1 = var1/10 
-    {% endhighlight %}
+{% highlight console %}
+real var1 = 11.0
+if var1 < 10
+  var1 = var1+10
+else
+  var1 = var1/10 
+{% endhighlight %}
 
-    </details>
+</details>
 
 {:start="2"}
 2. Write a for loop that will iterate from 1 to 10 and at each stage get the modulus 2 of the variable
 
-    <details>
+<details>
 
-    <summary>Click here for answer</summary>
+<summary>Click here for answer</summary>
 
-    {% highlight console %}
-    for variable between 1 and 10
-    print variable%2 
-    {% endhighlight %}
+{% highlight console %}
+for variable between 1 and 10
+print variable%2 
+{% endhighlight %}
 
-    </details><br />
+</details><br />
 
 {:start="3"}
 3. Initialise a variable to be value 1. Write a while loop that continues until that variable is 100. Inside the loop, if the number is less than 10, get the number to the power of itself. If it is between 10 and 50, take away 5 from the number. If it is above 50, add 1 to the number
 
-    <details>
+<details>
 
-    <summary>Click here for answer</summary>
+<summary>Click here for answer</summary>
 
-    {% highlight console %}
-    int var1 = 1
-    while var1 <=100
-      if var1 < 10
-        var1= var1^var1
-      else if var1 >= 10 && var1 <=50
-        var1 = var1 - 5
-      else if var1 > 50
-        var1 = var1 + 1 
-    {% endhighlight %}
+{% highlight console %}
+int var1 = 1
+while var1 <=100
+  if var1 < 10
+    var1= var1^var1
+  else if var1 >= 10 && var1 <=50
+    var1 = var1 - 5
+  else if var1 > 50
+    var1 = var1 + 1 
+{% endhighlight %}
 
-    </details>
+</details>
 
 ### Pseudocode
 {:start="1"}
