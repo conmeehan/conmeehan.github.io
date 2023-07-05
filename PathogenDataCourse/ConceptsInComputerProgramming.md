@@ -43,13 +43,13 @@ Some text <br />
 
 Text again
 
-```js
+~~~js
 real var1 = 11.0
 if var1 < 10
   var1 = var1+10
  else
   var1 = var1/10 
-```
+~~~
 
 </details>
 
@@ -57,10 +57,14 @@ if var1 < 10
 
 <details><summary>Click here for answer</summary>
 
+<pre>
+
 ```c
 for variable between 1 and 10
  print variable%2 
 ```
+
+</pre>
 
 </details><br />
 
