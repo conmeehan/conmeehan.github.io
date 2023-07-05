@@ -63,7 +63,7 @@ The amount of glucose added to the petri dish - **Independent**<br />
 2 different growth conditions on the same set of bacterial strains - **Paired**<br />
 Mice in litter A given drug 1 and mice in litter B given drug 2 - **Independent**<br />
 Difference in glucose levels in the morning and in the evening in a patient - **Paired**<br />
-qPCR expression data is compared between clinical samples and a negative control sample - **Indepdendent (control refers to sample)**<br />
+qPCR expression data is compared between clinical samples and a negative control sample - **Independent (control refers to sample)**<br />
 5 patient samples treated separately with a negative control and a drug - **Paired (control refers to drug)**<br />
 
 ### Which parametric statistical test?
@@ -78,7 +78,7 @@ Is there a difference in cell size at the start and end of a 12-hour period of t
 
 ## Statistics test in Excel
 **NOTE** It is not recommended to do inferential statsitics in Excel. You cannot test for the assumptions required for choosing between parametric and non-parametric tests. However, if you wish to understand the T-test and ANOVA, these worksheets will outline how to do them in excel.<br />
-Descriptive statistics in Excel are fine and can be completed following the worksheet
+Descriptive statistics in Excel are fine and can be completed following the worksheet<br />
 [Descriptive statistics using Excel](https://conmeehan.github.io/PathogenDataCourse/Worksheets/DescriptiveStatsExcel)<br />
 [Independent and Paired T-test using Excel](https://conmeehan.github.io/PathogenDataCourse/Worksheets/T-testExcel)<br />
 [One Way ANOVA using Excel](https://conmeehan.github.io/PathogenDataCourse/Worksheets/ANOVA-Excel)<br />
