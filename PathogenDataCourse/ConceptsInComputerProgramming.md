@@ -35,9 +35,17 @@ Once finished the tutorial, take the post-learing quiz.<br>
 ### Sequence and iteration
 1. Initialise a variable with a certain real value. Write a statement that will add 10 to the variable if it is less than 10 and divide the variable by 10 if it is greater than or equal to 10
 
-<details><summary>Click here for answer</summary>
+<details>
 
-```
+<summary>Click here for answer</summary>
+
+## Header
+
+Some text
+
+Text again
+
+```ruby
 real var1 = 11.0
 if var1 < 10
   var1 = var1+10
@@ -45,7 +53,7 @@ if var1 < 10
   var1 = var1/10 
 ```
 
-</details><br />
+</details>
 
 2. Write a for loop that will iterate from 1 to 10 and at each stage get the modulus 2 of the variable
 
