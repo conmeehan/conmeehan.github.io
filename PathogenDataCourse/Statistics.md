@@ -31,6 +31,7 @@ Once finished the tutorial, take the post-learing quiz.<br>
 
 ## Presentation
 * [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/Statistics.pptx)
+
 ## Tasks from slides with sample answers
 ### What type of research?
 #### Qualitative vs quantitative
@@ -70,10 +71,10 @@ Do 3 different drugs each have the same or different effects on insulin levels i
 Is there a difference in cell size at the start and end of a 12-hour period of treatment? - **Paired t-test**
 
 ## Statistics in R
-Descriptive statistics using R
-Independent and Paired T-test using R
-Normality and homogeny of variance testing using R
-One Way ANOVA using R
+[Descriptive statistics using R](https://conmeehan.github.io/PathogenDataCourse/Worksheets/DescriptiveStatsR)<br />
+[Independent and Paired T-test using R](https://conmeehan.github.io/PathogenDataCourse/Worksheets/T-testR)<br />
+[Normality and homogeny of variance testing using R]()<br />
+[One Way ANOVA using R]()<br />
 
 ## Statistics test in Excel
 **NOTE** It is not recommended to do inferential statsitics in Excel. You cannot test for the assumptions required for choosing between parametric and non-parametric tests. However, if you wish to understand the T-test and ANOVA, these worksheets will outline how to do them in excel.<br />
