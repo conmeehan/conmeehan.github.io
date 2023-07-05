@@ -46,7 +46,7 @@ else
   var1 = var1/10 
 {% endhighlight %}
 
-</details>
+</details><br />
 
 {:start="2"}
 2. Write a for loop that will iterate from 1 to 10 and at each stage get the modulus 2 of the variable
