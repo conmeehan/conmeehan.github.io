@@ -43,7 +43,7 @@ if var1 < 10
   var1 = var1+10
  else
   var1 = var1/10 
-{% endhighlight %}}
+{% endhighlight %}
 
 </details>
 
@@ -56,7 +56,7 @@ if var1 < 10
 {% highlight console %}
 for variable between 1 and 10
  print variable%2 
-{% endhighlight %}}
+{% endhighlight %}
 
 </details><br />
 
@@ -66,9 +66,7 @@ for variable between 1 and 10
 
 <summary>Click here for answer</summary>
 
-Test text
-
-```js
+{% highlight console %}
 int var1 = 1
 while var1 <=100
   if var1 < 10
@@ -77,7 +75,7 @@ while var1 <=100
     var1 = var1 - 5
    else if var1 > 50
     var1 = var1 + 1 
-```
+{% endhighlight %}
 
 </details>
 
@@ -85,7 +83,7 @@ while var1 <=100
 1. Ask the user for 2 numbers and print out their product (i.e. multiply them together)
 <details><summary>Click here for answer</summary>
 
-```console
+{% highlight console %}
 Prompt user to enter a number
   Store number in variable1
  Prompt user for a second number
@@ -93,21 +91,21 @@ Prompt user to enter a number
  Multiply variable1 and variable2
   Store answer in variable3
  Print variable3 to screen 
-```
+{% endhighlight %}
 
 </details></br>
 
 2. Read in a string of letters and check if it is a valid DNA string
 <details><summary>Click here for answer</summary>
 
-```console
+{% highlight console %}
 Read in a string from the user or file
   Store in variable1
 Loop through by going letter by letter through the string
   Check if the letter is an A, C, G or T (case insensitive)
   If not, stop
  If the loop  finishes without stopping early, it is a valid DNA string 
-```
+{% endhighlight %}
 
 </details></br>
 
@@ -115,11 +113,11 @@ Loop through by going letter by letter through the string
   - Hint: use phrases like ‘starts with’, ‘ends with’, ‘followed by’
 <details><summary>Click here for answer</summary>
 
-```console
+{% highlight console %}
 Store string in a variable
 Check if variable starts with "patient_" and is followed by six digits
 Check that the string ends after these 6 digits
-```
+{% endhighlight %}
 
 </details></br>
 
@@ -130,7 +128,7 @@ Check that the string ends after these 6 digits
   - Write out the three results found with a message describing what they are
 <details><summary>Click here for answer</summary>
 
-```console
+{% highlight console %}
 Create 5 real type variables and store numbers in each
 Add all five numbers to each other and divide that answer by 5 to get the average
   print to screen "This is the average of the five numbers" followed by the answer
@@ -142,7 +140,7 @@ Starting with the first number, store it in a variable called mamimum
 Now go number by number through the other 4 and at each number check if it is larger than the number stored in maximum
   If so, replace the number stored in maximum by that number
 Once finished, print to screen "The maximum of the 5 numbers is" followed by the number stored in the maximum variable
-```
+{% endhighlight %}
 
 </details></br>
 
@@ -163,20 +161,20 @@ AACCC
   - Sequence names are lines that begin with >
 <details><summary>Click here for answer</summary>
 
-```console
+{% highlight console %}
 Find:
 ^>.*
-```
+{% endhighlight %}
 
 </details></br>
 
 2. Find the first nucleotide of each sequence
 <details><summary>Click here for answer</summary>
 
-```console
+{% highlight console %}
 Find:
 ^[^>]
-```
+{% endhighlight %}
 
 </details></br>
 
@@ -184,36 +182,36 @@ Find:
   - Sequence names are lines that begin with >
 <details><summary>Click here for answer</summary>
 
-```console
+{% highlight console %}
 Find:
 ^>seq
 Replace:
 >sample
-```
+{% endhighlight %}
 
 </details></br>
 
 4. Add a tab character followed by ‘function’ to the end of each sequence name
 <details><summary>Click here for answer</summary>
 
-```console
+{% highlight console %}
 Find:
 ^(>.*)
 Replace:
 \1\tfunction
-```
+{% endhighlight %}
 
 </details></br>
 
 5. Find an AA at the start of a line and move it to the end of the line
 <details><summary>Click here for answer</summary>
 
-```console
+{% highlight console %}
 Find:
 ^(AA)(.*)$
 Replace:
 \2\1
-```
+{% endhighlight %}
 
 </details></br>
 
