@@ -11,6 +11,16 @@ key: page-UNIX
 
 This page outlines some more advanced uses of UNIX that are very useful for research.<br>
 
+## Learning outcomes
+* Implement redirection and tab completion tasks
+* Execute selection and interation commands in UNIX
+* Recognise grep, sed and pipe command structures
+* Appreciate the modification of the UNIX shell through profiles and aliases
+
+## Prerequisities
+An understanding of computer programming basics such as variables, selection, iteration and regular expressions. These are covered in the [Concepts in computer programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming) tutorial.
+A basic understanding of UNIX shell. This is covered in [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial).
+
 ## Using printf instead of echo
 `echo` is a very sueful command for printing strings to screen. However, it adds a newline character to the end of th string automatically, which can be annoying when printing to file (see below). It also does not allow for multiple liens to be printed together. <br />
 A more powerful tool for printing to screen or file is `printf`. For example, to print a string to screen with multiple newlines (\n characters are used for this) you can use

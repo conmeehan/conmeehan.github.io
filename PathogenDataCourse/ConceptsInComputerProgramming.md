@@ -12,6 +12,14 @@ key: page-Concepts
 
 This tutorial outlines the basics concepts in computer science such as variables, operators, selecting/iteration, pseudo code and regular expressions.<br>
 
+## Learning outcomes
+* Recognise data types and variables
+* Describe arithmetic, relational and logic operators
+* Execute selection and iteration workflows
+* Express algorithms in pseudocode
+* Implement regular expressions
+
+## Prerequisites
 It is recommended that you have [Notepad++ (Windows)](https://notepad-plus-plus.org/downloads/) or [BBEdit (Mac)](https://www.barebones.com/products/bbedit/) for the regular expressions tasks; most default Linux editors can do these.
 
 ## Tasks
@@ -21,7 +29,7 @@ During the presentation there are points to stop and do exercises, which are lin
 Once finished the tutorial, take the post-learing quiz.<br>
 
 ## Presentation
-* [Download slides here](PathogenDataCourse/CondaInstallAndUse.mdCondaInstallAndUse.md)
+* [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/ConceptsInComputerProgramming.pptx)
 ### Tasks from slides with sample answers
 #### Sequence and iteration
 * Initialise a variable with a certain real value. Write a statement that will add 10 to the variable if it is less than 10 and divide the variable by 10 if it is greater than or equal to 10

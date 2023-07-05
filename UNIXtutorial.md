@@ -12,6 +12,12 @@ key: page-UNIX
 
 This tutorial outlines the basics needed for working with the UNIX shell environment. These are UNIX commands and thus they apply to Linux and Mac operating systems. Windows machines cannot run UNIX commands locally and will require additional software to do so (see below).
 
+## Learning outcomes
+* Interpret and implement absolute and relative paths in a UNIX hierarchy
+* Recognise the various UNIX commands for navigation, creation, manipulation and viewing folders and files in UNIX
+
+## Prerequisities
+An understanding of computer programming basics such as variables. These are covered in the [Concepts in computer programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming) tutorial.
 
 ## Useful Material
 
