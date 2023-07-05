@@ -23,7 +23,7 @@ This tutorial outlines the basics concepts in data handling (including tidying) 
 ## Prerequisites
 It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming) and [Introduction to R](https://conmeehan.github.io/PathogenDataCourse/IntroToR) tutorials before starting.
 
-## Tasks
+## Order of tutorial
 
 Please do the pre-learning quiz, then watch the presentation. <br />
 Once finished the tutorial, take the post-learing quiz.<br>

@@ -37,43 +37,45 @@ Once finished the tutorial, take the post-learing quiz.<br>
 
 <details>
 
-## Header
+## Detail code section no. 1.
 
-Some text <br />
+This is testing area no. 1. <br />
 
-Text again
 
-~~~js
+{% highlight bash %}
 real var1 = 11.0
 if var1 < 10
   var1 = var1+10
  else
   var1 = var1/10 
-~~~
+{% endhighlight %}}
 
 </details>
 
 2. Write a for loop that will iterate from 1 to 10 and at each stage get the modulus 2 of the variable
 
-<details><summary>Click here for answer</summary>
+<details>
+
+<summary>Click here for answer</summary>
 
 <pre>
-
-```c
+<code class="js">
 for variable between 1 and 10
  print variable%2 
-```
-
+</code>
 </pre>
 
 </details><br />
 
 3. Initialise a variable to be value 1. Write a while loop that continues until that variable is 100. Inside the loop, if the number is less than 10, get the number to the power of itself. If it is between 10 and 50, take away 5 from the number. If it is above 50, add 1 to the number
 
-<details><summary>Click here for answer</summary>
+<details>
+
+<summary>Click here for answer</summary>
 
 Test text
-```console
+
+```js
 int var1 = 1
 while var1 <=100
   if var1 < 10
@@ -83,6 +85,7 @@ while var1 <=100
    else if var1 > 50
     var1 = var1 + 1 
 ```
+
 </details>
 
 ### Pseudocode

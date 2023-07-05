@@ -23,7 +23,7 @@ This tutorial outlines the basics concepts in experimental design and statistics
 ## Prerequisites
 It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming) and [Introduction to R](https://conmeehan.github.io/PathogenDataCourse/IntroToR) tutorials before starting.
 
-## Tasks
+## Order of tutorial
 
 Please do the pre-learning quiz, then watch the presentation. <br />
 During the presentation there are points to stop and do exercises, which are linked below. The answers to the questions in the exercises are linked within each one.<br>
