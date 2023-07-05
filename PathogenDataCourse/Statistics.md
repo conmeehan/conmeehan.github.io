@@ -70,13 +70,14 @@ qPCR expression data is compared between clinical samples and a negative control
 Do 3 different drugs each have the same or different effects on insulin levels in mice? (different mice tested for each drug) - **One-way ANOVA**<br />
 Is there a difference in cell size at the start and end of a 12-hour period of treatment? - **Paired t-test**
 
-## Statistics in R
+## Worksheets
+### Statistics in R
 [Descriptive statistics using R](https://conmeehan.github.io/PathogenDataCourse/Worksheets/DescriptiveStatsR)<br />
 [Independent and Paired T-test using R](https://conmeehan.github.io/PathogenDataCourse/Worksheets/T-testR)<br />
 [Normality and homogeny of variance testing using R](https://conmeehan.github.io/PathogenDataCourse/Worksheets/NormalityVarianceTestingR)<br />
 [One Way ANOVA using R](https://conmeehan.github.io/PathogenDataCourse/Worksheets/ANOVA-R)<br />
 
-## Statistics test in Excel
+### Statistics test in Excel
 **NOTE** It is not recommended to do inferential statsitics in Excel. You cannot test for the assumptions required for choosing between parametric and non-parametric tests. However, if you wish to understand the T-test and ANOVA, these worksheets will outline how to do them in excel.<br />
 Descriptive statistics in Excel are fine and can be completed following the worksheet<br />
 [Descriptive statistics using Excel](https://conmeehan.github.io/PathogenDataCourse/Worksheets/DescriptiveStatsExcel)<br />

@@ -31,5 +31,15 @@ Once finished the tutorial, take the post-learing quiz.<br>
 ## Presentation
 * [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/DataHandlingAndPresentation.pptx)
 
+## Worksheets
+### Figures in R
+[Bar charts using R](https://conmeehan.github.io/PathogenDataCourse/Worksheets/BarChartsR)<br />
+[Box plots using R](https://conmeehan.github.io/PathogenDataCourse/Worksheets/BoxPlotsR)<br />
+
+### Figures in Excel
+
+### Data tidying in Excel
+
 ## Additional videos
 *	[An understanding of tidy data](https://www.youtube.com/watch?v=KW1laBLEiw0 )
+* [Tidy data in R](https://r4ds.had.co.nz/tidy-data.html)

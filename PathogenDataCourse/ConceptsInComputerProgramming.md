@@ -10,7 +10,7 @@ key: page-Concepts
 ---
 
 
-This tutorial outlines the basics concepts in computer science such as variables, operators, selecting/iteration, pseudo code and regular expressions.<br>
+This tutorial outlines the basics concepts in computer science such as variables, operators, selecting/iteration, pseudo code and regular expressions.<br />
 
 ## Learning outcomes
 * Recognise data types and variables
@@ -25,8 +25,8 @@ It is recommended that you have [Notepad++ (Windows)](https://notepad-plus-plus.
 ## Order of tutorial
 
 Please do the pre-learning quiz, then watch the presentation. <br />
-During the presentation there are points to stop and do exercises, which are linked below. The answers to the questions in the exercises are linked within each one.<br>
-Once finished the tutorial, take the post-learing quiz.<br>
+During the presentation there are points to stop and do exercises, which are linked below. The answers to the questions in the exercises are linked within each one.<br />
+Once finished the tutorial, take the post-learing quiz.<br />
 
 ## Presentation
 * [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/ConceptsInComputerProgramming.pptx)
@@ -35,49 +35,49 @@ Once finished the tutorial, take the post-learing quiz.<br>
 ### Sequence and iteration
 1. Initialise a variable with a certain real value. Write a statement that will add 10 to the variable if it is less than 10 and divide the variable by 10 if it is greater than or equal to 10
 
-<details> <summary>Click here for answer</summary>
+    <details> <summary>Click here for answer</summary>
 
-{% highlight console %}
-real var1 = 11.0
-if var1 < 10
-  var1 = var1+10
- else
-  var1 = var1/10 
-{% endhighlight %}
+    {% highlight console %}
+    real var1 = 11.0
+    if var1 < 10
+      var1 = var1+10
+    else
+      var1 = var1/10 
+    {% endhighlight %}
 
-</details>
+    </details>
 
 2. Write a for loop that will iterate from 1 to 10 and at each stage get the modulus 2 of the variable
 
-<details>
+    <details>
 
-<summary>Click here for answer</summary>
+    <summary>Click here for answer</summary>
 
-{% highlight console %}
-for variable between 1 and 10
- print variable%2 
-{% endhighlight %}
+    {% highlight console %}
+    for variable between 1 and 10
+    print variable%2 
+    {% endhighlight %}
 
-</details><br />
+    </details><br />
 
 3. Initialise a variable to be value 1. Write a while loop that continues until that variable is 100. Inside the loop, if the number is less than 10, get the number to the power of itself. If it is between 10 and 50, take away 5 from the number. If it is above 50, add 1 to the number
 
-<details>
+    <details>
 
-<summary>Click here for answer</summary>
+    <summary>Click here for answer</summary>
 
-{% highlight console %}
-int var1 = 1
-while var1 <=100
-  if var1 < 10
-    var1= var1^var1
-   else if var1 >= 10 && var1 <=50
-    var1 = var1 - 5
-   else if var1 > 50
-    var1 = var1 + 1 
-{% endhighlight %}
+    {% highlight console %}
+    int var1 = 1
+    while var1 <=100
+      if var1 < 10
+        var1= var1^var1
+      else if var1 >= 10 && var1 <=50
+        var1 = var1 - 5
+      else if var1 > 50
+        var1 = var1 + 1 
+    {% endhighlight %}
 
-</details>
+    </details>
 
 ### Pseudocode
 1. Ask the user for 2 numbers and print out their product (i.e. multiply them together)
@@ -93,7 +93,7 @@ Prompt user to enter a number
  Print variable3 to screen 
 {% endhighlight %}
 
-</details></br>
+</details><br />
 
 2. Read in a string of letters and check if it is a valid DNA string
 <details><summary>Click here for answer</summary>
@@ -107,7 +107,7 @@ Loop through by going letter by letter through the string
  If the loop  finishes without stopping early, it is a valid DNA string 
 {% endhighlight %}
 
-</details></br>
+</details><br />
 
 3. Check if a string conforms to the pattern “patient_000000” where the 6 digits can be any numbers between 0-9
   - Hint: use phrases like ‘starts with’, ‘ends with’, ‘followed by’
@@ -119,7 +119,7 @@ Check if variable starts with "patient_" and is followed by six digits
 Check that the string ends after these 6 digits
 {% endhighlight %}
 
-</details></br>
+</details><br />
 
 4. Do the following steps
   - Read in 5 separate numbers
@@ -142,7 +142,7 @@ Now go number by number through the other 4 and at each number check if it is la
 Once finished, print to screen "The maximum of the 5 numbers is" followed by the number stored in the maximum variable
 {% endhighlight %}
 
-</details></br>
+</details><br />
 
 ### Regular expressions
 These should be done in Notepad++ or BBEdit
@@ -159,16 +159,19 @@ AACCC
 ```
 1. Find all sequence names (i.e. seq followed by a number)
   - Sequence names are lines that begin with >
-<details><summary>Click here for answer</summary>
 
-{% highlight console %}
-Find:
-^>.*
-{% endhighlight %}
+    <details><summary>Click here for answer</summary>
 
-</details></br>
+    {% highlight console %}
+    Find:
+    ^>.*
+    {% endhighlight %}
 
+    </details><br />
+
+{:start="2"}
 2. Find the first nucleotide of each sequence
+
 <details><summary>Click here for answer</summary>
 
 {% highlight console %}
@@ -176,7 +179,7 @@ Find:
 ^[^>]
 {% endhighlight %}
 
-</details></br>
+</details><br />
 
 3. Replace all ‘seq’ in sequence names with ‘sample’
   - Sequence names are lines that begin with >
@@ -189,7 +192,7 @@ Replace:
 >sample
 {% endhighlight %}
 
-</details></br>
+</details><br />
 
 4. Add a tab character followed by ‘function’ to the end of each sequence name
 <details><summary>Click here for answer</summary>
@@ -201,7 +204,7 @@ Replace:
 \1\tfunction
 {% endhighlight %}
 
-</details></br>
+</details><br />
 
 5. Find an AA at the start of a line and move it to the end of the line
 <details><summary>Click here for answer</summary>
@@ -213,7 +216,7 @@ Replace:
 \2\1
 {% endhighlight %}
 
-</details></br>
+</details><br />
 
 
 ## Additional (advanced) tasks
