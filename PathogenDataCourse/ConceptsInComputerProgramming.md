@@ -37,7 +37,7 @@ Once finished the tutorial, take the post-learing quiz.<br>
 
 <details> <summary>Click here for answer</summary>
 
-{% highlight %}
+{% highlight console %}
 real var1 = 11.0
 if var1 < 10
   var1 = var1+10
@@ -53,7 +53,7 @@ if var1 < 10
 
 <summary>Click here for answer</summary>
 
-{% highlight %}
+{% highlight console %}
 for variable between 1 and 10
  print variable%2 
 {% endhighlight %}}
