@@ -33,6 +33,7 @@ Once finished the tutorial, take the post-learing quiz.<br />
 
 ## Tasks from slides with sample answers
 ### Sequence and iteration
+{:start="1"}
 1. Initialise a variable with a certain real value. Write a statement that will add 10 to the variable if it is less than 10 and divide the variable by 10 if it is greater than or equal to 10
 
     <details> <summary>Click here for answer</summary>
@@ -47,6 +48,7 @@ Once finished the tutorial, take the post-learing quiz.<br />
 
     </details>
 
+{:start="2"}
 2. Write a for loop that will iterate from 1 to 10 and at each stage get the modulus 2 of the variable
 
     <details>
@@ -60,6 +62,7 @@ Once finished the tutorial, take the post-learing quiz.<br />
 
     </details><br />
 
+{:start="3"}
 3. Initialise a variable to be value 1. Write a while loop that continues until that variable is 100. Inside the loop, if the number is less than 10, get the number to the power of itself. If it is between 10 and 50, take away 5 from the number. If it is above 50, add 1 to the number
 
     <details>
@@ -80,6 +83,7 @@ Once finished the tutorial, take the post-learing quiz.<br />
     </details>
 
 ### Pseudocode
+{:start="1"}
 1. Ask the user for 2 numbers and print out their product (i.e. multiply them together)
 <details><summary>Click here for answer</summary>
 
@@ -95,6 +99,7 @@ Prompt user to enter a number
 
 </details><br />
 
+{:start="2"}
 2. Read in a string of letters and check if it is a valid DNA string
 <details><summary>Click here for answer</summary>
 
@@ -109,6 +114,7 @@ Loop through by going letter by letter through the string
 
 </details><br />
 
+{:start="3"}
 3. Check if a string conforms to the pattern “patient_000000” where the 6 digits can be any numbers between 0-9
   - Hint: use phrases like ‘starts with’, ‘ends with’, ‘followed by’
 <details><summary>Click here for answer</summary>
@@ -121,6 +127,7 @@ Check that the string ends after these 6 digits
 
 </details><br />
 
+{:start="4"}
 4. Do the following steps
   - Read in 5 separate numbers
   - Calculate the average of the five numbers
@@ -157,21 +164,21 @@ TTTCC
 >seq4
 AACCC
 ```
+{:start="1"}
 1. Find all sequence names (i.e. seq followed by a number)
   - Sequence names are lines that begin with >
 
-    <details><summary>Click here for answer</summary>
+<details><summary>Click here for answer</summary>
 
-    {% highlight console %}
-    Find:
-    ^>.*
-    {% endhighlight %}
+{% highlight console %}
+Find:
+^>.*
+{% endhighlight %}
 
-    </details><br />
+</details><br />
 
 {:start="2"}
 2. Find the first nucleotide of each sequence
-
 <details><summary>Click here for answer</summary>
 
 {% highlight console %}
@@ -181,6 +188,7 @@ Find:
 
 </details><br />
 
+{:start="3"}
 3. Replace all ‘seq’ in sequence names with ‘sample’
   - Sequence names are lines that begin with >
 <details><summary>Click here for answer</summary>
@@ -194,6 +202,7 @@ Replace:
 
 </details><br />
 
+{:start="4"}
 4. Add a tab character followed by ‘function’ to the end of each sequence name
 <details><summary>Click here for answer</summary>
 
@@ -206,6 +215,7 @@ Replace:
 
 </details><br />
 
+{:start="5"}
 5. Find an AA at the start of a line and move it to the end of the line
 <details><summary>Click here for answer</summary>
 

@@ -37,6 +37,8 @@ Once finished the tutorial, take the post-learing quiz.<br>
 [Box plots using R](https://conmeehan.github.io/PathogenDataCourse/Worksheets/BoxPlotsR)<br />
 
 ### Figures in Excel
+[Bar charts using Excel](https://conmeehan.github.io/PathogenDataCourse/Worksheets/BarChartsExcel)<br />
+[Box plots using Excel](https://conmeehan.github.io/PathogenDataCourse/Worksheets/BoxPlotsExcel)<br />
 
 ### Data tidying in Excel
 
