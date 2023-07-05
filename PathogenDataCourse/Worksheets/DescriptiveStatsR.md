@@ -12,11 +12,11 @@ key: page-DescritiveStatsR
 *	In this worksheet you will learn how to use R to calculate descriptive statistics such as Mean, Mode, Standard Deviation etc.
 
 ## Required prerequisite(s)
-*	You must have R installed on your computer and ideally also RStudio. See https://rstudio-education.github.io/hopr/starting.html for a guide.
+*	You must have R installed on your computer and ideally also RStudio. See [https://rstudio-education.github.io/hopr/starting.html](https://rstudio-education.github.io/hopr/starting.html) for a guide.
 
 ## Suggested prerequisite(s)
 * It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming) and [Introduction to R](https://conmeehan.github.io/PathogenDataCourse/IntroToR) tutorials before starting.
-*	An understanding of tidy data. See https://www.youtube.com/watch?v=KW1laBLEiw0 
+*	An understanding of tidy data. See [https://www.youtube.com/watch?v=KW1laBLEiw0](https://www.youtube.com/watch?v=KW1laBLEiw0)
 
 ## Dataset
 *	This demonstration uses [UnpairedDataset1.tsv](https://conmeehan.github.io/PathogenDataCourse/Datasets/UnpairedDataset1.tsv) and [PairedDataset1.tsv](https://conmeehan.github.io/PathogenDataCourse/Datasets/PairedDataset1.tsv)

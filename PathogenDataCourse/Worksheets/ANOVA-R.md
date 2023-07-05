@@ -13,17 +13,17 @@ key: page-TtestR
 
 
 ## Required prerequisite(s)
-*	You must have R installed on your computer and ideally also RStudio. See https://rstudio-education.github.io/hopr/starting.html for a guide.
-*	You have confirmed your data is suitable for parametric tests by testing normality and homogeny of variance, following the [Normality and homogeny of variance testing using R]() worksheet. 
-    - NOTE: If your data requires a non-parametric tests, the equivalent for the one way (unpaired) ANOVA is the Kruskal-Wallis test. You can see the commands for this and its post hoc tests here: http://www.sthda.com/english/wiki/kruskal-wallis-test-in-r. There is no easy non-parametric test equivalent for the repeat measures (paired) ANOVA.  
+*	You must have R installed on your computer and ideally also RStudio. See [https://rstudio-education.github.io/hopr/starting.html](https://rstudio-education.github.io/hopr/starting.html) for a guide.
+*	You have confirmed your data is suitable for parametric tests by testing normality and homogeny of variance, following the [Normality and homogeny of variance testing using R](https://conmeehan.github.io/PathogenDataCourse/Worksheets/NormalityVarianceTestingR) worksheet. 
+    - NOTE: If your data requires a non-parametric tests, the equivalent for the one way (unpaired) ANOVA is the Kruskal-Wallis test. You can see the commands for this and its post hoc tests here: [http://www.sthda.com/english/wiki/kruskal-wallis-test-in-r](http://www.sthda.com/english/wiki/kruskal-wallis-test-in-r). There is no easy non-parametric test equivalent for the repeat measures (paired) ANOVA.  
 
 
 ## Suggested prerequisite(s)
 * It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming) and [Introduction to R](https://conmeehan.github.io/PathogenDataCourse/IntroToR) tutorials before starting.
-*	An understanding of tidy data. See https://www.youtube.com/watch?v=KW1laBLEiw0 
-*	An understanding of paired vs unpaired samples. See https://www.youtube.com/watch?v=-6vDjGR41YM 
-*	An understanding of parametric tests vs non-parametric tests: https://www.youtube.com/watch?v=biXY84hDX5M 
-*	An understanding of the melt format in R: https://www.statology.org/melt-in-r/
+*	An understanding of tidy data. See [https://www.youtube.com/watch?v=KW1laBLEiw0](https://www.youtube.com/watch?v=KW1laBLEiw0 )
+*	An understanding of paired vs unpaired samples. See [https://www.youtube.com/watch?v=-6vDjGR41YM](https://www.youtube.com/watch?v=-6vDjGR41YM ) 
+*	An understanding of parametric tests vs non-parametric tests: [https://www.youtube.com/watch?v=biXY84hDX5M](https://www.youtube.com/watch?v=biXY84hDX5M)
+*	An understanding of the melt format in R: [https://www.statology.org/melt-in-r/](https://www.statology.org/melt-in-r/)
 
 
 ## Dataset
