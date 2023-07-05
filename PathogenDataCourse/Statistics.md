@@ -79,7 +79,9 @@ Is there a difference in cell size at the start and end of a 12-hour period of t
 ## Statistics test in Excel
 **NOTE** It is not recommended to do inferential statsitics in Excel. You cannot test for the assumptions required for choosing between parametric and non-parametric tests. However, if you wish to understand the T-test and ANOVA, these worksheets will outline how to do them in excel.<br />
 Descriptive statistics in Excel are fine and can be completed following the worksheet
-
+[Descriptive statistics using Excel](https://conmeehan.github.io/PathogenDataCourse/Worksheets/DescriptiveStatsExcel)<br />
+[Independent and Paired T-test using Excel](https://conmeehan.github.io/PathogenDataCourse/Worksheets/T-testExcel)<br />
+[One Way ANOVA using Excel](https://conmeehan.github.io/PathogenDataCourse/Worksheets/ANOVA-Excel)<br />
 
 
 

@@ -6,7 +6,7 @@ titles:
   en-US   : *EN
   en-CA   : *EN
   en-AU   : *EN
-key: page-TtestR
+key: page-ANOVA-R
 ---
 
 *	In this worksheet you will learn how to use R to perform a one way (unpaired) or repeated measures (paired) ANOVA. This test takes 3 or more groups which are unpaired or paired (see suggested video below) and calculates if there is a statistically significant difference between them.

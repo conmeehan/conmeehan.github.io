@@ -83,4 +83,4 @@ View(pairedsummary)
 
 
 ### Further options for vtable method
-*	https://cran.r-project.org/web/packages/vtable/vignettes/sumtable.html 
+*	[https://cran.r-project.org/web/packages/vtable/vignettes/sumtable.html](https://cran.r-project.org/web/packages/vtable/vignettes/sumtable.html )
