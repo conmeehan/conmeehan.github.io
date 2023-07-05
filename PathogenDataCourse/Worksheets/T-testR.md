@@ -8,7 +8,7 @@ titles:
   en-AU   : *EN
 key: page-TtestR
 ---
-## Goal
+
 *	In this worksheet you will learn how to use R to perform an independent or Paired T-test. This test takes 2 groups which are unpaired or paired (see suggested video below) and calculates if there is a statistically significant difference between them.
 
 ## Important notes

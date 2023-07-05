@@ -8,7 +8,7 @@ titles:
   en-AU   : *EN
 key: page-DescritiveStatsR
 ---
-## Goal
+
 *	In this worksheet you will learn how to use R to calculate descriptive statistics such as Mean, Mode, Standard Deviation etc.
 
 ## Required prerequisite(s)
