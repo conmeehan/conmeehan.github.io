@@ -35,14 +35,9 @@ Once finished the tutorial, take the post-learing quiz.<br>
 ### Sequence and iteration
 1. Initialise a variable with a certain real value. Write a statement that will add 10 to the variable if it is less than 10 and divide the variable by 10 if it is greater than or equal to 10
 
-<details>
+<details> <summary>Click here for answer</summary>
 
-## Detail code section no. 1.
-
-This is testing area no. 1. <br />
-
-
-{% highlight bash %}
+{% highlight %}
 real var1 = 11.0
 if var1 < 10
   var1 = var1+10
@@ -58,12 +53,10 @@ if var1 < 10
 
 <summary>Click here for answer</summary>
 
-<pre>
-<code class="js">
+{% highlight %}
 for variable between 1 and 10
  print variable%2 
-</code>
-</pre>
+{% endhighlight %}}
 
 </details><br />
 

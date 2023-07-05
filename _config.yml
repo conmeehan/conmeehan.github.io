@@ -35,7 +35,7 @@ timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for
 author:
   type      : # "person" (default), "organization"
   name      : Conor Meehan
-  url       : https://www.bradford.ac.uk/staff/cmeehan2
+  url       : https://www.ntu.ac.uk/staff-profiles/science-technology/conor-meehan
   avatar    : # path or url of avatar image (square)
   bio       : Lecturer in Molecular Microbiology, focussing on researching pathogenic mycobacteria and teaching bioinformatics and molecular epidemiology.
   email     :
