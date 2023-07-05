@@ -37,7 +37,7 @@ Once finished the tutorial, take the post-learing quiz.<br>
 
 <details><summary>Click here for answer</summary>
 
-```console
+```
 real var1 = 11.0
 if var1 < 10
   var1 = var1+10
@@ -51,7 +51,7 @@ if var1 < 10
 
 <details><summary>Click here for answer</summary>
 
-```console
+```c
 for variable between 1 and 10
  print variable%2 
 ```
@@ -59,8 +59,10 @@ for variable between 1 and 10
 </details><br />
 
 3. Initialise a variable to be value 1. Write a while loop that continues until that variable is 100. Inside the loop, if the number is less than 10, get the number to the power of itself. If it is between 10 and 50, take away 5 from the number. If it is above 50, add 1 to the number
+
 <details><summary>Click here for answer</summary>
 
+Test text
 ```console
 int var1 = 1
 while var1 <=100
@@ -71,7 +73,7 @@ while var1 <=100
    else if var1 > 50
     var1 = var1 + 1 
 ```
-</details><br />
+</details>
 
 ### Pseudocode
 1. Ask the user for 2 numbers and print out their product (i.e. multiply them together)
