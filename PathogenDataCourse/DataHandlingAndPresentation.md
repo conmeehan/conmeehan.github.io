@@ -41,7 +41,7 @@ Once finished the tutorial, take the post-learing quiz.<br>
 [Box plots using Excel](https://conmeehan.github.io/PathogenDataCourse/Worksheets/BoxPlotsExcel)<br />
 
 ### Data tidying in Excel
-
+[Example data tidying and figure creation tasks in Excel](https://conmeehan.github.io/PathogenDataCourse/Worksheets/DataTidyingExcel)<br />
 ## Additional videos
 *	[An understanding of tidy data](https://www.youtube.com/watch?v=KW1laBLEiw0 )
 * [Tidy data in R](https://r4ds.had.co.nz/tidy-data.html)
