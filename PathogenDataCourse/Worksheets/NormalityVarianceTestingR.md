@@ -32,29 +32,29 @@ key: page-AssumptionTestingR
 ## Steps
 1.	Open RStudio
 2.	Read in the UnpairedDataset1.tsv file. The read.delim will automatically assign row 1 as a header so no extra flags need to be passed to it
-```console
+```r
 unpaired <- read.delim(“UnpairedDataset1.tsv")
 ```
 3.	Our data has 3 groups and for ANOVA you would perform the tests on all three groups. For this example we will use only two groups. We will select just Group 1 and Group 2 for the test
-```console
+```r
 unpairedGroups <- unpaired[,c("Group.1","Group.2")]
 ```
 4.	The Shapiro-Wilk test will look for normality in each group. If either p-value is < 0.05 (or whatever p-value cut-off you are using) then the data is not normally distributed and you cannot use a parametric test. If both are >0.05 then they are both normally distributed and suitable for parametric tests (providing they also pass the homogeny of variance test below)
-```console
+```r
 shapiro.test(unpairedGroups$Group.1) 
 shapiro.test(unpairedGroups$Group.2)
 ```
 5.	To perform a homogeny of variance test the data must in a ‘melted’ long format. Install the reshape 2 package (if needed) and then load the library
-```console
+```r
 install.packages("reshape2")
 library("reshape2")
 ```
 6.	Melt the data frame so it is in the right format for the T-test
-```console
+```r
 meltedUnpairedGroups=melt(unpairedGroups)
 ```
 7.	Perform the bartlett test. If the p-value is < 0.05 (or whatever p-value cut-off you are using) then there is uneven variance between the groups and you cannot use a parametric test. If it is >0.05 then the variances are equal and suitable for parametric tests (providing they also pass the normality test above)
-```console
+```r
 bartlett.test(value ~ variable, data=meltedUnpairedGroups)
 ```
 

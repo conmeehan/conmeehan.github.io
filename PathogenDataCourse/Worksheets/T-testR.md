@@ -35,55 +35,55 @@ key: page-TtestR
 ## Unpaired Steps
 1.	Open RStudio
 2.	Read in the UnpairedDataset1.tsv file. The read.delim will automatically assign row 1 as a header so no extra flags need to be passed to it
-```console
+```r
 unpaired <- read.delim(“UnpairedDataset1.tsv")
 ```
 3.	T-tests are only performed on two groups, but our dataset has 3 groups. We will select just Group 1 and Group 2 for the test
-```console
+```r
 unpairedGroups <- unpaired[,c("Group.1","Group.2")]
 ```
 4.	To perform a t-test the data must in a ‘melted’ long format. Install the reshape 2 package (if needed) and then load the library
-```console
+```r
 install.packages("reshape2")
 library("reshape2")
 ```
 5.	Melt the data frame so it is in the right format for the T-test
-```console
+```r
 meltedUnpairedGroups=melt(unpairedGroups)
 ```
 6.	Perform the t-test and store in a variable
-```console
+```r
 up_ttest = t.test(value ~ variable, data=meltedUnpairedGroups)
 ```
 7.	View the p-value of the test
-```console
+```r
 up_ttest$p.value
 ```
 ## Paired Steps
 1.	Open RStudio
 2.	Read in the Paired.Dataset1.tsv file. This file has sample names in column 1 so you must pass that flag to read.delim
-```console 
+```r 
 paired <- read.delim("PairedDataset1.tsv", row.names=1)
 ```
 3.	T-tests are only performed on two groups, but our dataset has 3 groups. We will select just Condition 1 and Condition 2 for the test
-```console
+```r
 pairedGroups <- paired[,c("Condition.1","Condition.2")]
 ```
 4.	To perform a t-test the data must in a ‘melted’ long format. Install the reshape 2 package (if needed) and then load the library
-```console
+```r
 install.packages("reshape2")
 library("reshape2")
 ```
 5.	Melt the data frame so it is in the right format for the T-test
-```console
+```r
 meltedPairedGroups=melt(pairedGroups)
 ```
 6.	Perform the t-test and store in a variable. Note the use of the paired flag for paired data
-```console
+```r
 p_ttest = t.test(value ~ variable, data=meltedPairedGroups , paired= TRUE)
 ```
 7.	View the p-value of the test
-```console
+```r
 p_ttest$p.value
 ```
 

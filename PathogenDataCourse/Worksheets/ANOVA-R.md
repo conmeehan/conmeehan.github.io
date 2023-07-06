@@ -32,64 +32,64 @@ key: page-ANOVA-R
 ## Unpaired Steps
 1.	Open RStudio
 2.	Read in the UnpairedDataset1.tsv file. The read.delim will automatically assign row 1 as a header so no extra flags need to be passed to it
-```console
+```r
 unpaired <- read.delim(“UnpairedDataset1.tsv")
 ```
 3.	To perform an ANOVA the data must in a ‘melted’ long format. Install the reshape 2 package (if needed) and then load the library
-```console
+```r
 install.packages("reshape2")
 library("reshape2")
 ```
 4.	Melt the data frame so it is in the right format for the T-test
-```console
+```r
 meltedUnpaired=melt(unpaired)
 ```
 5.	Perform the ANOVA and store in a variable
-```console
+```r
 unpairedAnov <- aov(value ~ variable, data=meltedUnpaired)
 ```
 6.	View the summary of the ANOVA. The Pr(>F) column tells you the p-value
-```console
+```r
 summary(unpairedAnov)
 ```
 7.	If there is a significant difference between groups, a post-hoc test must be performed to determine which groups differ. We will use a Tukey HSD test to compare all groups to each other. The ‘p adj’ column tells you the adjusted (corrected) p-value for all pairwise comparisons in the data.
-```console
+```r
 TukeyHSD(unpairedAnov, conf.level=.95)
 ```
 
 ## Paired Steps
 1.	Open RStudio
 2.	Read in the Paired.Dataset1.tsv file. Although the file has sample names in the first column, we want to keep these as their own column as they are needed for paired data
-```console
+```r
 paired <- read.delim("PairedDataset1.tsv")
 ```
 8.	To perform an ANOVA the data must in a ‘melted’ long format. Install the reshape 2 package (if needed) and then load the library
-```console
+```r
 install.packages("reshape2")
 library("reshape2")
 ```
 9.	Melt the data frame so it is in the right format for the T-test
-```console
+```r
 meltedPaired=melt(paired)
 ```
 10.	Perform the ANOVA and store in a variable. We must pass the sample names via the Error method to tell the ANOVA we have paired samples
-```console
+```r
 pairedAnov <- aov(value ~factor(variable)+Error(factor(Sample.Name)), data=meltedPaired)
 ```
 11.	View the summary of the ANOVA. The Pr(>F) column tells you the p-value
-```console
+```r
 summary(pairedAnov)
 ```
 12.	If there is a significant difference between groups, a post-hoc test must be performed to determine which groups differ. We will use a Tukey HSD test to compare all groups to each other. To do this for repeated measures (paired) ANOVA we have to use the emmeans library. Install (if needed) and load the library
-```console
+```r
 install.packages("emmeans")
 library("emmeans")
 ```
 13.	Convert the ANOVA result to the right format
-```console
+```r
 emm <- emmeans(pairedAnov, ~ variable)
 ```
 14.	Run the Tukey HSD test. The ‘p-value’ column tells you the adjusted (corrected) p-value for all pairwise comparisons in the data.
-```console
+```r
 pairs(emm)
 ```
