@@ -22,7 +22,7 @@ It is suggested that you do these in order, or at least the concepts in computer
 ### [Experimental design and statistics](https://conmeehan.github.io/PathogenDataCourse/Statistics)
 ### [Data tidying and figure generation](https://conmeehan.github.io/PathogenDataCourse/DataHandlingAndPresentation)
 ### [Biological Databases and BLAST](https://conmeehan.github.io/PathogenDataCourse/BiologicalDBsAndBLAST) 
-### Genome assembly and annotation (viral and bacterial)
+### [Genome assembly and annotation (viral and bacterial)](https://conmeehan.github.io/PathogenDataCourse/GenomAssemblyAnnotation)
 ### [Introduction to phylogenetics](https://conmeehan.github.io/PathogenDataCourse/IntroToPhylogenetics)
 ### [Introduction to Bayesian phylodynamics](https://conmeehan.github.io/PathogenDataCourse/IntroToPhydynamics)
 ### Predicting AMR, virulence genes and secondary metabolites

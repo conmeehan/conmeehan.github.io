@@ -42,3 +42,6 @@ Once finished the tutorial, take the post-learing quiz.<br />
 
 
 </details><br />
+
+## Other tutorials/tools
+* [Bestiary](https://beastiary.wytamma.com/) for assessing Trace files

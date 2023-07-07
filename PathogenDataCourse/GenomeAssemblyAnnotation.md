@@ -48,6 +48,11 @@ Which of these is the most stringent e-value cut-off?
 
 ## Worksheets
 ### UNIX terminal approaches
+SPAdes for bacterial and viral genome assembly (short reads)
+Flye for bacterial and viral genome assembly (Long reads)
+BUSCO for genome completeness checking
+CheckM for genome quality control
+Bakta for genome annotation
 
 ### Galaxy approaches
 * [Bacterial genome assembly using Galaxy](https://training.galaxyproject.org/training-material/topics/assembly/)
@@ -61,4 +66,6 @@ Which of these is the most stringent e-value cut-off?
 
 
 ### Other tools
+* [Trycycler](https://github.com/rrwick/Perfect-bacterial-genome-tutorial/wiki) tutorial for in depth hybrid assembly
 * [VirAmp](http://viramp.com:8080/) has a Galaxy-like interface for assembling viral genomes
+* [Phables](https://phables.readthedocs.io/en/latest/) for bacteriophage assembly
