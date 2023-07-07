@@ -20,7 +20,6 @@
       {%- endif -%}
       <div class="footer__author-links">
         {%- include author-links.html author=_site_author -%}
-        If you see mistakes or have suggestions for tutorials, please email meehan.conor@gmail.com
       </div>
     </div>
     {%- include snippets/get-locale-string.html key='COPYRIGHT_DATES' -%}
@@ -29,6 +28,7 @@
       <div>
         {%- include snippets/get-locale-string.html key='COPYRIGHT_DATES' -%}
         {%- assign _locale_copyright_dates = __return -%}
+        If you see mistakes or have suggestions for tutorials, please email meehan.conor@gmail.com<br />
         © {{ site.title }} {{ _locale_copyright_dates }},
         Powered by <a title="Jekyll is a simple, blog-aware, static site generator." href="http://jekyllrb.com/">Jekyll</a> & <a
         title="TeXt is a super customizable Jekyll theme." href="https://github.com/kitian616/jekyll-TeXt-theme">TeXt Theme</a>.
