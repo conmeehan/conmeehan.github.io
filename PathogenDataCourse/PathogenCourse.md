@@ -23,3 +23,13 @@ It is suggested that you do these in order, or at least the concepts in computer
 ### [Data tidying and figure generation](https://conmeehan.github.io/PathogenDataCourse/DataHandlingAndPresentation)
 ### [Biological Databases and BLAST](https://conmeehan.github.io/PathogenDataCourse/BiologicalDBsAndBLAST) 
 
+<br />
+
+## Additional (related) useful tutorials (by other people)
+* [Swiss Bioinformatics institute training material](https://github.com/sib-swiss/training-collection)
+   * Extensive computer programing training for bioinformatics
+* [Bactopia workshop](https://github.com/lskatz/bactopia-workshop/tree/main/workshop) <br />
+    * Guidance on running the complete bacterial genome assembly and analysis pipeline [Bactopia](https://bactopia.github.io/v2.2.0/)
+    
+
+
