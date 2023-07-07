@@ -22,7 +22,13 @@ It is suggested that you do these in order, or at least the concepts in computer
 ### [Experimental design and statistics](https://conmeehan.github.io/PathogenDataCourse/Statistics)
 ### [Data tidying and figure generation](https://conmeehan.github.io/PathogenDataCourse/DataHandlingAndPresentation)
 ### [Biological Databases and BLAST](https://conmeehan.github.io/PathogenDataCourse/BiologicalDBsAndBLAST) 
-
+### Genome assembly and annotation (viral and bacterial)
+### Introduction to phylogenetics
+### Introduction to phylodynamics
+### Predicting AMR, virulence genes and secondary metabolites
+### Plasmodium genomics and drug resistance
+### Molecular epidemiology and strain typing
+### Microbiomes and metagenomics
 <br />
 
 ## Additional (related) useful tutorials (by other people)
@@ -33,6 +39,12 @@ It is suggested that you do these in order, or at least the concepts in computer
    * Extensive computer programing training for bioinformatics
 * [Bactopia workshop](https://github.com/lskatz/bactopia-workshop/tree/main/workshop) <br />
     * Guidance on running the complete bacterial genome assembly and analysis pipeline [Bactopia](https://bactopia.github.io/v2.2.0/)
+### Python tutorials
+* [W3 schools python tutorial](https://www.w3schools.com/python/default.asp)
+* [UC Davis bioinformatics core introduction to Python](https://ucdavis-bioinformatics-training.github.io/2022-Feb-Introduction-To-Python-For-Bioinformatics/python/python1)
+* [Python for biologists](https://www.pythonforbiologists.org/)
+* [Full spectrum bioinformatics](https://github.com/zaneveld/full_spectrum_bioinformatics)
+   * Introduction to bioinformatics via Python coding
     
 
 
