@@ -21,5 +21,5 @@ It is suggested that you do these in order, or at least the concepts in computer
 ### [Introduction to R](https://conmeehan.github.io/PathogenDataCourse/IntroToR)
 ### [Experimental design and statistics](https://conmeehan.github.io/PathogenDataCourse/Statistics)
 ### [Data tidying and figure generation](https://conmeehan.github.io/PathogenDataCourse/DataHandlingAndPresentation)
-### [Biological Databases and BLAST](https://conmeehan.github.io/PathogenDataCourse/BiologicalDBsandBLAST) 
+### [Biological Databases and BLAST](https://conmeehan.github.io/PathogenDataCourse/BiologicalDBsAndBLAST) 
 

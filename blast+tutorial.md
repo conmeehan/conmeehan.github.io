@@ -183,7 +183,7 @@ blastp -query proteins.fasta -remote -db nr -out proteins_nr.txt -outfmt 6 -eval
 ```
 Note: you may have to wait a long time for the remote search to finish, depending on the current server load at NCBI.
 
-Q. Did we get the same sequences back from the nr database as we did from the pdb database?
+Q. Did we get the same sequences back from the nr database as we did from the pdb database? Why/why not?
 
 <details> <summary>Click here for answer</summary>
 
@@ -193,28 +193,45 @@ No because NR contains many more proteins than the local PDB amino acid database
  
 ## Exercise 7: Extracting hits from the BLAST database
 
-Once we have our BLAST results we may wish to go back and get the sequences for the hits from the database. For this we require a file of the sequence names of the hits (or parts of it, such as the section output from type 6 output) and the database used for the original BLAST (which must have been created with the -parse_seqids flag). Lets take 2 sequences from our hits against the pdbaa database. Copy the following into a file called hits.txt
-
+Once we have our BLAST results we may wish to go back and get the sequences we matched against from the database (perhaps to build an alignment and phylogenetic tree). For this we require a file of the sequence names of the hits (or parts of it, such as the section output from type 6 output) and the database used for the original BLAST (which must have been created with the -parse_seqids flag). <br />
+Lets take 2 sequences from our hits against the pdbaa database. Copy the following into a file called hits.txt (hint, can use printf or similar on the terminal)
+```
 gi|1942986|pdb|1OCC|A
 gi|40889823|pdb|1V54|A
-
-This is portions of 2 names of sequences we found to be good hits to our first query sequence. We will use the **blastdbcmd** program to get these sequences from the pdbaa database. Type:
-```console
+```
+These are portions of 2 names of sequences we found to be good hits to our first query sequence. We will use the `blastdbcmd` program to get these sequences from the pdbaa database. Type:
+```c
 blastdbcmd -db db/pdbaa -dbtype prot -entry_batch hits.txt -outfmt %f -out hits.fasta 
 ```
 
-This command is similar to in excerise 4 but instead of getting all the sequences in the database, we are getting a subselection. The **-db**, **-dbtype** and **-out** we have seen before, **-entry_batch** is the file containing the sequence names and **-outfmt** here says we want fasta formatted sequences (%f). If you now open hits.fasta you should see the 2 sequences we requested.
+This command is similar to in excerise 4 but instead of getting all the sequences in the database, we are getting a subselection. 
+* The `-db`, `-dbtype` and `-out` flags we have seen before
+* `-entry_batch` is the file containing the sequence names
+*  `-outfmt` here says we want fasta formatted sequences (%f).
+
+If you now open hits.fasta you should see the 2 sequences we requested.
 
  
 ## Exercise 8: Converting output format types
 
-If you wish to change output formats after you have run a BLAST search we can use **blast_formatter**. This requires that the original run used **-outfmt 11** (archive type) and the database was made with the **-parse_seqids** flag. If we ran a BLAST such as
-```console
+If you wish to change output formats after you have run a BLAST search we can use `blast_formatter`. <br />
+However this only works in specific situations. This requires that the original run used `-outfmt 11` (archive type) and the database was made with the `-parse_seqids` flag. <br />
+If we ran a BLAST such as
+```c
 blastp -query proteins.fasta -db db/pdbaa -out protein_archive.txt -outfmt 11
 ```
 We could retrieve the results in out format 6 by typing
-```console
+```c
 blast_formatter -archive protein_archive.txt -outfmt 6 -out proteins_tabular.txt
 ```
 
 **Thus a good way to run BLAST+ is to use -outfmt 11 and then after that use blast_formatter to change the output to different formats as needed.**
+
+## Extra practice tasks
+### Task 1
+1. Download the [EscherichiaDB fasta file](https://conmeehan.github.io/PathogenDataCourse/Datasets/EscherichiaDB.fasta), which contains a set of *Escherichia* species genomes
+   * Try using wget to do this 
+2. Build a nucleotide BLAST database from this dataset
+3. Download the [EcoliToxins fasta file](https://conmeehan.github.io/PathogenDataCourse/Datasets/EcoliToxins.fasta), which contains the gene sequences of some common toxins found in *E. coli*
+   * Try using wget to do this 
+4. Use BLAST (selecting the correct type of BLAST) to search the toxin sequences against the genome database and find any genomes which contain these toxins
