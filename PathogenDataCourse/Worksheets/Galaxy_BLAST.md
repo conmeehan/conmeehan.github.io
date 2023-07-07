@@ -6,7 +6,7 @@ titles:
   en-US   : *EN
   en-CA   : *EN
   en-AU   : *EN
-key: page-NCBI_BLAST
+key: page-Galaxy_BLAST
 ---
 
 *	In this worksheet you will learn how to find homologous (similar) sequences to a set of query sequences in a custom made database using the BLAST tool on Galaxy
