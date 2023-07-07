@@ -10,13 +10,13 @@ key: page-BioDBSandBLAST
 ---
 
 
-This tutorial outlines the various bio9logical online databases and their uses as well as an introduction to homology trminology and searching using BLAST.<br />
+This tutorial outlines the various online biological databases and their uses as well as an introduction to homology terminology and searching using BLAST.<br />
 
 ## Learning outcomes
 * Identify online database types and retrieve data
 * Describe types of homologs and gene evolution
 * Recognise the types of BLAST and their uses
-* Execute a BLAST search either via the terminal (BLAST+) or the NCBI website portal
+* Execute a BLAST search either via the terminal (BLAST+), the NCBI website portal or the Galaxy portal
 
 ## Prerequisites
 * It is recommended that you have [Notepad++ (Windows)](https://notepad-plus-plus.org/downloads/) or [BBEdit (Mac)](https://www.barebones.com/products/bbedit/) for viewing fasta files; most linux default editors can do this.
@@ -84,3 +84,4 @@ Which of these is the most stringent e-value cut-off?
 ## Worksheets
 * [Using BLAST+ (UNIX environment) to search for homologous sequences](https://conmeehan.github.io/blast+tutorial)
 * [BLAST on the NCBI website](https://conmeehan.github.io/PathogenDataCourse/Worksheets/NCBI_BLAST)
+* [BLAST using Galaxy](https://conmeehan.github.io/PathogenDataCourse/Worksheets/Galaxy_BLAST)

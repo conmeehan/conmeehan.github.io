@@ -12,7 +12,7 @@ key: page-PathogenCourse
 
 This workshop contains a set of tutorials for undertaking basic data analytics for pathogen genomics research (although many topics covered are also applicable elsewhere).<br />
 Each tutorial has a lecture or explanation of the topic with associated practice tasks and sample asnwers.<br />
-It is suggested that you do these in order, or at least the concepts in computer programming, UNIX tutorials and R tutorial before the other topics. <br />
+It is suggested that you do these in order, or at least the concepts in computer programming, UNIX tutorials and R tutorial before the other topics, if you wish to do the terminal and/or R-based worksheets (there are Galaxy and web-based alternatives if you do not). <br />
 ## Topics (each is a hyperlink to its own page):
 ### [Concepts in computer programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming)
 ### [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial)
@@ -26,6 +26,9 @@ It is suggested that you do these in order, or at least the concepts in computer
 <br />
 
 ## Additional (related) useful tutorials (by other people)
+* [Galaxy tutorials](https://training.galaxyproject.org/)
+   * Various tutorials from introduction to advanced analyses using the Galaxy portal.
+   * Many of the Galaxy tutorials in this workshop comes from this set of tutorials.
 * [Swiss Bioinformatics institute training material](https://github.com/sib-swiss/training-collection)
    * Extensive computer programing training for bioinformatics
 * [Bactopia workshop](https://github.com/lskatz/bactopia-workshop/tree/main/workshop) <br />
