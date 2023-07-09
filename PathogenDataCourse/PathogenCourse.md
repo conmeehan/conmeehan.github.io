@@ -16,17 +16,17 @@ It is suggested that you do these in order, or at least the concepts in computer
 ## Topics (each is a hyperlink to its own page):
 ### [Concepts in computer programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming)
 ### [The UNIX shell](https://conmeehan.github.io/PathogenDataCourse/UNIXshell)
-### [Introduction to R](https://conmeehan.github.io/PathogenDataCourse/IntroToR)
-### [Experimental design and statistics](https://conmeehan.github.io/PathogenDataCourse/Statistics)
-### [Data tidying and figure generation](https://conmeehan.github.io/PathogenDataCourse/DataHandlingAndPresentation)
-### [Biological Databases and BLAST](https://conmeehan.github.io/PathogenDataCourse/BiologicalDBsAndBLAST) 
-### [Genome assembly and annotation (viral and bacterial)](https://conmeehan.github.io/PathogenDataCourse/GenomAssemblyAnnotation)
-### [Introduction to phylogenetics](https://conmeehan.github.io/PathogenDataCourse/IntroToPhylogenetics)
-### [Introduction to Bayesian phylodynamics](https://conmeehan.github.io/PathogenDataCourse/IntroToPhydynamics)
-### Predicting AMR, virulence genes and secondary metabolites
-### Plasmodium genomics and drug resistance
-### Molecular epidemiology and strain typing
-### Microbiomes and metagenomics
+### [Introduction to R]
+### [Experimental design and statistics]
+### [Data tidying and figure generation]
+### [Biological Databases and BLAST]
+### [Genome assembly and annotation (viral and bacterial)]
+### [Introduction to phylogenetics]
+### [Introduction to Bayesian phylodynamics]
+### [Predicting AMR, virulence genes and secondary metabolites]
+### [Plasmodium genomics and drug resistance]
+### [Molecular epidemiology and strain typing]
+### [Microbiomes and metagenomics]
 <br />
 
 ## Additional (related) useful tutorials (by other people)
