@@ -15,9 +15,7 @@ Each tutorial has a lecture or explanation of the topic with associated practice
 It is suggested that you do these in order, or at least the concepts in computer programming, UNIX tutorials and R tutorial before the other topics, if you wish to do the terminal and/or R-based worksheets (there are Galaxy and web-based alternatives if you do not). <br />
 ## Topics (each is a hyperlink to its own page):
 ### [Concepts in computer programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming)
-### [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial)
-### [UNIX shell tutorial (advanced)](https://conmeehan.github.io/advancedUNIXtutorial)
-### [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse)
+### [The UNIX shell](https://conmeehan.github.io/PathogenDataCourse/UNIXshell)
 ### [Introduction to R](https://conmeehan.github.io/PathogenDataCourse/IntroToR)
 ### [Experimental design and statistics](https://conmeehan.github.io/PathogenDataCourse/Statistics)
 ### [Data tidying and figure generation](https://conmeehan.github.io/PathogenDataCourse/DataHandlingAndPresentation)
