@@ -83,6 +83,11 @@ while var1 <=100
     var1 = var1 + 1 
 {% endhighlight %}
 
+* Note: the algorithm is worded ambiguously where it states 'between 10 and 50' and should be more specific saying "between 10 and 50 included" or similar. 
+ * This is specifically like this to make you think about ambiguity
+* Note 2: This loop will actually never finish because the first step of the loop is 1^1 which is 1, so it will never increase and thus run forever.
+  * This is specifically done to make you think about covering all scenarios. Probably best to start at 2 or add a clause to capture such cases
+
 </details>
 
 ### Pseudocode

@@ -33,7 +33,7 @@ Once finished the tutorial, take the post-learing quiz.<br />
 ## [The UNIX Shell Pre-tutorial Survey](https://ntusurvey.onlinesurveys.ac.uk/the-unix-shell-pre-tutorial-survey)
 
 ## Tutorials
-### [UNIX shell tutorial (navigation, creation and viewing)]((https://conmeehan.github.io/UNIXtutorial))
+### [UNIX shell tutorial (navigation, creation and viewing)](https://conmeehan.github.io/UNIXtutorial)
 ### [Advanced UNIX tutorial](https://conmeehan.github.io/advancedUNIXtutorial)
 ### [Conda installation and use](https://conmeehan.github.io/PathogenDataCourse/Worksheets/CondaInstallAndUse)
 
