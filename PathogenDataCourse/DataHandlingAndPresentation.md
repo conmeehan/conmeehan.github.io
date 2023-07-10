@@ -28,6 +28,8 @@ It is recommended that you have followed the [Concepts in Computer Programming](
 Please do the pre-learning quiz, then watch the presentation. <br />
 Once finished the tutorial, take the post-learing quiz.<br>
 
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/data-handling-and-presentation-pre-tutorial-survey" target="_blank">Data Handling and Presentation Pre-tutorial Survey</a>
+
 ## Presentation
 * [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/DataHandlingAndPresentation.pptx)
 
@@ -45,3 +47,5 @@ Once finished the tutorial, take the post-learing quiz.<br>
 ## Additional videos
 *	[An understanding of tidy data](https://www.youtube.com/watch?v=KW1laBLEiw0 )
 * [Tidy data in R](https://r4ds.had.co.nz/tidy-data.html)
+
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/data-handling-and-presentation-post-tutorial-survey" target="_blank">Data Handling and Presentation Post-tutorial Survey</a>

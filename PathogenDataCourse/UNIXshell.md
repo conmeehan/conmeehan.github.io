@@ -10,7 +10,7 @@ key: page-UNIXshell
 ---
 
 
-This tutorial introduces youn to the UNIX shell and both basic navigation and advanced uses such as statements and iterations.<br>
+This tutorial introduces you to the UNIX shell and both basic navigation and advanced uses such as statements and iterations.<br>
 
 ## Learning outcomes
 * Interpret and implement absolute and relative paths in a UNIX hierarchy
