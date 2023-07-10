@@ -30,7 +30,7 @@ This tutorial introduces youn to the UNIX shell and both basic navigation and ad
 Please do the pre-learning quiz for each tutorial, then do the worksheets. <br />
 Once finished the tutorial, take the post-learing quiz.<br />
 
-## <a href="https://ntusurvey.onlinesurveys.ac.uk/the-unix-shell-pre-tutorial-survey" target="_blank">The UNIX Shell Pre-tutorial Survey</a>]
+## <a href="https://ntusurvey.onlinesurveys.ac.uk/the-unix-shell-pre-tutorial-survey" target="_blank">The UNIX Shell Pre-tutorial Survey</a>
 
 ## Tutorials
 ### [UNIX shell tutorial (navigation, creation and viewing)](https://conmeehan.github.io/UNIXtutorial)

@@ -16,7 +16,7 @@ It is suggested that you do these in order, or at least the concepts in computer
 ## Topics (each is a hyperlink to its own page):
 ### [Concepts in computer programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming)
 ### [The UNIX shell](https://conmeehan.github.io/PathogenDataCourse/UNIXshell)
-### [Introduction to R]
+### [Introduction to R](https://conmeehan.github.io/PathogenDataCourse/IntroToR)
 ### [Experimental design and statistics]
 ### [Data tidying and figure generation]
 ### [Biological Databases and BLAST]
