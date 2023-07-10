@@ -26,8 +26,11 @@ It is recommended that you have followed the [Concepts in Computer Programming](
 ## Order of tutorial
 
 Please do the pre-learning quiz, then watch the presentation. <br />
-During the presentation there are points to stop and do exercises, which are linked below. The answers to the questions in the exercises are linked within each one.<br>
+During the presentation there are points to stop and do exercises, which are linked below. The answers to the questions in the exercises are linked within each one.<br />
+Towards the bottom of the page, there are worksheets for doing statistics in R or Excel.<br />
 Once finished the tutorial, take the post-learing quiz.<br>
+
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/statistics-pre-tutorial-survey" target="_blank">Statistics Pre-tutorial Survey</a>
 
 ## Presentation
 * [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/Statistics.pptx)
@@ -85,4 +88,4 @@ Descriptive statistics in Excel are fine and can be completed following the work
 [One Way ANOVA using Excel](https://conmeehan.github.io/PathogenDataCourse/Worksheets/ANOVA-Excel)<br />
 
 
-
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/statistics-post-tutorial-survey" target="_blank">Statistics Post-tutorial Survey</a>

@@ -20,7 +20,6 @@ This tutorial outlines the basics needed for working with the UNIX shell environ
 An understanding of computer programming basics such as variables. These are covered in the [Concepts in computer programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming) tutorial.
 
 ## Useful (Extra) Material
-
 A UNIX cheat sheet like [this one](https://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet) might be helpful as a reference.<br />
 For more info on using the unix shell check out [Software Carpentry tutorial](http://swcarpentry.github.io/shell-novice/).<br />
 [Sandbox.io](https://sandbox.bio/tutorials?id=terminal-basics) has a web-based UNIX shell for practise along with a wealth of tutorials to follow
@@ -41,6 +40,11 @@ Linux computers are built upon UNIX and so you can run this tutorial locally if 
 ### Web-based practice environment
 
 If none fo the above work for you, you can use the [Sandbox.io](https://sandbox.bio/tutorials?id=terminal-basics) web-based environment to practise. 
+
+
+## Tip for practicing UNIX
+UNIX can create and remove and overwrite files in a way you are not used to at the start. For practising, I usually recommend creating a new profile on your laptop (practiseProfile or something) and using that to practise UNIX, so you dont erase files you need by mistake!
+
 
 ## Directory structure
 A computer file system is laid out as a hierarchical multifurcating tree structure. This may sound confusing but it is easy to think of it as boxes of boxes where each box is a directory.<br />
@@ -183,8 +187,8 @@ nano file1.txt
 ```
 This will launch the nano text editor and allow you to edit file1.txt. If file1.txt doesn't exist, it will create it for you; if it does exist, it will edit the document.<br>
 Write in here ‘this is the contents of file1.txt’.<br>
-Save the file by pressing ctrl-o. This will prompt you at the bottom of the screen to confirm the file name and you can press return to confirm this.<br>
-Exit nano by pressing ctrl-x (and hitting return). This will return you to your prompt.<br>
+Save the file by pressing ctrl-o (press control and then press o). This will prompt you at the bottom of the screen to confirm the file name and you can press return/enter to confirm this.<br>
+Exit nano by pressing ctrl-x (and hitting return/enter). This will return you to your prompt.<br>
 If you list the contents of your current directory (using ls) you should see file1.txt is now there.<br>
 
 ## Copying, renaming, and moving files

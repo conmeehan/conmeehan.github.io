@@ -17,9 +17,9 @@ It is suggested that you do these in order, or at least the concepts in computer
 ### [Concepts in computer programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming)
 ### [The UNIX shell](https://conmeehan.github.io/PathogenDataCourse/UNIXshell)
 ### [Introduction to R](https://conmeehan.github.io/PathogenDataCourse/IntroToR)
-### [Experimental design and statistics]
-### [Data tidying and figure generation]
-### [Biological Databases and BLAST]
+### [Experimental design and statistics](https://conmeehan.github.io/PathogenDataCourse/Statistics)
+### [Data handling and figure generation](https://conmeehan.github.io/PathogenDataCourse/DataHandlingAndPresentation)
+### [Biological Databases and BLAST](https://conmeehan.github.io/PathogenDataCourse/BiologicalDBsAndBLAST)
 ### [Genome assembly and annotation (viral and bacterial)]
 ### [Introduction to phylogenetics]
 ### [Introduction to Bayesian phylodynamics]
