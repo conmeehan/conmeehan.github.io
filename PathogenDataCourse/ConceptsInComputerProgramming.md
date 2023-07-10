@@ -1,7 +1,7 @@
 ---
 layout: article
 titles:
-  en      : &EN       Concepts in computer science
+  en      : &EN       Concepts in computer programming
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
@@ -28,11 +28,11 @@ Please do the pre-learning quiz, then watch the presentation. <br />
 During the presentation there are points to stop and do exercises, which are linked below. The answers to the questions in the exercises are linked within each one.<br />
 Once finished the tutorial, take the post-learing quiz.<br />
 
-### [Concepts in Computer Programming Pre-tutorial Survey](https://ntusurvey.onlinesurveys.ac.uk/concepts-in-computer-programming-pre-tutorial-survey)
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/concepts-in-computer-programming-pre-tutorial-survey" target="_blank">Concepts in Computer Programming Pre-tutorial Survey</a>
 
 ### [Presentation slides](https://conmeehan.github.io/PathogenDataCourse/SlideSets/ConceptsInComputerProgramming.pptx)
 
-### [Concepts in Computer Programming Post-tutorial Survey](https://ntusurvey.onlinesurveys.ac.uk/concepts-in-computer-programming-post-tutorial-survey)
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/concepts-in-computer-programming-post-tutorial-survey" target="_blank">Concepts in Computer Programming Post-tutorial Survey</a>
 
 ## Tasks from slides with sample answers
 ### Sequence and iteration

@@ -14,11 +14,17 @@ This tutorial points to some of the best R tutorials on the internet and provide
 
 It is strongly encouraged to use RStudion when learning R. Installation instructions for R and RStudio can be found at [this link](https://rstudio-education.github.io/hopr/starting.html).
 
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/intro-to-r-pre-tutorial-survey" target="_blank">Intro to R Pre-tutorial Survey</a>
+
+
 ## Introduction to R tutorials
 *  [Swirl interactive course (use `install_course("R Programming")` for basic course)](https://swirlstats.com/students.html)
 * [Rafa lab tutorial (Basics are sections 1-6)](http://rafalab.dfci.harvard.edu/dsbook/getting-started.html)
 * [UC Davis R course (Basics are topics 1-5)](https://ucdavis-bioinformatics-training.github.io/2021-March-Introduction-to-R-for-Bioinformatics/R/Intro2R_main)
 * [Get R done youtube series (Basics are videos 1-14)](https://www.youtube.com/playlist?list=PLmNgrNF3pZqg2GPmcIAWDa1A2-cAfbX37)
+
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/intro-to-r-post-tutorial-survey" target="_blank">Intro to R Post-tutorial Survey]
+
 
 ## Bioinformatics/data science focussed tutorials (some are advanced)
 * [Introduction to R for Biologists (Focusses on visualisations)](https://melbournebioinformatics.github.io/r-intro-biologists/intro_r_biologists.html)
@@ -27,7 +33,7 @@ It is strongly encouraged to use RStudion when learning R. Installation instruct
 * [A psychologists guide to R](https://github.com/seanchrismurphy/A-Psychologists-Guide-to-R/tree/master)
 * [Visualising phylogenetic trees and associated data in R](https://guangchuangyu.github.io/ggtree-book/short-introduction-to-r.html)
 
-## Example tasks as pseudocode
+## Example tasks
 A set of example tasks can be found on the [W3 resource webpage](https://www.w3resource.com/r-programming-exercises/)
 ### Task 1
 ```console

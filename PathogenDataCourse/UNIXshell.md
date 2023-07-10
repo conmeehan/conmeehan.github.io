@@ -30,12 +30,12 @@ This tutorial introduces youn to the UNIX shell and both basic navigation and ad
 Please do the pre-learning quiz for each tutorial, then do the worksheets. <br />
 Once finished the tutorial, take the post-learing quiz.<br />
 
-## [The UNIX Shell Pre-tutorial Survey](https://ntusurvey.onlinesurveys.ac.uk/the-unix-shell-pre-tutorial-survey)
+## <a href="https://ntusurvey.onlinesurveys.ac.uk/the-unix-shell-pre-tutorial-survey" target="_blank">The UNIX Shell Pre-tutorial Survey</a>]
 
 ## Tutorials
 ### [UNIX shell tutorial (navigation, creation and viewing)](https://conmeehan.github.io/UNIXtutorial)
 ### [Advanced UNIX tutorial](https://conmeehan.github.io/advancedUNIXtutorial)
 ### [Conda installation and use](https://conmeehan.github.io/PathogenDataCourse/Worksheets/CondaInstallAndUse)
 
-## [The UNIX Shell Post-tutorial Survey](https://ntusurvey.onlinesurveys.ac.uk/the-unix-shell-post-tutorial-survey)
+## <a href="https://ntusurvey.onlinesurveys.ac.uk/the-unix-shell-post-tutorial-survey" target="_blank">The UNIX Shell Post-tutorial Survey</a>
 
