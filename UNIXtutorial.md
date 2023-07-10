@@ -19,11 +19,11 @@ This tutorial outlines the basics needed for working with the UNIX shell environ
 ## Prerequisities
 An understanding of computer programming basics such as variables. These are covered in the [Concepts in computer programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming) tutorial.
 
-## Useful Material
+## Useful (Extra) Material
 
 A UNIX cheat sheet like [this one](https://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet) might be helpful as a reference.<br />
 For more info on using the unix shell check out [Software Carpentry tutorial](http://swcarpentry.github.io/shell-novice/).<br />
-[Sandbox.io](https://sandbox.bio/tutorials?id=terminal-basics) has a web-based UNIX shell for praqctise a wealth of tutorials to follow
+[Sandbox.io](https://sandbox.bio/tutorials?id=terminal-basics) has a web-based UNIX shell for practise along with a wealth of tutorials to follow
 
 ## Accessing the command line/terminal
 ### Windows Users

@@ -12,7 +12,14 @@ key: page-Concepts
 
 This tutorial points to some of the best R tutorials on the internet and provides some sample tasks to test your learning.<br>
 
-It is strongly encouraged to use RStudion when learning R. Installation instructions for R and RStudio can be found at [this link](https://rstudio-education.github.io/hopr/starting.html).
+It is strongly encouraged to use RStudio when learning R. Installation instructions for R and RStudio can be found at [this link](https://rstudio-education.github.io/hopr/starting.html).
+
+## Learning outcomes
+* Install and launch R and RStudio
+* Execute basic commands such as variable assignments and arithmetic operations
+* Install packages inside of R/RStudio
+* Create and modify data structrues and tables
+* Navigate and undertake basic operations on R data frames
 
 ### <a href="https://ntusurvey.onlinesurveys.ac.uk/intro-to-r-pre-tutorial-survey" target="_blank">Intro to R Pre-tutorial Survey</a>
 
@@ -23,7 +30,7 @@ It is strongly encouraged to use RStudion when learning R. Installation instruct
 * [UC Davis R course (Basics are topics 1-5)](https://ucdavis-bioinformatics-training.github.io/2021-March-Introduction-to-R-for-Bioinformatics/R/Intro2R_main)
 * [Get R done youtube series (Basics are videos 1-14)](https://www.youtube.com/playlist?list=PLmNgrNF3pZqg2GPmcIAWDa1A2-cAfbX37)
 
-### <a href="https://ntusurvey.onlinesurveys.ac.uk/intro-to-r-post-tutorial-survey" target="_blank">Intro to R Post-tutorial Survey]
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/intro-to-r-post-tutorial-survey" target="_blank">Intro to R Post-tutorial Survey</a>
 
 
 ## Bioinformatics/data science focussed tutorials (some are advanced)

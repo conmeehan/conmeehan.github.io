@@ -20,7 +20,7 @@ This tutorial outlines the basics concepts in computer science such as variables
 * Implement regular expressions
 
 ## Prerequisites
-It is recommended that you have [Notepad++ (Windows)](https://notepad-plus-plus.org/downloads/) or [BBEdit (Mac)](https://www.barebones.com/products/bbedit/) for the regular expressions tasks; most default Linux editors can do these.
+It is recommended that you have [Notepad++ (Windows)](https://notepad-plus-plus.org/downloads/) or [BBEdit (Mac)](https://www.barebones.com/support/bbedit/updates.html) for the regular expressions tasks; most default Linux editors can do these.
 
 ## Order of tutorial
 
