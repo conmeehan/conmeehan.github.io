@@ -49,10 +49,10 @@ Which of these is the most stringent e-value cut-off?
 ## Worksheets
 ### UNIX terminal approaches
 SPAdes for bacterial and viral genome assembly (short reads)
-Flye for bacterial and viral genome assembly (Long reads)
-BUSCO for genome completeness checking
-CheckM for genome quality control
+[Flye for bacterial and viral genome assembly (Long reads)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAssembly_Flye)
+[BUSCO and Bandage for genome completeness and quality checking](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeQC_BUSCO_Bandage)
 Bakta for genome annotation
+Snippy for reference mapping (SNP calling)
 
 ### Galaxy approaches
 * [Bacterial genome assembly using Galaxy](https://training.galaxyproject.org/training-material/topics/assembly/)
