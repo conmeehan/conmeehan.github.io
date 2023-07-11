@@ -51,7 +51,7 @@ Which of these is the most stringent e-value cut-off?
 [SPAdes for bacterial and viral genome assembly (short reads)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAssembly_SPAdes)
 [Flye for bacterial and viral genome assembly (Long reads)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAssembly_Flye)
 [BUSCO and Bandage for genome completeness and quality checking](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeQC_BUSCO_Bandage)
-Bakta for genome annotation
+[Bakta for genome annotation](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAnnotation_Bakta)
 Snippy for reference mapping (SNP calling)
 
 ### Galaxy approaches
