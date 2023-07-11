@@ -22,6 +22,12 @@ This tutorial outlines the basics concepts in computer science such as variables
 ## Prerequisites
 It is recommended that you have [Notepad++ (Windows)](https://notepad-plus-plus.org/downloads/) or [BBEdit (Mac)](https://www.barebones.com/support/bbedit/updates.html) for the regular expressions tasks; most default Linux editors can do these.
 
+## Approximate time to finish tutorial
+* Lecture: 1.5 hours
+* Tasks within lectures: 1 hour
+* Additional advanced tasks: 1 hour
+* Pre/post surveys: 10 minutes
+
 ## Order of tutorial
 
 Please do the pre-learning quiz, then watch the presentation. <br />

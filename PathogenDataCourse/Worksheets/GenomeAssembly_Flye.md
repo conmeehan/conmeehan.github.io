@@ -6,7 +6,7 @@ titles:
   en-US   : *EN
   en-CA   : *EN
   en-AU   : *EN
-key: page-ANOVA-R
+key: page-GenomeAssembly-Flye
 ---
 
 *	In this worksheet you will learn how to use Flye to assemble long reads into a genome. Long reads are those that come from 3rd generation sequencers such as PacBio SMRT or Nanopore ONT.
@@ -39,7 +39,7 @@ wget https://zenodo.org/record/4534098/files/DRR187567.fastq.bz2
 ```c
 bzcat DRR187567.fastq.bz2 | gzip -c > DRR187567.fastq.gz
 ```
-* Note: Most sequencers produce .gz fiels so this isnt necessary if your file is already in that format.
+* Note: Most sequencers produce .gz files so this isnt necessary if your file is already in that format.
 * Note: This can take a while as the file is quite large
 
 4. Install Flye using conda
@@ -66,12 +66,20 @@ filtlong --min_length 1000 --keep_percent 90 DRR187567.fastq.gz | gzip > DRR1875
 6. Assemble to genome with Flye. The full list of options you can pass to this assembler are [here](https://github.com/fenderglass/Flye/blob/flye/docs/USAGE.md) but we will do a basic assembly.
 * We know this is an MRSA sample and thus the genome should be around 2.8Mbp, which we can pass to Flye to help in the assembly
   * This isnt a requirement but can improve accuracy
- * We use the --nano-corr as these are nanopore reads which we filtered (corrected)
+ * We use the `--nano-corr`` as these are nanopore reads which we filtered (corrected)
   * Replace with --nano-raw if you do not filter   
+ * `-t` indicates the number of threads to use; we have set this to 4 here but should be set to whatever your machine can handle 
  ```c
-flye --genome-size 2.8m --out-dir DRR187567_flye --nano-corr DRR187567_filtered.fastq.gz
+flye --genome-size 2.8m --out-dir DRR187567_flye -t 4 --nano-corr DRR187567_filtered.fastq.gz
  ``` 
  * Assembly takes a long time (average 1-2 horus on a standard laptop).
 
+7. Look at the basic statistics of the final assembly
+```c
+cat DRR187567_flye/assembly_info.txt
+```
+* The genome looks good inisitally as it has assembled into 2 contigs (chromosome and plasmid) with high coverage (both over 100x) and both closed (circular column is Y). 
+
+
  ## Post assembly steps
- Once assembly is finished you can check the quality and completeness using the [BUSCO and Bandage worksheet](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeQC_BUSCO_Bandage)
+ Once assembly is finished you can do a more in depth check of the quality and completeness using the [BUSCO and Bandage worksheet](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeQC_BUSCO_Bandage)

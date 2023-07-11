@@ -21,6 +21,16 @@ It is strongly encouraged to use RStudio when learning R. Installation instructi
 * Create and modify data structrues and tables
 * Navigate and undertake basic operations on R data frames
 
+## Approximate time to finish tutorial
+* Intro to R tutorials: 6 hours each (only necessary to complete one)
+* Additional tasks: 1 hour
+* Pre/post surveys: 10 minutes
+
+## Order of tutorial
+
+Please do the pre-learning quiz, then select a linked tutorial to complete. <br />
+Once finished the tutorial, take the post-learing quiz.<br />
+
 ### <a href="https://ntusurvey.onlinesurveys.ac.uk/intro-to-r-pre-tutorial-survey" target="_blank">Intro to R Pre-tutorial Survey</a>
 
 

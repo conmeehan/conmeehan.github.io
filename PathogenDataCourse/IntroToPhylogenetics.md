@@ -18,14 +18,14 @@ key: page-Concepts
 * Describe the process of parsimony tree building
 * Translate a distance matrix into a phylogeny
 * Discuss the drawbacks of non- and semi-parametric phylogenetic methods
-* Calculate corrected distances using different models of evolution
-* Explain a rate matrix
-* Describe how site heterogeneity is modelled
-* Define ascertainment bias and its effect on phylogenetics
 * Describe the process of tree space searching
 * Recognise the maximum likelihood and bootstrap approaches
 * Use RAxML-NG to build a phylogenetic tree
 * Visualise phylogenetic trees with either iTOL or R packages
+* Calculate corrected distances using different models of evolution (optional)
+* Explain a rate matrix (optional)
+* Describe how site heterogeneity is modelled (optional)
+* Define ascertainment bias and its effect on phylogenetics (optional)
 
 ## Prerequisites
 * It is recommended that you have [Notepad++ (Windows)](https://notepad-plus-plus.org/downloads/) or [BBEdit (Mac)](https://www.barebones.com/products/bbedit/) for viewing fasta files; most linux default editors can do this.
