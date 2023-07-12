@@ -13,14 +13,19 @@ key: page-GenomeAssemblyAnnotation
 This tutorial outlines the various online biological databases and their uses as well as an introduction to homology terminology and searching using BLAST.<br />
 
 ## Learning outcomes
-* Identify online database types and retrieve data
-* Describe types of homologs and gene evolution
-* Recognise the types of BLAST and their uses
-* Execute a BLAST search either via the terminal (BLAST+), the NCBI website portal or the Galaxy portal
+* Describe the primary steps in de novo assembly
+* Implement basic assembly quality control and metrics
+* List the primary outputs of genome annotation
+* Describe the primary steps in reference mapping
+* Compare the pros and cons of assembly and mapping approaches
+* Undertake genome assembly using Flye or Spades
+* Undertake genome annotation using Bakta
+* Undertake reference-based mapping using Snippy
+
 
 ## Prerequisites
 * It is recommended that you have [Notepad++ (Windows)](https://notepad-plus-plus.org/downloads/) or [BBEdit (Mac)](https://www.barebones.com/products/bbedit/) for viewing fasta files; most linux default editors can do this.
-* It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming), [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) and [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse) tutorials if you are going to do the BLAST+ worksheet.
+* It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming), [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) and [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse) tutorials if you are going to do the UNIX-based worksheets.
 
 ## Approximate time to finish tutorial
 * Lecture: 1.5 hours
@@ -38,25 +43,51 @@ Once finished the tutorial, take the post-learing quiz.<br />
 
 
 ## Presentation
-* [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/BioDBSandHomology.pptx)
+* [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/GenomeAssembly.pptx)
 
 ## Tasks from slides with sample answers
-### Motif searching 
-
-
-Which of these is the most stringent e-value cut-off?
-1. 0.0
-2. 1e-30
-3. 1e-3
-
+What is the sequencing depth of the two positions highlighted in blue? (see slides for image)
 <details> <summary>Click here for answer</summary>
 
-1. 0.0
+G: 7 <br />
+A: 8
 
 </details><br />
 
+What is the resulting sequence after the de bruijn-based joining of these two reads? (k=3)
+TTAACCA
+CCAAAAT
+
+<details> <summary>Click here for answer</summary>
+
+TTAACCAAAT
+
+</details><br />
+
+Which of these is a good maximum number of contigs in an assembly?
+100
+500
+1000
+
+<details> <summary>Click here for answer</summary>
+
+100
+
+</details><br />
+
+tRNAs are a type of coding or non-coding gene?
+
+<details> <summary>Click here for answer</summary>
+
+Non-coding
+
+</details><br />
+
+
+
+
 ## Worksheets
-### UNIX terminal approaches
+### UNIX shell approaches
 [SPAdes for bacterial and viral genome assembly (short reads)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAssembly_SPAdes)
 [Flye for bacterial and viral genome assembly (Long reads)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAssembly_Flye)
 [BUSCO and Bandage for genome completeness and quality checking](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeQC_BUSCO_Bandage)
