@@ -22,6 +22,12 @@ This tutorial outlines the various online biological databases and their uses as
 * It is recommended that you have [Notepad++ (Windows)](https://notepad-plus-plus.org/downloads/) or [BBEdit (Mac)](https://www.barebones.com/products/bbedit/) for viewing fasta files; most linux default editors can do this.
 * It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming), [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) and [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse) tutorials if you are going to do the BLAST+ worksheet.
 
+## Approximate time to finish tutorial
+* Lecture: 1.5 hours
+* Tutorials: 1.5 hours
+* Pre/post surveys: 10 minutes
+
+
 ## Order of tutorial
 
 Please do the pre-learning quiz, then watch the presentation. <br />
