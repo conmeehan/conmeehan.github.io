@@ -34,6 +34,9 @@ Please do the pre-learning quiz, then watch the presentation. <br />
 During the presentation there are points to stop and do exercises, which are linked below. The answers to the questions in the exercises are linked within each one.<br />
 Once finished the tutorial, take the post-learing quiz.<br />
 
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/genome-assembly-pre-tutorial-survey" target="_blank">Genome Assembly Pre-tutorial Survey</a>
+
+
 ## Presentation
 * [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/BioDBSandHomology.pptx)
 
@@ -58,7 +61,7 @@ Which of these is the most stringent e-value cut-off?
 [Flye for bacterial and viral genome assembly (Long reads)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAssembly_Flye)
 [BUSCO and Bandage for genome completeness and quality checking](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeQC_BUSCO_Bandage)
 [Bakta for genome annotation](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAnnotation_Bakta)
-Snippy for reference mapping (SNP calling)
+[Snippy for reference mapping (SNP calling)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeMapping_Snippy)
 
 ### Galaxy approaches
 * [Bacterial genome assembly using Galaxy](https://training.galaxyproject.org/training-material/topics/assembly/)
@@ -69,6 +72,9 @@ Snippy for reference mapping (SNP calling)
 * [Bacterial genome annotation using Prokka on Galaxy](https://training.galaxyproject.org/training-material/topics/genome-annotation/)
    * Prokka is no longer being actively supported, it is suggested to use Bakta instead 
 * [Bacterial genome annotation using Bakta on Galaxy](https://conmeehan.github.io/PathogenDataCourse/Worksheets/Galaxy_Bakta)   
+
+
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/genome-assembly-post-tutorial-survey" target="_blank">Genome Assembly Post-tutorial Survey</a>
 
 
 ### Other tools and videos
