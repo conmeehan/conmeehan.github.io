@@ -32,7 +32,7 @@ Once finished the tutorial, take the post-learing quiz.<br />
 
 
 ## Presentation
-* [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/BioDBSAndHomology.pptx)
+* [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/BioDBsAndHomology.pptx)
 
 ## Tasks from slides with sample answers
 ### Motif searching 
