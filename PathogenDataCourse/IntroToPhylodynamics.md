@@ -23,8 +23,8 @@ Please note this is not an exhaustive tutorial on how to use Bayesian phylogenet
 
 ## Prerequisites
 * It is recommended that you have [Notepad++ (Windows)](https://notepad-plus-plus.org/downloads/) or [BBEdit (Mac)](https://www.barebones.com/products/bbedit/) for viewing fasta files; most linux default editors can do this.
-* It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming), [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) and [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/Worksheets/CondaInstallAndUse) tutorials if you are going to do the RAxML-NG via terminal worksheet.
-* It is recommended that you have followed the [Introduction to R](https://conmeehan.github.io/PathogenDataCourse/IntroToR) tutorial if you are going to do the visualising phylogenetic trees in R worksheet.
+* It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming)
+
 
 ## Order of tutorial
 
@@ -42,6 +42,14 @@ Once finished the tutorial, take the post-learing quiz.<br />
 
 
 </details><br />
+### Worksheets
+
+### Assessing the quality of a Bayesian phylogenetic run
+
+### Building a Bayesian phylogenetic tree
+
+### Constructing a coalescent skyline plot
+
 
 ## Other tutorials/tools
 * [Bestiary](https://beastiary.wytamma.com/) for assessing Trace files

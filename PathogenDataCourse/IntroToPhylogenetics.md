@@ -50,10 +50,18 @@ Once finished the tutorial, take the post-learing quiz.<br />
 </details><br />
 
 ## Worksheets
+### Multiple sequence alignments (gene sequences)
+* [Creating a multiple gene sequence alignment using MAFFT in UNIX]
+* [Creating a multiple gene sequence alignment using MAFFT in Galaxy]
+
+### Building phylogenetic trees
 * [Maximum likelihood phylogenetic tree building with RAxML-ng (via UNIX/conda)](https://github.com/amkozlov/raxml-ng/wiki/Tutorial)
   * [Conda installation link](https://anaconda.org/bioconda/raxml-ng)
-* Maximum likelihood phylogenetic tree building with RAxML (via Galaxy)
+  * You can use the sequences provided in the tutorial or the sequences output from the multiple sequence alignment worksheets above, whichever is more informative for you
+* [Maximum likelihood phylogenetic tree building with RAxML (via Galaxy)]
   * Note that RAxML is an older verison of RAxML-ng and thus is not as up to date in its methods and speed
+
+### Visualising phylogenetic trees
 * [Visualising phylogenies using ggtree in R]
 * [Visualising phylogenies using the iTOL web interface](https://itol.embl.de/video_tutorial.cgi)
   * A set of video tutorials by the makers of iTOL
