@@ -20,7 +20,7 @@ This tutorial outlines the various online biological databases and their uses as
 
 ## Prerequisites
 * It is recommended that you have [Notepad++ (Windows)](https://notepad-plus-plus.org/downloads/) or [BBEdit (Mac)](https://www.barebones.com/products/bbedit/) for viewing fasta files; most linux default editors can do this.
-* It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming), [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) and [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse) tutorials if you are going to do the BLAST+ worksheet.
+* It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming), [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) and [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/Worksheets/CondaInstallAndUse) tutorials if you are going to do the BLAST+ worksheet.
 
 ## Order of tutorial
 
@@ -32,7 +32,7 @@ Once finished the tutorial, take the post-learing quiz.<br />
 
 
 ## Presentation
-* [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/BioDBSandHomology.pptx)
+* [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/BioDBSAndHomology.pptx)
 
 ## Tasks from slides with sample answers
 ### Motif searching 
