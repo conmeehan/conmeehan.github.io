@@ -10,9 +10,10 @@ key: page-Concepts
 ---
 
 * This tutorial outlines the basics concepts in Bayesian phylogenetics, and how it applies to molecular epidemiology (i.e. phylodynamics)<br />
-Please note this is not an exhaustive tutorial on how to use Bayesian phylogenetics to build trees (as this would take too long). 
+Please note this is not an exhaustive tutorial on how to use Bayesian phylogenetics to build trees (as this would take too long). Following a course such as [Taming the BEAST](https://taming-the-beast.org/) is suggested if you wish to learn this.
 
 ## Learning outcomes
+
 * Recognise the Monte Carlo Markov Chain process
 * Describe some common Bayesian epidemiology priors
 * State the molecular clock hypothesis
@@ -22,6 +23,7 @@ Please note this is not an exhaustive tutorial on how to use Bayesian phylogenet
 
 
 ## Prerequisites
+
 * It is recommended that you have [Notepad++ (Windows)](https://notepad-plus-plus.org/downloads/) or [BBEdit (Mac)](https://www.barebones.com/products/bbedit/) for viewing fasta files; most linux default editors can do this.
 * It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming)
 
@@ -33,6 +35,7 @@ During the presentation there are points to stop and do exercises, which are lin
 Once finished the tutorial, take the post-learing quiz.<br />
 
 ## Presentation
+
 * [Download slides here]()
 
 ## Tasks from slides with sample answers
@@ -42,14 +45,14 @@ Once finished the tutorial, take the post-learing quiz.<br />
 
 
 </details><br />
+
 ### Worksheets
 
-### Assessing the quality of a Bayesian phylogenetic run
-
-### Building a Bayesian phylogenetic tree
-
-### Constructing a coalescent skyline plot
+[Assessing the quality of a Bayesian phylogenetic run](https://conmeehan.github.io/PathogenDataCourse/Worksheets/Covergence_Tracer)
+[Building a Bayesian phylogenetic tree](https://conmeehan.github.io/PathogenDataCourse/Worksheets/BayesianPhylogenyConstruction)
+[Constructing a coalescent skyride plot](https://conmeehan.github.io/PathogenDataCourse/Worksheets/BayesianSkyrideConstruction)
 
 
 ## Other tutorials/tools
 * [Bestiary](https://beastiary.wytamma.com/) for assessing Trace files
+* [RWTY](https://cran.r-project.org/web/packages/rwty/vignettes/rwty.html) an alternative way to assess Bayesian run convergence
