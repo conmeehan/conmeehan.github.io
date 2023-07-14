@@ -50,7 +50,6 @@ Once finished the tutorial, take the post-learing quiz.<br />
 
 ### [Assessing the quality of a Bayesian phylogenetic run](https://conmeehan.github.io/PathogenDataCourse/Worksheets/Covergence_Tracer)
 ### [Building a Bayesian phylogenetic tree](https://conmeehan.github.io/PathogenDataCourse/Worksheets/BayesianPhylogenyConstruction)
-### [Constructing a coalescent skyride plot](https://conmeehan.github.io/PathogenDataCourse/Worksheets/BayesianSkyrideConstruction)
 
 
 ## Other tutorials/tools
