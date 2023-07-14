@@ -19,7 +19,7 @@ key: page-GenomeQC
 ## Dataset
 
 * This demonstration uses the trees files as output from [BEAST](https://beast.community/). The same dataset was run independently twice through BEAST, producing two trees files: [Run1_RwandaR3Clone.trees](https://conmeehan.github.io/PathogenDataCourse/Datasets/Run1_RwandaR3Clone.tree) and [Run2_RwandaR3Clone.trees](https://conmeehan.github.io/PathogenDataCourse/Datasets/Run2_RwandaR3Clone.trees).
-* These files are large and may take some time to download.
+* These original files contained 100,000,000 states each, as is usual for *Mycobacterium tuberculosis* BEAST runs. These files are very large so for demonstration purposes have been cut to 10,000,000 states each
 
 ## Tracer Steps
 
@@ -32,7 +32,7 @@ key: page-GenomeQC
 4. Click the + button above the 'Output File' text and select Run1_RwandaR3Clone.trees in the selection box.
 4. Repeat step4 but select Run2_RwandaR3Clone.trees
 5. Before we combine these files we wish to remove the first 10% of trees from each of these files, as they often contain bad data.
-6. Each file contains 100,000,000 trees so in the 'Burnin' box beside the name of each input file, click the box with the 0, delete the zero and type 10000000 in the box (i.e. 10k).
+6. Each file contains 10,000,000 trees so in the 'Burnin' box beside the name of each input file, click the box with the 0, delete the zero and type 1000000 in the box (i.e. 1M).
 7. Click the 'Choose file' button beside 'Output file' and then type 'RwandaR3Clone_combined.trees' into the box and click save
 8. Click 'Run'
 
