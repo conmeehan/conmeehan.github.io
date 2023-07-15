@@ -32,11 +32,20 @@ key: page-Concepts
 * It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming), [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) and [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/Worksheets/CondaInstallAndUse) tutorials if you are going to do the RAxML-NG via terminal worksheet.
 * It is recommended that you have followed the [Introduction to R](https://conmeehan.github.io/PathogenDataCourse/IntroToR) tutorial if you are going to do the ggtree worksheet.
 
+## Approximate time to finish tutorial
+* Lecture: 2 hours
+	* Optional lecture on models of evolution: 30 minutes
+* Tutorials: 45 mins
+* Pre/post surveys: 10 minutes
+
 ## Order of tutorial
 
 Please do the pre-learning quiz, then watch the presentation. <br />
 During the presentation there are points to stop and do exercises, which are linked below. The answers to the questions in the exercises are linked within each one.<br />
 Once finished the tutorial, take the post-learing quiz.<br />
+
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/introduction-to-phylogenetics-pre-tutorial-survey" target="_blank">Introduction to Phylogenetics Pre-tutorial Survey</a>
+
 
 ## Presentation
 * [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/IntroToPhylogenetics.pptx)
@@ -189,6 +198,11 @@ SNP data because it does not contain invariant (constant) sites and so the branc
 * [Visualising phylogenies using ggtree in R](https://conmeehan.github.io/PathogenDataCourse/Worksheets/VisualisePhylogenetics_ggtree)
 * [Visualising phylogenies using the iTOL web interface](https://itol.embl.de/video_tutorial.cgi)
   * A set of video tutorials by the makers of iTOL
+
+
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/introduction-to-phylogenetics-post-tutorial-survey" target="_blank">Introduction to Phylogenetics Post-tutorial Survey</a>
+
+
 
 ## Other tutorials/tools
 * [Tree thinking assessments](https://www.ebi.ac.uk/sites/ebi.ac.uk/files/content.ebi.ac.uk/materials/2014/140602_prague/tree_thinking_tests.pdf)

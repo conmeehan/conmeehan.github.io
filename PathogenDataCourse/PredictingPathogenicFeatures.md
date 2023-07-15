@@ -21,8 +21,8 @@ This tutorial outlines the various online biological databases and their uses as
 * It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming), [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) and [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/Worksheets/CondaInstallAndUse) tutorials if you are going to do the UNIX-based worksheets.
 
 ## Approximate time to finish tutorial
-* Lecture: 
-* Tutorials: 
+* Lecture: 20 mins
+* Tutorials: 30 mins
 * Pre/post surveys: 10 minutes
 
 
@@ -39,13 +39,8 @@ Once finished the tutorial, take the post-learing quiz.<br />
 * [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/PredictingPathogenicFeatures.pptx)
 
 ## Worksheets
-### UNIX shell approaches
-AbritAMR
-ABRicate
-PlasmidFinder
-
-### Galaxy approaches
-* Detecting virulence factors and AMR genes using ABRicate
+### [Predicting pathogenic features using AbritAMR and PlasmidFinder via UNIX](https://conmeehan.github.io/PathogenDataCourse/Worksheets/Predicting_AMR_VF_Plasmids_UNIX)
+### [Predicting pathogenic features using AbritAMR and PlasmidFinder via Galaxy](https://conmeehan.github.io/PathogenDataCourse/Worksheets/Predicting_AMR_VF_Plasmids_Galaxy)
 
 
 ### <a href="https://ntusurvey.onlinesurveys.ac.uk/predictng-pathogenic-features-post-tutorial-survey" target="_blank">Genome Assembly Post-tutorial Survey</a>

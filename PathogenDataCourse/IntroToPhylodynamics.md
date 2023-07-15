@@ -27,12 +27,20 @@ Please note this is not an exhaustive tutorial on how to use Bayesian phylogenet
 * It is recommended that you have [Notepad++ (Windows)](https://notepad-plus-plus.org/downloads/) or [BBEdit (Mac)](https://www.barebones.com/products/bbedit/) for viewing fasta files; most linux default editors can do this.
 * It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming)
 
+## Approximate time to finish tutorial
+* Lecture: 1 hour
+* Tutorials: 45 mins
+* Pre/post surveys: 10 minutes
 
 ## Order of tutorial
 
 Please do the pre-learning quiz, then watch the presentation. <br />
 During the presentation there are points to stop and do exercises, which are linked below. The answers to the questions in the exercises are linked within each one.<br />
 Once finished the tutorial, take the post-learing quiz.<br />
+
+
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/introduction-to-phylodynamics-pre-tutorial-survey" target="_blank">Introduction to Phylodynamics Pre-tutorial Survey</a>
+
 
 ## Presentation
 
@@ -121,6 +129,9 @@ Phylogeographic (e.g.BSSVS model)
 
 ### [Assessing the quality of a Bayesian phylogenetic run](https://conmeehan.github.io/PathogenDataCourse/Worksheets/Covergence_Tracer)
 ### [Building a Bayesian phylogenetic tree](https://conmeehan.github.io/PathogenDataCourse/Worksheets/BayesianPhylogenyConstruction)
+
+
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/introduction-to-phylodynamics-post-tutorial-survey" target="_blank">Introduction to Phylodynamics Post-tutorial Survey</a>
 
 
 ## Other tutorials/tools
