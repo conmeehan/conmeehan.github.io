@@ -51,15 +51,13 @@ Once finished the tutorial, take the post-learing quiz.<br />
 
 ## Worksheets
 ### Multiple sequence alignments (gene sequences)
-* [Creating a multiple gene sequence alignment using MAFFT in UNIX]
+* [Creating a multiple gene sequence alignment using MAFFT in UNIX](https://conmeehan.github.io/PathogenDataCourse/Worksheets/AligningSequences_MafftUNIX)
 * [Creating a multiple gene sequence alignment using MAFFT in Galaxy]
 
 ### Building phylogenetic trees
-* [Maximum likelihood phylogenetic tree building with RAxML-ng (via UNIX/conda)](https://github.com/amkozlov/raxml-ng/wiki/Tutorial)
-  * [Conda installation link](https://anaconda.org/bioconda/raxml-ng)
-  * You can use the sequences provided in the tutorial or the sequences output from the multiple sequence alignment worksheets above, whichever is more informative for you
-* [Maximum likelihood phylogenetic tree building with RAxML (via Galaxy)]
-  * Note that RAxML is an older verison of RAxML-ng and thus is not as up to date in its methods and speed
+* [Maximum likelihood phylogenetic tree building with RAxML-ng (via UNIX/conda)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/MLPhylogeneticss_RAxML-NG)
+* [Maximum likelihood phylogenetic tree building with RAxML-ng (via webserver)]
+  * Uses a graphical interface for building phylogenetic trees
 
 ### Visualising phylogenetic trees
 * [Visualising phylogenies using ggtree in R]
@@ -77,4 +75,4 @@ Once finished the tutorial, take the post-learing quiz.<br />
 * [Data integration, manipulation and visualisation of phylogenetic trees](https://yulab-smu.top/treedata-book/index.html)	
 	* Free online book with extensive tutorials on interacting with phylogenetic trees through R using tidytree, treeio, ggtree and ggtreeExtra
 * [Phylogenetic tree building for *Mycobacterium tuberculosis* using Galaxy](https://training.galaxyproject.org/training-material/topics/evolution/tutorials/mtb_phylogeny/tutorial.html)  
-
+* The RAxML-NG github page has an extended tutorial for running this tool and its additional features which you can access [here](https://github.com/amkozlov/raxml-ng/wiki/Tutorial)

@@ -55,3 +55,6 @@ Once finished the tutorial, take the post-learing quiz.<br />
 ## Other tutorials/tools
 * [Bestiary](https://beastiary.wytamma.com/) for assessing Trace files
 * [RWTY](https://cran.r-project.org/web/packages/rwty/vignettes/rwty.html) an alternative way to assess Bayesian run convergence
+* [ggtree for annotating phylodynamic trees](https://guangchuangyu.github.io/ggtree-book/chapter-ggtree.html)
+	* Advanced tutorial outlining how to annotate outputs from BEAST and other phylodynamic software (e.g. HyPhy) in ggtree
+	

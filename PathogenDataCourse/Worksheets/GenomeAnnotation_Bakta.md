@@ -14,7 +14,7 @@ key: page-GenomeQC
 ## Suggested prerequisites
 * It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming) and [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) tutorials before starting.
 * A knowledge of Bakta is useful. You can read the Bakta paper [here](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000685) and the manual and other documents can be found [here](https://github.com/oschwengers/bakta). 
-* Installing BBakta through conda is easiest so its suggested you have followed the [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse) tutorial.
+* Installing Bakta through conda is easiest so its suggested you have followed the [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse) tutorial.
 
 
 
