@@ -177,12 +177,12 @@ SNP data because it does not contain invariant (constant) sites and so the branc
 
 ## Worksheets
 ### Multiple sequence alignments (gene sequences)
-* [Creating a multiple gene sequence alignment using MAFFT in UNIX](https://conmeehan.github.io/PathogenDataCourse/Worksheets/AligningSequences_MafftUNIX)
-* [Creating a multiple gene sequence alignment using MAFFT in Galaxy]
+* [Creating a multiple gene sequence alignment using MAFFT in UNIX](https://conmeehan.github.io/PathogenDataCourse/Worksheets/AligningSequences_Mafft_UNIX)
+* [Creating a multiple gene sequence alignment using MAFFT in Galaxy](https://conmeehan.github.io/PathogenDataCourse/Worksheets/AligningSequences_Mafft_Galaxy)
 
 ### Building phylogenetic trees
-* [Maximum likelihood phylogenetic tree building with RAxML-ng (via UNIX/conda)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/MLPhylogeneticss_RAxML-NG)
-* [Maximum likelihood phylogenetic tree building with RAxML-ng (via webserver)]
+* [Maximum likelihood phylogenetic tree building with RAxML-ng (via UNIX/conda)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/MLPhylogenetics_RAxML-NG)
+* [Maximum likelihood phylogenetic tree building with RAxML-ng (via webserver)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/MLPhylogeneticss_RAxML-NG_Web)
   * Uses a graphical interface for building phylogenetic trees
 
 ### Visualising phylogenetic trees

@@ -20,7 +20,7 @@ key: page-MLPhyloRAxML-NG
 
 ## Dataset
 *	This demonstration uses [16S_Staph_example_aligned.fasta](https://conmeehan.github.io/PathogenDataCourse/Datasets/16S_Staph_example_aligned.fasta) as produced by the [Aligning sequences using MAFFT (via UNIX/conda)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/AligningSequences_MafftUNIX) worksheet.
-	* RAxML-NG requires sequences to be aligned so ensure you have performed [multiple sequence alignment](https://conmeehan.github.io/PathogenDataCourse/Worksheets/AligningSequences_MafftUNIX) or, if doing a whole genome alignment, you have created a SNP alignment, e.g. using [Snippy-core](https://github.com/tseemann/snippy#core-snp-phylogeny)
+	* RAxML-NG requires sequences to be aligned so ensure you have performed [multiple sequence alignment](https://conmeehan.github.io/PathogenDataCourse/Worksheets/AligningSequences_Mafft_UNIX) or, if doing a whole genome alignment, you have created a SNP alignment, e.g. using [Snippy-core](https://github.com/tseemann/snippy#core-snp-phylogeny)
 
 ## Steps
 1. Create a directory to store the analysis and then change directory into that directory
