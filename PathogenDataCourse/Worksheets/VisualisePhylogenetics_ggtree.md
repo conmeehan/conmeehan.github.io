@@ -112,6 +112,7 @@ ggsave("16S_Staph_example_colouredTree_withData.pdf")
 
 
 ### Additional guides
+* [Molecular ecologist: Phylogenetic trees in R using ggtree](https://www.molecularecologist.com/2017/02/08/phylogenetic-trees-in-r-using-ggtree)
 * [Comprehensive ggtree tutorials](https://guangchuangyu.github.io/ggtree-book/short-introduction-to-r.html)
 	* Extended ggtree tutorials beyond the worksheet above, outlining both phylogenetic and phylodynamic tree annotations
 * [Data integration, manipulation and visualisation of phylogenetic trees](https://yulab-smu.top/treedata-book/index.html)	
