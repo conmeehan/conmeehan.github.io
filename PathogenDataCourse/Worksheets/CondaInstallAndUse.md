@@ -63,6 +63,9 @@ This will download MAFFT and all associated dependancies. Once finished, the pro
 ```console
 mamba uninstall mafft
 ```
-
+Always deactivate your mamba environment when finished
+```c
+mamba deactivate
+```
 
 

@@ -67,3 +67,8 @@ raxml-ng --all --msa 16S_Staph_example_aligned.fasta --model GTR+G --prefix 16S_
 * `16S_Staph_example.raxml.startTree`: RAxML-NG by default runs the ML algorithm 20 times and selects the best run (to try and avoid local maxima). Each of these has a starting tree built with either parsimony or random on which the ML algorithm begins. This file stores the starting trees from all 20 runs
 * `16S_Staph_example.raxml.support`: The maximum likelihood tree with the bootstrap values
 	* **This is the tree you usually want to use for further analyses**
+
+5. Deactivate your mamba environment when finished
+```c
+mamba deactivate
+```

@@ -91,6 +91,10 @@ snippy --outdir DRR187559_snippy --ref GCF_000013425.1/genomic.gbff  --R1 DRR187
 * `cat DRR187559_snippy/snps.txt`: This is an overview of the settings used and how many SNPs etc were found in the sample compared to the reference
 * `DRR187559_snippy/snps.tab`: This fiule contains all the SNPs found and if you used a gbff file as the reference, what genes or intergenic regions that are in
 
+9. Deactivate your mamba environment when finished
+```c
+mamba deactivate
+```
 
 ## Further uses of snippy
 * SNP alignments and whole genome alignments based on mapping to the reference can be made using snippy if you have multiple samples, which can then be useful for [building phylogenies](https://conmeehan.github.io/PathogenDataCourse/IntroToPhylogenetics). This is outlined in the [Core SNP phylogeny](https://github.com/tseemann/snippy#core-snp-phylogeny) section of the snippy github page. 

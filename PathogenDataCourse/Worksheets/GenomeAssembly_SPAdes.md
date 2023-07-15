@@ -78,6 +78,10 @@ spades.py -1 DRR187559_trimmed_1.fastq.gz -2 DRR187559_trimmed_2.fastq.gz -o DRR
 ```
 * You can get basic metrics such as N50 using the tool [Quast](https://github.com/ablab/quast) which can be downloaded via conda [here](https://anaconda.org/bioconda/quast)
 
+8. Deactivate your mamba environment when finished
+```c
+mamba deactivate
+```
 
 ## Post assembly steps
  Once assembly is finished you can do a more in depth check of the quality and completeness using the [BUSCO and Bandage worksheet](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeQC_BUSCO_Bandage)

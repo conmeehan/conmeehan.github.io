@@ -66,13 +66,14 @@ filtlong --min_length 1000 --keep_percent 90 DRR187567.fastq.gz | gzip > DRR1875
 6. Assemble to genome with Flye. The full list of options you can pass to this assembler are [here](https://github.com/fenderglass/Flye/blob/flye/docs/USAGE.md) but we will do a basic assembly.
 * We know this is an MRSA sample and thus the genome should be around 2.8Mbp, which we can pass to Flye to help in the assembly
   * This isnt a requirement but can improve accuracy
- * We use the `--nano-corr`` as these are nanopore reads which we filtered (corrected)
+ * We use the `--nano-corr` as these are nanopore reads which we filtered (corrected)
   * Replace with --nano-raw if you do not filter   
  * `-t` indicates the number of threads to use; we have set this to 4 here but should be set to whatever your machine can handle 
+ 
  ```c
 flye --genome-size 2.8m --out-dir DRR187567_flye -t 4 --nano-corr DRR187567_filtered.fastq.gz
  ``` 
- * Assembly takes a long time (average 1-2 horus on a standard laptop).
+ * Assembly takes a long time (average 1-2 hours on a standard laptop).
 
 7. Look at the basic statistics of the final assembly
 ```c
@@ -80,6 +81,10 @@ cat DRR187567_flye/assembly_info.txt
 ```
 * The genome looks good inisitally as it has assembled into 2 contigs (chromosome and plasmid) with high coverage (both over 100x) and both closed (circular column is Y). 
 
+8. Deactivate your mamba environment when finished
+```c
+mamba deactivate
+```
 
  ## Post assembly steps
  Once assembly is finished you can do a more in depth check of the quality and completeness using the [BUSCO and Bandage worksheet](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeQC_BUSCO_Bandage)

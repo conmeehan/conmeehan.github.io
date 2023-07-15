@@ -49,7 +49,11 @@ mamba activate mafft
 
 ```c
 mafft --auto 16S_Staph_example_unaligned.fasta >16S_Staph_example_aligned.fasta
-```
+``
+4. Deactivate your mamba environment when finished
+```c
+mamba deactivate
+````
 
 ### Use of multiple sequence alignments (MSA)
 MSA are the primary input to phylogenetic tree inference and other programs for comparative genomics. You can use this output to building a tree using [RAxML-NG](https://conmeehan.github.io/PathogenDataCourse/Worksheets/MLPhylogenetics_RAxML-NG)

@@ -53,3 +53,7 @@ bakta --db ./bakta_db/db-light --output DRR187559_bakta --prefix DRR187559 --loc
 
 5. Once finished, bakta creates a set of annotation files, recognised each by their suffix. These are explained in the [bakta manual output section](https://github.com/oschwengers/bakta#output)
 
+6. Deactivate your mamba environment when finished
+```c
+mamba deactivate
+```

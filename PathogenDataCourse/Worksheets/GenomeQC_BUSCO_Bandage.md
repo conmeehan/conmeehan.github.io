@@ -41,12 +41,18 @@ mamba activate busco
 busco -m genome -i DRR187559_spades/scaffolds.fasta -o DRR187559_busco --auto-lineage-prok
 ```
 * If you prefer, you can pick the specific lineage by running `busco --list-datasets` and specify it with `-l` instead
+
 4. Look at the summary of the BUSCO results. This is stored in the BUSCO output folder and is a file that starts 'short_summary.specific' and ends in '.txt'
 ```
 cat DRR187559_busco/short_summary.specific.bacillales_odb10.DRR187559_busco.txt
 ```
 * The line that has `C:XX%[S:XX%,D:XX%],F:XX%,M:XX%,n:XX` where XX are the different percentages and number of genes is the primary result line
 * We can see in this example, we should have close to 100% completeness of the genome, indicating that the genome seems to have assembled well in terms of completeness.
+
+5. Deactivate your mamba environment when finished
+```c
+mamba deactivate
+```
 
 ## Bandage Steps
 1. Install Bandage by downloading it from [here](https://rrwick.github.io/Bandage/)

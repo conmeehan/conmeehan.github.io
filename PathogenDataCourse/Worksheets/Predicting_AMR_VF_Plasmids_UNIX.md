@@ -38,29 +38,12 @@ wget https://conmeehan.github.io/PathogenDataCourse/Datasets/DRR187559_scaffolds
 3. Install ABRitamr using conda
   * It is recommended to always install packages in their own environments so here will we create an enironment and install ABRitamr in one step. 
 ```c
-mamba create -n bakta -c bioconda bakta -y
-mamba activate bakta
+mamba create -n abritamr -c bioconda abritamr -y
+mamba activate abritamr
 ```
 
-3. Download the annotation database for Bakta.
-* In this example we will download the lightweight database (`--type light`) for speed but in research you should sue the full database (`--type full`)
-* We will store the database in a subfolder of the current fodler (`--output ./db`) but in research you should store it in a separate location so that it can be accessed repeatedly, not just for this one genome
-```c
-bakta_db download --output ./bakta_db --type light
-```  
-* Note, even the lightweight database is large (~1.3Gb) and so can take a long time to download
 
-4. Annotate the genome using Bakta
-* Bakta has many options beyond what we are setting here. Type 'bakta -h' in your terminal to see them all
-* `--db` is the location of the database we downloaded in step 3
-* `--output` is the name of the folder to place all the output files
-* `-- prefix` is the string to put on the front of every output file
-* `--locus-tag` is the strong to put at the start of every predicted gene/protein name in the output files
-* `--threads` is the number of threads to allocate to the program (higher is better but don't put more than your machine has)
-* Finally, the location of the genome to be assembled should be supplied (in this case `DRR187559_spades/scaffolds.fasta`) 
+Deactivate your mamba environment when finished
 ```c
-bakta --db ./bakta_db/db-light --output DRR187559_bakta --prefix DRR187559 --locus-tag ID --threads 7 DRR187559_spades/scaffolds.fasta
+mamba deactivate
 ```
-
-5. Once finished, bakta creates a set of annotation files, recognised each by their suffix. These are explained in the [bakta manual output section](https://github.com/oschwengers/bakta#output)
-
