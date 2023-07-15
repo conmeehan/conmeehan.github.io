@@ -1,29 +1,29 @@
 ---
 layout: article
 titles:
-  en      : &EN       Predicting pathogenic features (AMR, Virulence factors, Plasmids)
+  en      : &EN       Predicting pathogenic features (AMR, Virulence factors, Plasmids) (via UNIX/conda)
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
   en-AU   : *EN
-key: page-GenomeQC
+key: page-PredictingPathogenicFeatures_UNIX
 ---
 
-*	In this worksheet you will learn how predict a range of pathogenic features such as antimicrobial resistance (abritAMR), virulence factors (ABRicate) and plasmid presence (PlasmidFinder)
-* This is three separate analyses but use similar inputs
+*	In this worksheet you will learn how predict a range of pathogenic features such as antimicrobial resistance and virulence factors (abritAMR), and plasmid presence (PlasmidFinder)
+* This is two separate analyses but use similar inputs
 
 
 ## Suggested prerequisites
 * It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming) and [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) tutorials before starting.
-* A knowledge of the three primary tools is useful. You can access their manuals here: [abritAMR](https://github.com/MDU-PHL/abritamr), [ABRicate](https://github.com/tseemann/abricate), [PlasmidFinder](https://bitbucket.org/genomicepidemiology/plasmidfinder/src/master/)
-* Installing abritAMR, ABRictae and PlasmidFinder through conda is easiest so its suggested you have followed the [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse) tutorial.
+* A knowledge of the two primary tools is useful. You can access their manuals here: [abritAMR](https://github.com/MDU-PHL/abritamr), [PlasmidFinder](https://bitbucket.org/genomicepidemiology/plasmidfinder/src/master/)
+* Installing abritAMR and PlasmidFinder through conda is easiest so its suggested you have followed the [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse) tutorial.
 
 ## Dataset
 *	This demonstration uses the output of [Assembling a genome from short reads (e.g. Illumina) using SPAdes](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAssembly_SPAdes) worksheet but this will work on any assembly, such as that created in the [Assembling a genome from long reads (e.g. ONT) using Flye](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAssembly_Flye) worksheet. Thus, it is suggested you run at least one of these assembly methods first. 
 	* You can download the example scaffolds output file of the SPAdes worksheet here: [DRR187559_scaffolds.fasta](https://conmeehan.github.io/PathogenDataCourse/Datasets/DRR187559_scaffolds.fasta)
 
 
-## AMR prediction (ABRitamr steps)
+## AMR and virulence factor prediction (ABRitamr steps)
 1. Create a directory for your analyses and step into it
 ```c
 mkdir pathogenesis_demo
@@ -42,8 +42,17 @@ mamba create -n abritamr -c bioconda abritamr -y
 mamba activate abritamr
 ```
 
+4. Run ABRitamr on the scaffolds file
+* The `run` command tells ABRitamr we wish to run the analysis (as opposed to the other pipeline which is to create a specific report)
+* `-c` is the genome assembly file 
+* `-px` is the name of the folder to put all the output files in
+```c
+abritamr run -c DRR187559_scaffolds.fasta -px DRR187559_ABRitamr
+```
 
-Deactivate your mamba environment when finished
+5. Inside the resulting output folder you will find multiple files. Their contents are explained [here](https://github.com/MDU-PHL/abritamr#abritamr-run)
+
+6. Deactivate your mamba environment when finished
 ```c
 mamba deactivate
 ```
