@@ -72,7 +72,9 @@ Once finished the tutorial, take the post-learing quiz.<br />
 * [IQ-TREE2](http://www.iqtree.org/) the main alternative to RAxML-NG
   * Can be used via [conda](https://anaconda.org/bioconda/iqtree) or a [webserver](http://iqtree.cibiv.univie.ac.at/)
     * IQ-TREE also comes on Galaxy (just search for tool in left hand menu)
-* [Parsing and visualising phylogenetic trees and associated trees using treeio in R](https://guangchuangyu.github.io/ggtree-book/short-introduction-to-r.html)
-  * Extensive guide to this R package for associating data (e.g. preence/absence tables) with phylogenetic trees
+* [Comprehensive ggtree tutorials](https://guangchuangyu.github.io/ggtree-book/short-introduction-to-r.html)
+	* Extended ggtree tutorials beyond the worksheet above, outlining both phylogenetic and phylodynamic tree annotations
+* [Data integration, manipulation and visualisation of phylogenetic trees](https://yulab-smu.top/treedata-book/index.html)	
+	* Free online book with extensive tutorials on interacting with phylogenetic trees through R using tidytree, treeio, ggtree and ggtreeExtra
 * [Phylogenetic tree building for *Mycobacterium tuberculosis* using Galaxy](https://training.galaxyproject.org/training-material/topics/evolution/tutorials/mtb_phylogeny/tutorial.html)  
 

@@ -69,3 +69,5 @@ PlasmidFinder
   * Random forest based classification of plasmids
 * Antismash
   * Tool for finding secondary metabolites in genome assemblies 
+* [IslandViewer 4](https://www.pathogenomics.sfu.ca/islandviewer/upload/)
+	* Tool for finding genomic (including pathogenicity) islands  

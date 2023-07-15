@@ -49,6 +49,7 @@ Once finished the tutorial, take the post-learing quiz.<br />
 * [R for data science](https://r4ds.had.co.nz/index.html)
 * [A psychologists guide to R](https://github.com/seanchrismurphy/A-Psychologists-Guide-to-R/tree/master)
 * [Visualising phylogenetic trees and associated data in R](https://guangchuangyu.github.io/ggtree-book/short-introduction-to-r.html)
+* [The epidemiologist R handbook](https://epirhandbook.com/en/index.html)
 
 ## Example tasks
 A set of example tasks can be found on the [W3 resource webpage](https://www.w3resource.com/r-programming-exercises/)
