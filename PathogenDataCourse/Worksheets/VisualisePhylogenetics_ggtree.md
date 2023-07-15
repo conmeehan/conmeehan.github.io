@@ -27,68 +27,93 @@ key: page-VizPhylo-ggtree
 
 ## Steps
 1.	Open RStudio
+2. Install the `ggtree` and `ggplot2` packages (if you have not already)
+* `ggtree` is installed trhough Bioconductor, not the standard R libraries, so needs the installation of the bioconductor manager
+```c
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install("ggtree")
+
+install.packages("ggplot2")
+```
+
+3. Load all the required libraries
+```c
+library(ggtree)
+library(ggplot2)
+library(treeio)
+```
+
+4. Read in the [16S_Staph_example.raxml.support.tree](https://conmeehan.github.io/PathogenDataCourse/Datasets/16S_Staph_example.raxml.support.tree) (which should be in your computer, in your current working directory of RStudio)
+```c
+tree <- read.newick(file = "16S_Staph_example.raxml.support.tree")
+```
+
+5. We will starrt with the basic tree plot with no information
+```c
+ggtree(tree)
+```
+
+6. We will add the tip labels and points to denote each of the internal and external nodes
+```c
+ggtree(tree)+ geom_tiplab()+geom_point() 
+```
+7. Often the labels get cut off on the right hand side so we will limit the size of the x-axis of the tree so that we can see the full labels. We will also 'nudge' the labels a little away from the tree node points
+```c
+ggtree(tree)+ geom_tiplab(nudge_x = 0.0005)+ geom_point() + xlim_tree(0.05)
+
+```
+8. Our tree has bootstrap support values so we will add these to the tree and also 'nudge' them to the right so they are clear
+```c
+ggtree(tree)+ geom_tiplab(nudge_x = 0.0005)+ geom_point() + xlim_tree(0.05)+ geom_nodelab(aes(label=label), nudge_x = 0.0009)
+```
+
+9. Our tree now is in a basic visualisation for publication. We can save this to file like so:
+```c
+ggsave("16S_Staph_example_basicTree.pdf")
+```
+
+10. We can add colouring of specific clades to the tree. To do this we first need to find out the numbers of the internal nodes, so we can group based on these
+```c
+ggtree(tree)+ geom_text2(aes(label=node), hjust=-.3)
+```
+
+11. The command shows us the basic tree plot again and the numbers of the internal nodes. We will now create two groups: Node 10 and all its descendants (top 5 strains) and Node 14 and its descendants (middle 2 strains)
+```c
+tree <- groupClade(tree, c(10,14))
+``` 
+12. We can now add colouring per clade to our tree as an aesthetic to the tree. 
+* A legend is automatically added to the plot but since we dont need this as the groups dont have names, we remove this with the  `theme(legend.position = "none")`
+```c
+ggtree(tree, aes(color=group, linetype="solid"))+ geom_tiplab(nudge_x = 0.0005)+ geom_point() + xlim_tree(0.05)+ geom_nodelab(aes(label=label), nudge_x = 0.0009)+ theme(legend.position = "none")
+```
+13. If we have metadata we wish to show beside our tree, such as presence/absence data, we can add that as well.
+14. First, load in the mock data associated with the tree. Note that the first column has **exactly** the same names as the tips of our tree; we will set this to be the row names of our data frame
+```c
+data <- read.delim("Mock_Staph_data.tsv", row.names=1) 
+```
+15. To add the data to our tree, we must first save the tree we want to output as an object. 
+* When adding data baside a tree it can be difficult to have the tip labels also there, due to space, so we will remove the `geom_tiplab(nudge_x = 0.0005)` to avoid issues
+* We will also remove the legend from the entire plot instead of just the tree, so we remove the `theme(legend.position = "none")` here
+```c
+p <- ggtree(tree, aes(color=group, linetype="solid"))+ geom_point() + xlim_tree(0.05)+ geom_nodelab(aes(label=label), nudge_x = 0.0009)
+```
+
+16. Add the data as a heatmap beside the tree
+```c
+gheatmap(p, data)+ theme(legend.position = "none")
+```
+
+17. Save the new plot
+```c
+ggsave("16S_Staph_example_colouredTree_withData.pdf")
+```
 
 
 
+### Additional guides
+* [Comprehensive ggtree tutorials](https://guangchuangyu.github.io/ggtree-book/short-introduction-to-r.html)
+	* Extended ggtree tutorials beyond the worksheet above, outlining both phylogenetic and phylodynamic tree annotations
+* [Data integration, manipulation and visualisation of phylogenetic trees](https://yulab-smu.top/treedata-book/index.html)	
+	* Free online book with extensive tutorials on interacting with phylogenetic trees through R using tidytree, treeio, ggtree and ggtreeExtra
 
-
-3.	Read in the UnpairedDataset1.tsv file. The read.delim will automatically assign row 1 as a header so no extra flags need to be passed to it
-```r
-unpaired <- read.delim(“UnpairedDataset1.tsv")
-```
-4.	Look at the unpaired data frame and not how some of the rows have NA for some columns. This is important when running statistics.
-```r
-View(unpaired)
-```
-5.	Display the summary statistics for each group
-```r
-summary(unpaired)
-```
-6.	One important descriptive statistics that summary() does not show is the standard deviation. Calculate this for each column using the apply function and tell the method that there are some entries with NA using the na.rm flag
-```r
-apply(unpaired,2, sd, na.rm=TRUE) 
-```
-7.	Read in the Paired.Dataset1.tsv file. This file has sample names in column 1 so you must pass that flag to read.delim
-```r
-paired <- read.delim("PairedDataset1.tsv", row.names=1)
-```
-8.	Calculate summary statistics and standard deviation as above. Note that we have no NA in the paired data so can remove the na.rm flag if you want (but also ok to leave in)
-```r
-summary(paired)
-apply(paired,2, sd, na.rm=TRUE)
-```
-
-## Method 2: using vtable
-1.	The vtable package can create nicer tables and store them as data frames for further use
-2.	Open RStudio
-3.	Install the vtable package either through searching for ‘vtable’ in the packages tab on the right or using the command
-```r
-install.packages("vtable")
-```
-4.	Load the vtable library
-```r
-library(vtable)
-```
-5.	Read in the UnpairedDataset1.tsv file. The read.delim will automatically assign row 1 as a header so no extra flags need to be passed to it
-6.	Look at the unpaired data frame and not how some of the rows have NA for some columns. This is important when running statistics.
-```r
-View(unpaired)
-```
-9.	Store and then display the summary statistics for each group. We use the out=’return’ to tell the sumtable command we wish to store the output as a dataframe (default is HTML code). Note that unlike method1, vtable can recognise and skip NA entries
-```r
-unpairedsummary<-sumtable(unpaired,out='return')
-View(unpairedsummary)
-```
-10.	Read in the Paired.Dataset1.tsv file. This file has sample names in column 1 so you must pass that flag to read.delim
-```r
-paired <- read.delim("PairedDataset1.tsv", row.names=1)
-```
-11.	Calculate summary statistics and standard deviation as above. 
-```r
-pairedsummary<-sumtable(paired,out='return')
-View(pairedsummary)
-```
-
-
-### Further options for vtable method
-*	[https://cran.r-project.org/web/packages/vtable/vignettes/sumtable.html](https://cran.r-project.org/web/packages/vtable/vignettes/sumtable.html )
