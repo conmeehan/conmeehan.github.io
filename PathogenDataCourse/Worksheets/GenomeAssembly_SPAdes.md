@@ -42,7 +42,7 @@ bzcat DRR187559_2.fastqsanger.bz2 | gzip -c > DRR187559_2.fastq.gz
 * Note: Most sequencers produce .gz files so this isnt necessary if your file is already in that format.
 
 4. Install SPAdes using conda
-  * It is recommended to always install packages in their own environments so here will we create an enironment and install Flye in one step. 
+  * It is recommended to always install packages in their own environments so here will we create an enironment and install SPAdes in one step. 
   * Spades on a mac currently installes a version that creates an error. We can overcome this by specifying the type of python to use, in this case version 2.7.2.
     * If using on a linux machine, you dont need the `python=2.7` section as the standard install is fine.
 ```c

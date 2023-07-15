@@ -36,7 +36,7 @@ wget https://conmeehan.github.io/PathogenDataCourse/Datasets/16S_Staph_example_u
 
 
 2. Install MAFFT using conda
-  * It is recommended to always install packages in their own environments so here will we create an enironment and install BUSCO in one step. 
+  * It is recommended to always install packages in their own environments so here will we create an enironment and install MAFFT in one step. 
 ```c
 mamba create -n mafft -c bioconda mafft -y
 mamba activate mafft

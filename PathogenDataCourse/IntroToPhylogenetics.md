@@ -186,7 +186,7 @@ SNP data because it does not contain invariant (constant) sites and so the branc
   * Uses a graphical interface for building phylogenetic trees
 
 ### Visualising phylogenetic trees
-* [Visualising phylogenies using ggtree in R]
+* [Visualising phylogenies using ggtree in R](https://conmeehan.github.io/PathogenDataCourse/Worksheets/VisualisePhylogenetics_ggtree)
 * [Visualising phylogenies using the iTOL web interface](https://itol.embl.de/video_tutorial.cgi)
   * A set of video tutorials by the makers of iTOL
 

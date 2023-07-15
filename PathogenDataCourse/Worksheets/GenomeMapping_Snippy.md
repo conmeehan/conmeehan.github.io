@@ -43,7 +43,7 @@ bzcat DRR187559_2.fastqsanger.bz2 | gzip -c > DRR187559_2.fastq.gz
 * Note: Most sequencers produce .gz files so this isnt necessary if your file is already in that format.
 
 4. Install snippy using conda
-  * It is recommended to always install packages in their own environments so here will we create an enironment and install Flye in one step. 
+  * It is recommended to always install packages in their own environments so here will we create an enironment and install snippy in one step. 
   * Snippy uses a specific version of a tool called snpeff in it so we need to specify this version on installation to avoid errors
   * The final command will check that all things install correctly. It will print `Dependancies look good` if so.
 ```c

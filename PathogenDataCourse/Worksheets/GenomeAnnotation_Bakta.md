@@ -25,7 +25,7 @@ key: page-GenomeQC
 1. Ensure you are in the same directory as the output folder from your assembly (e.g. xxx as created in the SPAdes worksheet)
 
 2. Install Bakta using conda
-  * It is recommended to always install packages in their own environments so here will we create an enironment and install BUSCO in one step. 
+  * It is recommended to always install packages in their own environments so here will we create an enironment and install Bakta in one step. 
 ```c
 mamba create -n bakta -c bioconda bakta -y
 mamba activate bakta
