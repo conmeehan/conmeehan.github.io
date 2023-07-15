@@ -36,13 +36,84 @@ Once finished the tutorial, take the post-learing quiz.<br />
 
 ## Presentation
 
-* [Download slides here]()
+* [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/Phylodynamics.pptx)
 
 ## Tasks from slides with sample answers
+What can Bayesian analyses estimate that other methods such as ML cannot?
 
 <details><summary>Click here for answer</summary>
 
+Can give estimate of tree phylogeny and other parameters
+* Divergence date/location
+* Rate of speciation/extinction
 
+
+</details><br />
+
+What does the posterior probability represent?
+
+<details><summary>Click here for answer</summary>
+
+* Probability that the hypothesised tree is true, given the observed data and priors
+
+</details><br />
+
+Give an example of a prior you may input for molecular epidemiology analyses.
+
+<details><summary>Click here for answer</summary>
+
+* Divergence date/location
+* Rate of speciation/extinction
+* Many examples of metadata acceptable
+
+
+</details><br />
+
+What are the two main types of molecular clock?
+
+<details><summary>Click here for answer</summary>
+
+* Strict
+* Relaxed
+
+</details><br />
+
+What is a coalescent event?
+
+<details><summary>Click here for answer</summary>
+
+When two alleles/individuals come together to form an ancestor (i.e. two branches meet)
+
+</details><br />
+
+
+What molecular evidence should be gathered to prove zoonitic transmission?
+
+<details><summary>Click here for answer</summary>
+
+* Closely related sequences from likely sources
+
+</details><br />
+
+List 3 assumptions that need to be fulfilled to undertake population dynamic analysis
+
+<details><summary>Click here for answer</summary>
+
+* Suitable for coalescent analysis because:
+* Geographically diverse
+* Random sampling
+* No obvious population subdivisions
+* Ample phylogenetic information
+* Independent estimate of model of evolution
+
+
+</details><br />
+
+What kind of phylogenetic tree building approach is needed to incorporate location data into the process?
+
+<details><summary>Click here for answer</summary>
+
+Phylogeographic (e.g.BSSVS model)
 
 </details><br />
 
