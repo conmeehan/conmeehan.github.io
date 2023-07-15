@@ -21,9 +21,9 @@ It is suggested that you do these in order, or at least the concepts in computer
 ### [Data handling and figure generation](https://conmeehan.github.io/PathogenDataCourse/DataHandlingAndPresentation)
 ### [Biological Databases and BLAST](https://conmeehan.github.io/PathogenDataCourse/BiologicalDBsAndBLAST)
 ### [Genome assembly and annotation (viral and bacterial)](https://conmeehan.github.io/PathogenDataCourse/GenomeAssemblyAnnotation)
-### [Introduction to phylogenetics]
-### [Introduction to Bayesian phylodynamics]
-### [Predicting AMR, virulence genes and secondary metabolites]
+### [Introduction to phylogenetics](https://conmeehan.github.io/PathogenDataCourse/IntroToPhylogenetics)
+### [Introduction to Bayesian phylodynamics](https://conmeehan.github.io/PathogenDataCourse/IntroToPhylodynamics)
+### [Predicting pathogenic features (AMR, virulence factors, plasmids)](https://conmeehan.github.io/PathogenDataCourse/PredictingPathogenicFeatures)
 ### [Plasmodium genomics and drug resistance]
 ### [Molecular epidemiology and strain typing]
 ### [Microbiomes and metagenomics]
