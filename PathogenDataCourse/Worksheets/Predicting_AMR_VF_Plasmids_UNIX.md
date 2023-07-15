@@ -56,3 +56,62 @@ abritamr run -c DRR187559_scaffolds.fasta -px DRR187559_ABRitamr
 ```c
 mamba deactivate
 ```
+
+
+## AMR and virulence factor prediction (ABRitamr steps)
+1. If you did not follow the abritAMR steps above, perform steps 1 and 2 now.
+* If you did, navigate into the `pathogenesis_demo` folder
+
+2. Install PlasmidFinder using conda
+  * It is recommended to always install packages in their own environments so here will we create an enironment and install PlasmidFinder in one step. 
+```c
+mamba create -n plasmidfinder -c bioconda plasmidfinder -y
+mamba activate plasmidfinder
+```
+
+3. The database for PlasmidFinder must be downloaded. This is done with a built in programe that should be available in your PlasmidFinder conda environment
+* We will redirect some of the produced information to a log file (>plasmidfinder-db.log) for future use
+```c
+download-db.sh >plasmidfinder-db.log
+```
+4. Look in the `plasmidfinder-db.log` file for the location of the downloaded database
+```c
+cat plasmidfinder-db.log
+```
+
+* This will be listed after 'Downloading PlasmidFinder 2.1 database to ' and before '...'
+* e.g. on my computer it is /Users/cmeehan/opt/miniconda3/envs/plasmidfinder/share/plasmidfinder-2.1.6/database
+
+5. Make an output directory for PlasmidFinder
+```c
+mkdir DRR187559_plasmidfinder
+```
+
+5. Run PlasmidFinder on the assembled genome
+
+* `-x` tells PlasmidFinder to give us all (extended) output files
+* `-i` is the input genome assembly file
+* `-o` is the output directory created i step 5
+* `-p` is the database file we downloaded in step 3, using the absolute path as noted down in step 4
+
+```c
+plasmidfinder.py -x -i DRR187559_scaffolds.fasta -o DRR187559_plasmidfinder -p /Users/cmeehan/opt/miniconda3/envs/plasmidfinder/share/plasmidfinder-2.1.6/database
+```
+
+6. Get the information on contigs/scaffolds that may contain plasmids
+
+* The `results_tab.tsv` file lists each plasmid the had a hit to a contig along with the length of the hit
+* Be wary when interpreting these results and look carefully at the length of the plasmids (can view on NCBI website using the accessions listed at the end of each line)
+
+	* Often short hits (<1kb) can occur erroneously to plasmids on contigs with similar genes; this does not mean there is a plasmid there (or that a plasmid is not there if you get such short hits)
+	* Bad assemblies (i.e. large or messy assembly graphs in [Bandage](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeQC_BUSCO_Bandage)) can produce such results 
+
+```c
+cat DRR187559_plasmidfinder/results_tab.tsv
+```
+
+7. Deactivate your mamba environment when finished
+```c
+mamba deactivate
+```
+

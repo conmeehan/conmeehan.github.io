@@ -38,19 +38,6 @@ Once finished the tutorial, take the post-learing quiz.<br />
 ## Presentation
 * [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/PredictingPathogenicFeatures.pptx)
 
-## Tasks from slides with sample answers
-What is the sequencing depth of the two positions highlighted in blue? (see slides for image)
-<details> <summary>Click here for answer</summary>
-
-G: 7 <br />
-A: 8
-
-</details><br />
-
-
-
-
-
 ## Worksheets
 ### UNIX shell approaches
 AbritAMR
