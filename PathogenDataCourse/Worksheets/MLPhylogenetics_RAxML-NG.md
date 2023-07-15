@@ -13,6 +13,7 @@ key: page-MLPhyloRAxML-NG
 
 ## Suggested prerequisites
 * It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming) and [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) tutorials before starting.
+* A knowledge of the [model of evolution parameters](https://conmeehan.github.io/PathogenDataCourse/SlideSets/ModelsOfEvolution.pptx) (if you wish to change the defaults)
 * A knowledge of RAxML-NG is useful. You can read the RAxML-NG paper [here](https://academic.oup.com/bioinformatics/article/35/21/4453/5487384) and the manual and other documents can be found [here](https://github.com/amkozlov/raxml-ng/). 
 * Installing RAxML-NG through conda is easiest so its suggested you have followed the [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse) tutorial.
 
