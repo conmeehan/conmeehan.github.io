@@ -1,7 +1,7 @@
 ---
 layout: article
 titles:
-  en      : &EN       Introuction to phylogenetics
+  en      : &EN       Introduction to phylogenetics
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
