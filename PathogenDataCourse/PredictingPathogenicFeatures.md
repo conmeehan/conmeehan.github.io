@@ -40,7 +40,7 @@ Once finished the tutorial, take the post-learing quiz.<br />
 
 ## Worksheets
 ### [Predicting pathogenic features using AbritAMR and PlasmidFinder via UNIX](https://conmeehan.github.io/PathogenDataCourse/Worksheets/Predicting_AMR_VF_Plasmids_UNIX)
-### [Predicting pathogenic features using AbritAMR and PlasmidFinder via Galaxy](https://conmeehan.github.io/PathogenDataCourse/Worksheets/Predicting_AMR_VF_Plasmids_Galaxy)
+### [Predicting pathogenic features using ABRicate and PlasmidFinder via Galaxy](https://conmeehan.github.io/PathogenDataCourse/Worksheets/Predicting_AMR_VF_Plasmids_Galaxy)
 
 
 ### <a href="https://ntusurvey.onlinesurveys.ac.uk/predictng-pathogenic-features-post-tutorial-survey" target="_blank">Genome Assembly Post-tutorial Survey</a>

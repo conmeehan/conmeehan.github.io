@@ -12,11 +12,13 @@ key: page-PredictingPathogenicFeatures_Galaxy
 *	In this worksheet you will learn how predict a range of pathogenic features such as antimicrobial resistance and virulence factors (ABRicate), and plasmid presence (PlasmidFinder)
 * This is two separate analyses but use similar inputs
 
+## Required prerequisite(s)
+*	You must create an account on [https://usegalaxy.eu/](https://usegalaxy.eu/) and log in to that account
+*	You have uploaded the dataset files listed below to Galaxy by following one of the tutorials on the [Loading data into Galaxy](https://galaxyproject.org/support/loading-data/) page
 
-## Suggested prerequisites
-* It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming) and [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) tutorials before starting.
+## Suggested prerequisite(s)
+*	An understanding of how to use Galaxy. Some good guidance: [https://www.youtube.com/watch?v=uVNdyrVDYYU](https://www.youtube.com/watch?v=uVNdyrVDYYU)
 * A knowledge of the two primary tools is useful. You can access their manuals here: [ABRicate](https://github.com/MDU-PHL/abritamr), [PlasmidFinder](https://bitbucket.org/genomicepidemiology/plasmidfinder/src/master/)
-* Installing abritAMR and PlasmidFinder through conda is easiest so its suggested you have followed the [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse) tutorial.
 
 ## Dataset
 *	This demonstration uses the output of [Assembling a genome from short reads (e.g. Illumina) using SPAdes](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAssembly_SPAdes) worksheet but this will work on any assembly, such as that created in the [Assembling a genome from long reads (e.g. ONT) using Flye](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAssembly_Flye) worksheet. Thus, it is suggested you run at least one of these assembly methods first. 

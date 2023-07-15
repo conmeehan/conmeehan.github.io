@@ -58,7 +58,7 @@ mamba deactivate
 ```
 
 
-## AMR and virulence factor prediction (ABRitamr steps)
+## Plasmid detection (PlasmidFinder steps)
 1. If you did not follow the abritAMR steps above, perform steps 1 and 2 now.
 * If you did, navigate into the `pathogenesis_demo` folder
 
