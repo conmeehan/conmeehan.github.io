@@ -14,9 +14,8 @@ key: page-AlignMAFFT
 ## Suggested prerequisites
 * It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming) and [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) tutorials before starting.
 * A knowledge of MAFFT is useful. You can read the MAFFT paper [here](https://academic.oup.com/nar/article/30/14/3059/2904316) and the manual and other documents can be found [here](https://mafft.cbrc.jp/alignment/software/). 
+* An understanding of [multiple sequence alignment uses](https://www.slideshare.net/SubhranilBhattacharj1/multiple-sequence-alignment-93458518)
 * Installing MAFFT through conda is easiest so its suggested you have followed the [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse) tutorial.
-
-
 
 ## Dataset
 *	This demonstration uses [16S_Staph_example_unaligned.fasta](https://conmeehan.github.io/PathogenDataCourse/Datasets/16S_Staph_example_unaligned.fasta), a subset of the [conlan_et_al.refpkg.Staphylococcus](https://greengenes.secondgenome.com/?prefix=downloads/special_collections/) 16S rRNA gene dataset from Greengenes
