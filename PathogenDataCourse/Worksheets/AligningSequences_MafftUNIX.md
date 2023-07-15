@@ -53,4 +53,4 @@ mafft --auto 16S_Staph_example_unaligned.fasta >16S_Staph_example_aligned.fasta
 ```
 
 ### Use of multiple sequence alignments (MSA)
-MSA are the primary input to phylogenetic tree inference and other programs for comparative genomics. You can use this output to building a tree using [RAxML-NG](https://conmeehan.github.io/PathogenDataCourse/Worksheets/MLPhylogeneticss_RAxML-NG)
+MSA are the primary input to phylogenetic tree inference and other programs for comparative genomics. You can use this output to building a tree using [RAxML-NG](https://conmeehan.github.io/PathogenDataCourse/Worksheets/MLPhylogenetics_RAxML-NG)
