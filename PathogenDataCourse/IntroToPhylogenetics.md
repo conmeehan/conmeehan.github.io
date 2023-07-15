@@ -39,13 +39,139 @@ During the presentation there are points to stop and do exercises, which are lin
 Once finished the tutorial, take the post-learing quiz.<br />
 
 ## Presentation
-* [Download slides here]()
+* [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/IntroToPhylogenetics.pptx)
+* (Optional) [Models of evolution](https://conmeehan.github.io/PathogenDataCourse/SlideSets/ModelsOfEvolution.pptx)
+	* An optional set of slides outlining the use of evolutionary models for both correction of distances matrices and implementation of parametric phylogenetics
 
 ## Tasks from slides with sample answers
+### Introduction to phylogenetics
+Do sampled taxa sit at the end of internal or external branches of a phylogenetic tree?
 
 <details><summary>Click here for answer</summary>
 
+External
 
+</details><br />
+
+What does monophyletic mean?
+
+<details><summary>Click here for answer</summary>
+
+A group of taxa that contains an ancestor and all its descendants
+
+</details><br />
+
+How many offspring does a bifurcating node have?
+
+<details><summary>Click here for answer</summary>
+
+2
+
+</details><br />
+
+How do you write this tree in newick format (see Introduction to phylogenetic slide 13 for image)?
+I.e. using the ( X, Y ) format
+
+<details><summary>Click here for answer</summary>
+
+(((D,C),B),A)
+
+</details><br />
+
+Is parsimony a non-parametric or semi-parametric method?
+
+<details><summary>Click here for answer</summary>
+
+Non-parametric
+
+</details><br />
+
+What is the main drawback of parsimony methods?
+
+<details><summary>Click here for answer</summary>
+
+Cannot account for convergent evolution
+
+</details><br />
+
+Is UPGMA a non-parametric or semi-parametric method?
+
+<details><summary>Click here for answer</summary>
+
+Semi-parametric
+
+</details><br />
+
+Do you pick the samples with the smallest or largest distance at each step of the distance approach?
+
+<details><summary>Click here for answer</summary>
+
+Smallest
+
+</details><br />
+
+What are the main ways to avoid getting stuck in a local maximum in tree searching?
+
+<details><summary>Click here for answer</summary>
+
+* Multiple starting points
+* Multiple searches at once; can switch between searching chains
+* Allow large and small rearrangements
+* Allow some steps backwards to try improve score
+
+
+</details><br />
+
+Does maximum likelihood go sequence by sequence or column by column?
+
+<details><summary>Click here for answer</summary>
+
+Column by column
+
+</details><br />
+
+In ML, at each step do you change the alignment or the tree?
+
+<details><summary>Click here for answer</summary>
+
+Tree
+
+</details><br />
+
+In bootstrapping is sampling done with or without replacement?
+
+<details><summary>Click here for answer</summary>
+
+With replacement
+
+</details><br />
+
+### Models of evolution
+If a uncorrected distance between two sequences is 0.3, what is the djc? 
+
+<details><summary>Click here for answer</summary>
+
+* djc=-3/4ln(1-4/3D)
+* djc=-3/4ln(1-(4/3) * (0.3))
+* djc=0.383
+
+</details><br />
+
+How do we convert a rate (Q) matrix into a transition (P) matrix?
+Why?
+
+<details><summary>Click here for answer</summary>
+
+Get the matrix exponential of the Q matrix. We can then know the probability of one nucleotide changing to another.
+
+</details><br />
+
+What kind of data requires ascertainment bias correction?
+Why?
+
+<details><summary>Click here for answer</summary>
+
+SNP data because it does not contain invariant (constant) sites and so the branch lengths will likely be wrong.
 
 </details><br />
 
