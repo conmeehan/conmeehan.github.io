@@ -1,7 +1,7 @@
 ---
 layout: article
 titles:
-  en      : &EN       Predicting pathogenic features (AMR, Virulence factors, Plasmids) (via Galaxy)
+  en      : &EN       Predicting pathogenic features (AMR, Virulence factors, Plasmids) (via Galaxy and the Web)
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
@@ -25,95 +25,39 @@ key: page-PredictingPathogenicFeatures_Galaxy
 	* You can download the example scaffolds output file of the SPAdes worksheet here: [DRR187559_scaffolds.fasta](https://conmeehan.github.io/PathogenDataCourse/Datasets/DRR187559_scaffolds.fasta)
 
 
-## AMR and virulence factor prediction (ABRitamr steps)
-1. Create a directory for your analyses and step into it
-```c
-mkdir pathogenesis_demo
-cd pathogenesis_demo
-```
-2. Copy your assembled genome into this folder or download the [sample data](https://conmeehan.github.io/PathogenDataCourse/Datasets/DRR187559_scaffolds.fasta)
-* You can save this directly to your terminal current working directory by using the wget command ([wget](https://anaconda.org/anaconda/wget) can be installed via conda).
+## AMR and virulence factor prediction (ABRicate steps)
 
-```c
-wget https://conmeehan.github.io/PathogenDataCourse/Datasets/DRR187559_scaffolds.fasta
-```
-3. Install ABRitamr using conda
-  * It is recommended to always install packages in their own environments so here will we create an enironment and install ABRitamr in one step. 
-```c
-mamba create -n abritamr -c bioconda abritamr -y
-mamba activate abritamr
-```
+* NOTE: ABRicate only looks for presence/absence of AMR-related **genes** and does not detect point mutations. To do this you should use the [AbritAMR via UNIX](https://conmeehan.github.io/PathogenDataCourse/Worksheets/Predicting_AMR_VF_Plasmids_UNIX) worksheet
 
-4. Run ABRitamr on the scaffolds file
-* The `run` command tells ABRitamr we wish to run the analysis (as opposed to the other pipeline which is to create a specific report)
-* `-c` is the genome assembly file 
-* `-px` is the name of the folder to put all the output files in
-```c
-abritamr run -c DRR187559_scaffolds.fasta -px DRR187559_ABRitamr
-```
-
-5. Inside the resulting output folder you will find multiple files. Their contents are explained [here](https://github.com/MDU-PHL/abritamr#abritamr-run)
-
-6. Deactivate your mamba environment when finished
-```c
-mamba deactivate
-```
+1.	In your web browser, navigate to [https://usegalaxy.eu/](https://usegalaxy.eu/)
+2.	Log in to your account using the ‘Login or Register’ button in the top navigation bar
+3.	Your datafile ‘DRR187559_scaffolds.fasta’ should already be in the history on the righthand side. If not, follow one of the tutorials on the [Loading data into Galaxy](https://galaxyproject.org/support/loading-data/) page
+4.	In the lefthand side menu, in the search box under ‘Tools’ type abricate
+5.	Click on ‘ABRicate Mass screening of contigs for antimicrobial and virulence genes’
+6.	The ABRicate tool will now appear in the centre of the screen. This tool looks for genes in a genome file related to antimicrobial resistance or virulence.
+7.	Under ‘Input file (FASTA, Genbank or EMBL file’ make sure your genome is shown in the box (DRR187559_scaffolds.fasta in our case)
+8.	The default parameters for ABRicate are fine so you do not need to change anything if you so wish
+9.	ABRicate can take a while to run so it is suggested you click ‘yes’ under the ‘Email notification
+10.	Once done, click ‘Run Tool’
+11.	You will see the output files appear in your history on the right.
+*	Once these turn green and the clock symbol has disappeared the analysis is finished
+12.	To download any of these files click on the file in your history (righthand menu) and then click the small save icon that appears at the bottom left of that box.
+*	Most files can then be viewed in a text viewer such as Notepad++ or BBEdit
+13.	A description of what is contained in each output file can be found [here](https://github.com/tseemann/abricate )
 
 
-## AMR and virulence factor prediction (ABRitamr steps)
-1. If you did not follow the abritAMR steps above, perform steps 1 and 2 now.
-* If you did, navigate into the `pathogenesis_demo` folder
+## Plasmid detection (PlasmidFinder steps)
+1. PlasmidFinder can be accessed via a webserver at [https://cge.food.dtu.dk/services/PlasmidFinder-2.0/](https://cge.food.dtu.dk/services/PlasmidFinder-2.0/)
+2. First you must select the type of genome you have under 'Select database'
+* Since we have an MRSA sample we will select 'Gram Positive'
+3. The default identity and coverage percentage settings can be used so there is no need to change these
+4. Under 'Select type of your reads' ensure that 'Assembled or Draft Genome/Contigs' is selected
+5. Click the 'Isolate File' button and select the DRR187559_scaffolds.fasta file
+6. Click 'Upload'
 
-2. Install PlasmidFinder using conda
-  * It is recommended to always install packages in their own environments so here will we create an enironment and install PlasmidFinder in one step. 
-```c
-mamba create -n plasmidfinder -c bioconda plasmidfinder -y
-mamba activate plasmidfinder
-```
+* Wait a few minutes for the analysis to finish. The screen will automatically move to the results when finished.
 
-3. The database for PlasmidFinder must be downloaded. This is done with a built in programe that should be available in your PlasmidFinder conda environment
-* We will redirect some of the produced information to a log file (>plasmidfinder-db.log) for future use
-```c
-download-db.sh >plasmidfinder-db.log
-```
-4. Look in the `plasmidfinder-db.log` file for the location of the downloaded database
-```c
-cat plasmidfinder-db.log
-```
-
-* This will be listed after 'Downloading PlasmidFinder 2.1 database to ' and before '...'
-* e.g. on my computer it is /Users/cmeehan/opt/miniconda3/envs/plasmidfinder/share/plasmidfinder-2.1.6/database
-
-5. Make an output directory for PlasmidFinder
-```c
-mkdir DRR187559_plasmidfinder
-```
-
-5. Run PlasmidFinder on the assembled genome
-
-* `-x` tells PlasmidFinder to give us all (extended) output files
-* `-i` is the input genome assembly file
-* `-o` is the output directory created i step 5
-* `-p` is the database file we downloaded in step 3, using the absolute path as noted down in step 4
-
-```c
-plasmidfinder.py -x -i DRR187559_scaffolds.fasta -o DRR187559_plasmidfinder -p /Users/cmeehan/opt/miniconda3/envs/plasmidfinder/share/plasmidfinder-2.1.6/database
-```
-
-6. Get the information on contigs/scaffolds that may contain plasmids
-
-* The `results_tab.tsv` file lists each plasmid the had a hit to a contig along with the length of the hit
+7. Get the information on contigs/scaffolds that may contain plasmids
 * Be wary when interpreting these results and look carefully at the length of the plasmids (can view on NCBI website using the accessions listed at the end of each line)
-
 	* Often short hits (<1kb) can occur erroneously to plasmids on contigs with similar genes; this does not mean there is a plasmid there (or that a plasmid is not there if you get such short hits)
 	* Bad assemblies (i.e. large or messy assembly graphs in [Bandage](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeQC_BUSCO_Bandage)) can produce such results 
-
-```c
-cat DRR187559_plasmidfinder/results_tab.tsv
-```
-
-7. Deactivate your mamba environment when finished
-```c
-mamba deactivate
-```
-
