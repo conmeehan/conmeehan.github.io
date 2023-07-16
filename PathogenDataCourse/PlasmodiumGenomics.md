@@ -6,7 +6,7 @@ titles:
   en-US   : *EN
   en-CA   : *EN
   en-AU   : *EN
-key: page-Concepts
+key: page-PlasmodiumGenomics
 ---
 
 * This tutorial outlines the basics concepts in *Plasmodium* genomics, specifically in relation to detecting drug resistance

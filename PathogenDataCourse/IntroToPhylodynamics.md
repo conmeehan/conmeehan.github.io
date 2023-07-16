@@ -6,7 +6,7 @@ titles:
   en-US   : *EN
   en-CA   : *EN
   en-AU   : *EN
-key: page-Concepts
+key: page-Phylodynamics
 ---
 
 * This tutorial outlines the basics concepts in Bayesian phylogenetics, and how it applies to molecular epidemiology (i.e. phylodynamics)<br />
