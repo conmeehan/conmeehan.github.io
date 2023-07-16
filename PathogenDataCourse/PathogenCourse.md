@@ -24,7 +24,7 @@ It is suggested that you do these in order, or at least the concepts in computer
 ### [Introduction to phylogenetics](https://conmeehan.github.io/PathogenDataCourse/IntroToPhylogenetics)
 ### [Introduction to Bayesian phylodynamics](https://conmeehan.github.io/PathogenDataCourse/IntroToPhylodynamics)
 ### [Predicting pathogenic features (AMR, virulence factors, plasmids)](https://conmeehan.github.io/PathogenDataCourse/PredictingPathogenicFeatures)
-### [Plasmodium genomics and drug resistance]
+### [Plasmodium genomics and drug resistance](https://conmeehan.github.io/PathogenDataCourse/PlasmodiumGenomics)
 ### [Molecular epidemiology and strain typing]
 ### [Microbiomes and metagenomics]
 <br />
