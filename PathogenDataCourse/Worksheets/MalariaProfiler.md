@@ -85,9 +85,11 @@ malaria-profiler profile -1 SRR6822195_1.fastq.gz -2 SRR6822195_2.fastq.gz -p SR
 ```c
 cat SRR6822195.results.txt
 ```
-* You will see that the estimated geographic origin is outlined near the top of the file ()
-* The 
-
+* Under "Species report" it will list the predicted species (P. falciparum in this case)
+* Under "Geoclassification report" it will list the predicted geographic origin (Southeast Asia in this case)
+* The "Resistance report" section lists all drugs that resistance against is searched for and will display at "R" if resistance is detected, along with the gene and amino acid change and proportion of reads that this SNP was present in in brackets
+* A more detailed version of this resistance report is then given under "Drug resistance variants report"
+* Any other variants detected in drug resistance related genes, but not known to be associated with drug resistance at present are listed under "Other variants report"
 
 5. Analyse the two targeted amplicon sequenced samples
 * Care must be taken when using amplicon sequenced data since if the amplicon does not cover a specific drug target, resistance will not be detected if present 
@@ -102,13 +104,7 @@ malaria-profiler profile -1 SRR7102507_1.fastq.gz -2 SRR7102507_2.fastq.gz -p SR
 
 6. Analyse their outputs as in step 4. Note the lack of geographic region (due to such markers not being present).
 
-7. We can combine the information from multiple runs into a single overview table like so:
-
-```c
-malaria-profiler collate 
-```
-
-5. Deactivate your mamba environment when finished
+7. Deactivate your mamba environment when finished
 ```c
 mamba deactivate
 ```
