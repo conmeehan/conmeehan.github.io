@@ -32,7 +32,7 @@ Please do the pre-learning quiz, then watch the presentation. <br />
 During the presentation there are points to stop and do exercises, which are linked below. The answers to the questions in the exercises are linked within each one.<br />
 Once finished the tutorial, take the post-learing quiz.<br />
 
-### <a href="https://ntusurvey.onlinesurveys.ac.uk/predictng-pathogenic-features-pre-tutorial-survey" target="_blank">Genome Assembly Pre-tutorial Survey</a>
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/predicting-pathogenic-features-pre-tutorial-survey" target="_blank">Genome Assembly Pre-tutorial Survey</a>
 
 
 ## Presentation
@@ -43,7 +43,7 @@ Once finished the tutorial, take the post-learing quiz.<br />
 ### [Predicting pathogenic features using ABRicate and PlasmidFinder via Galaxy and the Web](https://conmeehan.github.io/PathogenDataCourse/Worksheets/Predicting_AMR_VF_Plasmids_Galaxy)
 
 
-### <a href="https://ntusurvey.onlinesurveys.ac.uk/predictng-pathogenic-features-post-tutorial-survey" target="_blank">Genome Assembly Post-tutorial Survey</a>
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/predicting-pathogenic-features-post-tutorial-survey" target="_blank">Genome Assembly Post-tutorial Survey</a>
 
 
 ### Other tools and videos
