@@ -1,7 +1,7 @@
 ---
 layout: article
 titles:
-  en      : &EN       Introduction to *Plasmodium* Genomics
+  en      : &EN       Introduction to Plasmodium Genomics
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
@@ -50,7 +50,7 @@ Once finished the tutorial, take the post-learing quiz.<br />
 
 
 ## Worksheets
-* The malaria-profile tool outlined in this worksheet is still under active development and is in early stages of use. Please do not use this tool yet for reliable analyses
+* The malaria-profiler tool outlined in this worksheet is still under active development and is in early stages of use. Please do not use this tool yet for reliable analyses
 * This tool works best when it has an extensive library of drug resistance and population structure markers. If you know of one not in the [associated database](https://github.com/jodyphelan/malaria-db) please contact the developer
 
 ### [Detecting *Plasmodium* drug resistance from genomic data using malaria-profiler](https://conmeehan.github.io/PathogenDataCourse/Worksheets/MalariaProfiler)
