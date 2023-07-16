@@ -62,3 +62,4 @@ Once finished the tutorial, take the post-learing quiz.<br />
 ## Other tutorials/tools
 * The [Malaria Resistance Surveillance Pipeline](https://github.com/CDCgov/MaRS)
 	* A pipeline from the American CDC for detecting drug resistance from genomic information
+* [WHO guide on resistance markers](https://www.who.int/teams/global-malaria-programme/case-management/drug-efficacy-and-resistance/antimalarial-drug-efficacy-database)	
