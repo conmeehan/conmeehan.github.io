@@ -9,26 +9,24 @@ titles:
 key: page-MLPhyloRAxML-NG
 ---
 
-*	In this worksheet you will learn how create a Maximum Likelihood phylogenetic tree using RAxML-NG
+*	In this worksheet you will learn how do basic processing of 16S amplicon data in QIIME2 as well as calculate diversity measures.
 
 ## Suggested prerequisites
 * It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming) and [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) tutorials before starting.
-* A knowledge of the [model of evolution parameters](https://conmeehan.github.io/PathogenDataCourse/SlideSets/ModelsOfEvolution.pptx) (if you wish to change the defaults)
-* A knowledge of RAxML-NG is useful. You can read the RAxML-NG paper [here](https://academic.oup.com/bioinformatics/article/35/21/4453/5487384) and the manual and other documents can be found [here](https://github.com/amkozlov/raxml-ng/). 
-* Installing RAxML-NG through conda is easiest so its suggested you have followed the [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse) tutorial.
+* A knowledge of QIIME-2 is useful. You can read the QIIME-2 paper [here](https://www.nature.com/articles/s41587-019-0209-9) and the manual and other documents can be found [here](https://docs.qiime2.org/2023.5/). 
+* Installing QIIME-2 through conda is easiest so its suggested you have followed the [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse) tutorial.
 
 
 
 ## Dataset
-*	This demonstration uses [16S_Staph_example_aligned.fasta](https://conmeehan.github.io/PathogenDataCourse/Datasets/16S_Staph_example_aligned.fasta) as produced by the [Aligning sequences using MAFFT (via UNIX/conda)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/AligningSequences_MafftUNIX) worksheet.
-	* RAxML-NG requires sequences to be aligned so ensure you have performed [multiple sequence alignment](https://conmeehan.github.io/PathogenDataCourse/Worksheets/AligningSequences_Mafft_UNIX) or, if doing a whole genome alignment, you have created a SNP alignment, e.g. using [Snippy-core](https://github.com/tseemann/snippy#core-snp-phylogeny)
+*	This demonstration uses four 16S amplicon sequenced samples stored in [project PRJNA308319 on the ENA](https://www.ebi.ac.uk/ena/browser/view/PRJNA308319)
 
 ## Steps
 1. Create a directory to store the analysis and then change directory into that directory
 
 ```c
-mkdir raxmlng_demo
-cd raxmlng_demo
+mkdir qiime2_test
+cd qiime2_test
 ```
 
 2. Download the dataset from [16S_Staph_example_aligned.fasta](https://conmeehan.github.io/PathogenDataCourse/Datasets/16S_Staph_example_aligned.fasta)
