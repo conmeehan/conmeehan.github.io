@@ -69,7 +69,7 @@ for i in *_1.fastq.gz; do name=$(basename $i _1.fastq.gz);printf ${name}"\t"`pwd
 cd ..
 ```
 
-7. Install qiime-2 fusing conda following the specific instructions for your operating system as outlined [here](https://docs.qiime2.org/2023.5/install/native/#install-qiime-2-within-a-conda-environment)
+7. Install qiime-2 using conda following the specific instructions for your operating system as outlined [here](https://docs.qiime2.org/2023.5/install/native/#install-qiime-2-within-a-conda-environment)
 
 8. Activate the qiime-2 conda environment
 
