@@ -29,7 +29,7 @@ It is suggested that you do these in order, or at least the concepts in computer
 ### [Microbiomes and metagenomics]
 <br />
 
-## Additional (related) useful tutorials (by other people)
+## Additional (related) useful tutorials and resources (by other people)
 * [Galaxy tutorials](https://training.galaxyproject.org/)
    * Various tutorials from introduction to advanced analyses using the Galaxy portal.
    * Many of the Galaxy tutorials in this workshop comes from this set of tutorials.
@@ -37,6 +37,9 @@ It is suggested that you do these in order, or at least the concepts in computer
    * Extensive computer programing training for bioinformatics
 * [Bactopia workshop](https://github.com/lskatz/bactopia-workshop/tree/main/workshop) <br />
     * Guidance on running the complete bacterial genome assembly and analysis pipeline [Bactopia](https://bactopia.github.io/v2.2.0/)
+* [Proposed Standards for Public Health Bioinformatics Software (PHA4GE)](https://github.com/pha4ge/pipeline-resources/blob/main/docs/pipeline-standards.md)
+	* A comprehensive set of guidelines for creating software for public health use
+	
 ### Python tutorials
 * [W3 schools python tutorial](https://www.w3schools.com/python/default.asp)
 * [UC Davis bioinformatics core introduction to Python](https://ucdavis-bioinformatics-training.github.io/2022-Feb-Introduction-To-Python-For-Bioinformatics/python/python1)
