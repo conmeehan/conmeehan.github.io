@@ -39,14 +39,14 @@ wget https://conmeehan.github.io/PathogenDataCourse/Datasets/16S_Staph_example_a
 ```
 
 
-2. Install RAxML-NG using conda
+3. Install RAxML-NG using conda
   * It is recommended to always install packages in their own environments so here will we create an enironment and install RAxML-NG in one step. 
 ```c
 mamba create -n raxmlng -c bioconda raxml-ng -y
 mamba activate raxmlng
 ```
 
-3. Run RAxML-NG on the downloaded sequences
+4. Run RAxML-NG on the downloaded sequences
 
 * `--all` indicates that you want to both build the ML tree and also perform extensive bootstrap analyses. 
 * `--msa` is the name of the input aligned set of sequences file
@@ -58,7 +58,7 @@ mamba activate raxmlng
 raxml-ng --all --msa 16S_Staph_example_aligned.fasta --model GTR+G --prefix 16S_Staph_example --threads 7
 ```
 
-4. RAxML-NG outputs the following files:
+5. RAxML-NG outputs the following files:
 * `16S_Staph_example.raxml.bestModel`: The model of evolution used by RAxML-NG, which is estimated during the run
 * `16S_Staph_example.raxml.bestTree`: The maximum likelihood tree without the bootstrap values
 * `16S_Staph_example.raxml.bootstraps`: The individual trees produced at every bootstrap replicate
@@ -69,7 +69,7 @@ raxml-ng --all --msa 16S_Staph_example_aligned.fasta --model GTR+G --prefix 16S_
 * `16S_Staph_example.raxml.support`: The maximum likelihood tree with the bootstrap values
 	* **This is the tree you usually want to use for further analyses**
 
-5. Deactivate your mamba environment when finished
+6. Deactivate your mamba environment when finished
 ```c
 mamba deactivate
 ```
