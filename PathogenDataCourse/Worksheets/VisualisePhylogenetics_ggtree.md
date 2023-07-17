@@ -29,6 +29,7 @@ key: page-VizPhylo-ggtree
 1.	Open RStudio
 2. Install the `ggtree` and `ggplot2` packages (if you have not already)
 * `ggtree` is installed trhough Bioconductor, not the standard R libraries, so needs the installation of the bioconductor manager
+
 ```c
 if (!require("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
