@@ -191,7 +191,7 @@ SNP data because it does not contain invariant (constant) sites and so the branc
 
 ### Building phylogenetic trees
 * [Maximum likelihood phylogenetic tree building with RAxML-ng (via UNIX/conda)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/MLPhylogenetics_RAxML-NG)
-* [Maximum likelihood phylogenetic tree building with RAxML-ng (via webserver)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/MLPhylogeneticss_RAxML-NG_Web)
+* [Maximum likelihood phylogenetic tree building with RAxML-ng (via webserver)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/MLPhylogenetics_RAxML-NG_Web.md)
   * Uses a graphical interface for building phylogenetic trees
 
 ### Visualising phylogenetic trees
