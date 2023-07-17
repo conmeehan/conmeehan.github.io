@@ -41,7 +41,7 @@ wget https://conmeehan.github.io/PathogenDataCourse/Datasets/16S_Staph_example_a
 2. Install RAxML-NG using conda
   * It is recommended to always install packages in their own environments so here will we create an enironment and install RAxML-NG in one step. 
 ```c
-mamba create -n raxmlng -c bioconda raxmlng -y
+mamba create -n raxmlng -c bioconda raxml-ng -y
 mamba activate raxmlng
 ```
 
