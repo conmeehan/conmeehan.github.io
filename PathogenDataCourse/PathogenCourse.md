@@ -11,8 +11,10 @@ key: page-PathogenCourse
 
 
 This workshop contains a set of tutorials for undertaking basic data analytics for pathogen genomics research (although many topics covered are also applicable elsewhere).<br />
-Each tutorial has a lecture or explanation of the topic with associated practice tasks and sample asnwers.<br />
-It is suggested that you do these in order, or at least the concepts in computer programming, UNIX tutorials and R tutorial before the other topics, if you wish to do the terminal and/or R-based worksheets (there are Galaxy and web-based alternatives if you do not). <br />
+It is made to be lightweight, with each tutorial capable of running on a laptop. <br/><br/>
+
+Each tutorial has a lecture or explanation of the topic with associated practice worksheets and sample asnwers.<br />
+It is suggested that you do these in order, or at least the concepts in computer programming, UNIX tutorials and R tutorial before the other topics, if you wish to do the terminal and/or R-based worksheets (there are Galaxy and web-based alternatives for many if you do not). <br />
 ## Topics (each is a hyperlink to its own page):
 ### [Concepts in computer programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming)
 ### [The UNIX shell](https://conmeehan.github.io/PathogenDataCourse/UNIXshell)

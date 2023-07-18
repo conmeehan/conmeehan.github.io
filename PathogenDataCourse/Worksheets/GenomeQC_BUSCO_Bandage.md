@@ -20,6 +20,7 @@ key: page-GenomeQC
 
 ## Dataset
 *	This demonstration uses the output of [Assembling a genome from short reads (e.g. Illumina) using SPAdes](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAssembly_SPAdes) worksheet but this will work on any assembly, such as that created in the [Assembling a genome from long reads (e.g. ONT) using Flye](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAssembly_Flye) worksheet. Thus, it is suggested you run at least one of these assembly methods first. 
+	* You can download the example scaffolds output file of the SPAdes worksheet here: [DRR187559_scaffolds.fasta](https://conmeehan.github.io/PathogenDataCourse/Datasets/DRR187559_scaffolds.fasta)
 
 ## BUSCO Steps
 1. Ensure you are in the same directory as the output folder from your assembly (e.g. xxx as created in the SPAdes worksheet)
@@ -37,12 +38,14 @@ mamba activate busco
 * The input file (`-i`) should be the fasta file that was created from the assembly workflow (e.g. SPAdes).
 * `-o` should be the name of a folder to store all BUSCO outputs
 * BUSCO uses a set of lineage-specific markers to define completness. We can ask BUSCO to find the correct set of markers to use with the `--auto-lineage-prok` option (or `--auto-lineage-euk` if you have a Eukaryotic genome)
+
 ```c
 busco -m genome -i DRR187559_spades/scaffolds.fasta -o DRR187559_busco --auto-lineage-prok
 ```
 * If you prefer, you can pick the specific lineage by running `busco --list-datasets` and specify it with `-l` instead
 
 4. Look at the summary of the BUSCO results. This is stored in the BUSCO output folder and is a file that starts 'short_summary.specific' and ends in '.txt'
+
 ```
 cat DRR187559_busco/short_summary.specific.bacillales_odb10.DRR187559_busco.txt
 ```
@@ -50,6 +53,7 @@ cat DRR187559_busco/short_summary.specific.bacillales_odb10.DRR187559_busco.txt
 * We can see in this example, we should have close to 100% completeness of the genome, indicating that the genome seems to have assembled well in terms of completeness.
 
 5. Deactivate your mamba environment when finished
+
 ```c
 mamba deactivate
 ```
