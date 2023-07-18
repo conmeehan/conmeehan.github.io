@@ -1,7 +1,7 @@
 ---
 layout: article
 titles:
-  en      : &EN       Maximum likelihood phylogenetic tree building with RAxML-ng (via UNIX/conda)
+  en      : &EN       Microbiome 16S amplicon sequencing processing with QIIME-2
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
