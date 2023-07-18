@@ -47,7 +47,7 @@ Once finished the tutorial, take the post-learing quiz.<br />
 ### [Microbiome 16S amplicon sequencing processing with QIIME-2 (via UNIX)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/Microbiome_QIIME2)
 ### [Microbiome 16S amplicon sequencing processing with Mothur (via Galaxy)](https://training.galaxyproject.org/training-material/topics/metagenomics/)
 
-
+<br /><br />
 ### <a href="https://ntusurvey.onlinesurveys.ac.uk/microbiome-analysis-post-tutorial-survey" target="_blank">Microbiome analysis Post-tutorial Survey</a>
 
 
