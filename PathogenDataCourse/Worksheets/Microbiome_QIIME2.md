@@ -6,7 +6,7 @@ titles:
   en-US   : *EN
   en-CA   : *EN
   en-AU   : *EN
-key: page-MLPhyloRAxML-NG
+key: page-Microbiome-QIIME2
 ---
 
 *	In this worksheet you will learn how do basic processing of 16S amplicon data in QIIME2 as well as calculate diversity measures.
