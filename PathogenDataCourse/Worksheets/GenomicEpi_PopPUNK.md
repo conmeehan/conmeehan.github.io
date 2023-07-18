@@ -14,35 +14,60 @@ key: page-Typing-MLST
 
 ## Suggested prerequisites
 * It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming) and [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) tutorials before starting.
-* A knowledge of the MLST tool is useful. You can access the manuals [here](https://github.com/tseemann/mlst)
-* Installing MLST through conda is easiest so its suggested you have followed the [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse) tutorial.
+* A knowledge of the PopPUNK tool is useful. You can read the paper [here](https://genome.cshlp.org/content/29/2/304) and access the manuals [here](https://poppunk.readthedocs.io/en/latest/)
+	* The associated databases can be found [here](https://www.bacpop.org/poppunk/)
+* Installing PopPUNK through conda is easiest so its suggested you have followed the [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse) tutorial.
 
 ## Dataset
-*	This demonstration uses the output of [Assembling a genome from short reads (e.g. Illumina) using SPAdes](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAssembly_SPAdes) worksheet but this will work on any assembly, such as that created in the [Assembling a genome from long reads (e.g. ONT) using Flye](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAssembly_Flye) worksheet. Thus, it is suggested you run at least one of these assembly methods first. 
-	* You can download the example scaffolds output file of the SPAdes worksheet here: [DRR187559_scaffolds.fasta](https://conmeehan.github.io/PathogenDataCourse/Datasets/DRR187559_scaffolds.fasta)
-
+*	This demonstration uses a [genome assembly]() and a [unassembled read set](https://www.ebi.ac.uk/ena/browser/view/SRR11108932) of Haemophilus influenzae, both downloaded from the ENA
 
 ## Steps
 1. Create a directory for your analyses and step into it
 
 ```c
-mkdir mlst_demo
-cd mlst_demo
+mkdir poppunk_demo
+cd poppunk_demo
 ```
 
-2. Copy your assembled genome into this folder or download the [sample data](https://conmeehan.github.io/PathogenDataCourse/Datasets/DRR187559_scaffolds.fasta)
+2. Download the sample assembly and read file
 * You can save this directly to your terminal current working directory by using the wget command ([wget](https://anaconda.org/anaconda/wget) can be installed via conda).
 
 ```c
-wget https://conmeehan.github.io/PathogenDataCourse/Datasets/DRR187559_scaffolds.fasta
+wget https://www.ebi.ac.uk/ena/browser/api/fasta/AP022846.1 -O AP022846.1.fa
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/032/SRR11108932/SRR11108932_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/032/SRR11108932/SRR11108932_2.fastq.gz
 ```
 
-3. Install MLST using conda
-  * It is recommended to always install packages in their own environments so here will we create an enironment and install ABRitamr in one step. 
+3. We need to create a sample map file which is the in the form <samplename><tab><dataLocation>. Data location can be a single file (e,g, fasta) or two files (e.g. read1 and read 2, separated by a tab).
+* These commands will automatically create the data file for our two samples (file will be called `input.txt`)
 
 ```c
-mamba create -n mlst -c bioconda mlst -y
-mamba activate mlst
+printf "AP022846\tAP022846.1.fa\n" >input.txt
+printf "SRR11108932\tSRR11108932_1.fastq.gz\tSRR11108932_1.fastq.gz\n" >>input.txt
+```
+
+4. PopPUNK allows for clustering of query samples against known clusters of the given species. We will use the Haemophilus influenzae dataset which is stored in the [PopPUNK databse](https://www.bacpop.org/poppunk/)
+* You can save this directly to your terminal current working directory by using the wget command ([wget](https://anaconda.org/anaconda/wget) can be installed via conda).
+* If doing analysis with PopPUNK, always download the reference sequences file for your species, if there is one
+
+```c
+wget https://ftp.ebi.ac.uk/pub/databases/pp_dbs/Haemophilus_influenzae_v1_refs.tar.bz2
+```
+
+5. Extract the database from the compressed file
+* We use the `tar` command to extract from tar files
+* `-xjf` tells the program to do a full extract and that it is a bz2 compressed file on top of the tar compression
+
+```c
+tar -xjf  Haemophilus_influenzae_v1_refs.tar.bz2
+```
+
+3. Install PopPUNK using conda
+  * It is recommended to always install packages in their own environments so here will we create an enironment and install PopPunk in one step. 
+
+```c
+mamba create -n poppunk -c bioconda poppunk -y
+mamba activate poppunk
 ```
 
 4. Run MLST on the scaffolds file
