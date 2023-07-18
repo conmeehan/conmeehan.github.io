@@ -22,7 +22,7 @@ key: page-PlasmodiumGenomics
 * Describe linkage disequilibrium and its uses in Plasmodium epidemiology
 * Recognise the key genes involved in Plasmodium drug resistance
 * State the primary data types and computational approaches for determining Plasmodium population structure
-
+* Run simple analysis of WGS data using malaria-profiler
 
 
 ## Prerequisites
@@ -31,7 +31,7 @@ key: page-PlasmodiumGenomics
 * It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming), [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) and [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/Worksheets/CondaInstallAndUse) tutorials if you are going to do the Malaria-profiler worksheet.
 
 ## Approximate time to finish tutorial
-* Lecture: 30 hour
+* Lecture: 30 mins
 * Tutorials: 20 mins
 * Pre/post surveys: 10 minutes
 
