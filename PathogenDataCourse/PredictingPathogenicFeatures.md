@@ -13,7 +13,11 @@ key: page-PathogenicFeatures
 This tutorial outlines the various online biological databases and their uses as well as an introduction to homology terminology and searching using BLAST.<br />
 
 ## Learning outcomes
-* 
+* Discuss the basis of antimicrobial resistance mechanisms and ays to detect them from genomic data
+* Identify the primary virulence factors and ways to detect them from genomic data
+* Define plasmids and their primary contents and ways to detect them from genomic data
+* Use AbritAMR or similar to detect AMR and virulence factors
+* Use PlasmidFinder to detect plasmid sequences in genome assemblies
 
 
 ## Prerequisites

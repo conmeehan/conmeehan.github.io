@@ -1,7 +1,7 @@
 ---
 layout: article
 titles:
-  en      : &EN       Typing bacteria using MLST
+  en      : &EN       Typing bacteria using MLST (via UNIX)
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
@@ -9,7 +9,7 @@ titles:
 key: page-Typing-MLST
 ---
 
-*	In this worksheet you will learn how to use the MLST tool to type a bacterial genome
+*	In this worksheet you will learn how to use the MLST tool to type a bacterial genome via UNIX/Conda
 
 
 ## Suggested prerequisites
