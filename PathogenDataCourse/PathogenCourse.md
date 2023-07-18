@@ -28,7 +28,7 @@ It is suggested that you do these in order, or at least the concepts in computer
 ### [Predicting pathogenic features (AMR, virulence factors, plasmids)](https://conmeehan.github.io/PathogenDataCourse/PredictingPathogenicFeatures)
 ### [Plasmodium genomics and drug resistance](https://conmeehan.github.io/PathogenDataCourse/PlasmodiumGenomics)
 ### [Molecular epidemiology and strain typing]
-### [Microbiomes and metagenomics]
+### [Microbiome amplicon analyses](https://conmeehan.github.io/PathogenDataCourse/MicrobiomeAnalysis)
 <br />
 
 ## Additional (related) useful tutorials and resources (by other people)
