@@ -49,7 +49,7 @@ Once finished the tutorial, take the post-learing quiz.<br />
 ### Other tools and videos
 * [PlasForest](https://github.com/leaemiliepradier/PlasForest)
   * Random forest based classification of plasmids
-* Antismash
+* Antismash: [webserver](https://antismash.secondarymetabolites.org/#!/start); [github link (for use in UNIX)](https://github.com/antismash)
   * Tool for finding secondary metabolites in genome assemblies 
 * [IslandViewer 4](https://www.pathogenomics.sfu.ca/islandviewer/upload/)
 	* Tool for finding genomic (including pathogenicity) islands  
