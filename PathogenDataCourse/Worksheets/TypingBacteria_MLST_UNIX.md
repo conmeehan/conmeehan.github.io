@@ -38,7 +38,7 @@ wget https://conmeehan.github.io/PathogenDataCourse/Datasets/DRR187559_scaffolds
 ```
 
 3. Install MLST using conda
-  * It is recommended to always install packages in their own environments so here will we create an enironment and install ABRitamr in one step. 
+  * It is recommended to always install packages in their own environments so here will we create an enironment and install MLST in one step. 
 
 ```c
 mamba create -n mlst -c bioconda mlst -y

@@ -21,6 +21,8 @@ key: page-Microbiome-QIIME2
 ## Dataset
 *	This demonstration uses four 16S amplicon sequenced samples stored in [project PRJNA308319 on the ENA](https://www.ebi.ac.uk/ena/browser/view/PRJNA308319)
 *	You need a metadata sample file for each of your samples, outlining their groupings (e.g. location, patient data etc, depending on your study questions). A [mock metadata](https://conmeehan.github.io/PathogenDataCourse/Datasets/qiime2-sample-metadata.tsv) file has been created for this tutorial.
+
+
 ## Steps
 1. Create a directory to store the analysis and then change directory into that directory
 
