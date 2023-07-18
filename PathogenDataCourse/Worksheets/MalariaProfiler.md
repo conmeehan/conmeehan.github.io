@@ -51,6 +51,7 @@ wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR710/007/SRR7102507/SRR7102507_2.fastq.gz
 * If you have a **linux** operating system follow these commands:
 
 ```c
+wget https://raw.githubusercontent.com/jodyphelan/malaria-profiler/main/env.yml
 mamba env create -f env.yaml
 
 mamba activate malaria-profiler
@@ -63,6 +64,7 @@ malaria-profiler update_db
 	* (A bug in the malaria-profiler yaml-based install incorrectly calls the environment ntm-profiler and so this needs to be renamed)
 	
 ```c
+wget https://raw.githubusercontent.com/jodyphelan/malaria-profiler/main/macEnv.yaml
 mamba env create -f macEnv.yaml
 conda rename -n ntm-profiler malaria-profiler
 
