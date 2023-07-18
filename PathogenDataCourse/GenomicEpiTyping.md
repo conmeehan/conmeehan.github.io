@@ -1,7 +1,7 @@
 ---
 layout: article
 titles:
-  en      : &EN       Introduction to Plasmodium Genomics
+  en      : &EN       Bacterial genomic epidemiology and strain typing
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
@@ -9,30 +9,25 @@ titles:
 key: page-PlasmodiumGenomics
 ---
 
-* This tutorial outlines the basics concepts in *Plasmodium* genomics, specifically in relation to detecting drug resistance
-	*Please note that this is a rapidly evolving field and one currently with limited easy to use bioinformatics approaches. The slides and worksheets here are only meant to serve as examples of approaches which need constant updating and checking.
-* Much to the material provided on this page was generated from material generously provided by [Dr. Eline Kattenberg, Institute of Tropical Medicine, Belgium](https://research.itg.be/en/persons/johanna-helena-kattenberg)
+* This tutorial outlines the basics concepts in undertaking clustering and typing of bacterial strains
 
 	
 ## Learning outcomes
 
-* Classify Plasmodium species, specifically those that infect humans
-* Describe the genetic structure of Plasmodium across the three structures
-* Compare amplicon and genome sequencing approaches
-* Describe linkage disequilibrium and its uses in Plasmodium epidemiology
-* Recognise the key genes involved in Plasmodium drug resistance
-* State the primary data types and computational approaches for determining Plasmodium population structure
-* Run simple analysis of WGS data using malaria-profiler
-
+* State the different levels at which bacterial typing occurs
+* Explain the basis of ANI and MLST for species and strain typing
+* State the differences between MLST and cgMLST in terms of resolution and use
+* Recognise MinHash and MST approaches for genomic epidemiology
+* Implement the MLST and PopPUNK tools for undertaking typing and clustering
 
 ## Prerequisites
 
 * It is recommended that you have [Notepad++ (Windows)](https://notepad-plus-plus.org/downloads/) or [BBEdit (Mac)](https://www.barebones.com/products/bbedit/) for viewing fasta files; most linux default editors can do this.
-* It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming), [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) and [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/Worksheets/CondaInstallAndUse) tutorials if you are going to do the Malaria-profiler worksheet.
+* It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming), [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) and [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/Worksheets/CondaInstallAndUse) tutorials if you are going to do the UNIX-based worksheets.
 
 ## Approximate time to finish tutorial
 * Lecture: 30 mins
-* Tutorials: 20 mins
+* Tutorials: 30 mins
 * Pre/post surveys: 10 minutes
 
 ## Order of tutorial
@@ -41,26 +36,24 @@ Please do the pre-learning quiz, then watch the presentation. <br />
 Once finished the tutorial, take the post-learing quiz.<br />
 
 
-### <a href="https://ntusurvey.onlinesurveys.ac.uk/plasmodium-genomics-pre-tutorial-survey" target="_blank">Plasmodium Genomics Pre-tutorial Survey</a>
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/genomic-epidemiology-and-strain-typing-pre-tutorial-survey" target="_blank">Genomic Epidemiology And Strain Typing Pre-tutorial Survey</a>
 
 
 ## Presentation
 
-* [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/PlasmodiumGenomics.pptx)
+* [Download slides here](https://conmeehan.github.io/PathogenDataCourse/SlideSets/StrainTypingAndGenEpi.pptx)
 
 
 ## Worksheets
-* The malaria-profiler tool outlined in this worksheet is still under active development and is in early stages of use. Please do not use this tool yet for reliable analyses
-* This tool works best when it has an extensive library of drug resistance and population structure markers. If you know of one not in the [associated database](https://github.com/jodyphelan/malaria-db) please contact the developer
+### [Typing bacteria using MLST (via UNIX)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/TypingBacteria_MLST_UNIX)
+### [Typing bacteria using MLST (via Galaxy)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/TypingBacteria_MLST_Galaxy)
+### [Undertaking genomic epidemiology using PopPUNK](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomicEpi_PopPUNK)
 
-### [Detecting *Plasmodium* drug resistance from genomic data using malaria-profiler](https://conmeehan.github.io/PathogenDataCourse/Worksheets/MalariaProfiler)
 
-
-### <a href="https://ntusurvey.onlinesurveys.ac.uk/plasmodium-genomics-post-tutorial-survey" target="_blank">Plasmodium Genomics Post-tutorial Survey</a>
+<br /><br />
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/genomic-epidemiology-and-strain-typing-post-tutorial-survey" target="_blank">Genomic Epidemiology And Strain Typing Post-tutorial Survey</a>
 
 
 ## Other tutorials/tools
-* The [Malaria Resistance Surveillance Pipeline](https://github.com/CDCgov/MaRS)
-	* A pipeline from the American CDC for detecting drug resistance from genomic information
-* [WHO guide on resistance markers](https://www.who.int/teams/global-malaria-programme/case-management/drug-efficacy-and-resistance/antimalarial-drug-efficacy-database)	
-* The [PlasmoDB](https://plasmodb.org/plasmo/app) website contains a lot of useful resources for undertaking *Plasmodium*-related bioinformatics and sequencing
+* [Sourmash](https://sourmash.readthedocs.io/en/latest/index.html) for assigning samples to clusters and typing strains at species and sub-species levels
+* [Introduction to MLST as it applies to E. coli](https://www.happykhan.com/posts/intro-mlst-ecoli/)
