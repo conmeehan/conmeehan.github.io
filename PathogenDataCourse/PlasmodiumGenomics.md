@@ -63,3 +63,4 @@ Once finished the tutorial, take the post-learing quiz.<br />
 * The [Malaria Resistance Surveillance Pipeline](https://github.com/CDCgov/MaRS)
 	* A pipeline from the American CDC for detecting drug resistance from genomic information
 * [WHO guide on resistance markers](https://www.who.int/teams/global-malaria-programme/case-management/drug-efficacy-and-resistance/antimalarial-drug-efficacy-database)	
+* The [PlasmoDB](https://plasmodb.org/plasmo/app) website contains a lot of useful resources for undertaking *Plasmodium*-related bioinformatics and sequencing
