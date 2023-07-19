@@ -51,7 +51,7 @@ Once finished the tutorial, take the post-learing quiz.<br />
 
 
 <br /><br />
-### <a href="https://ntusurvey.onlinesurveys.ac.uk/genomic-epidemiology-and-strain-typing-post-tutorial-survey" target="_blank">Genomic Epidemiology And Strain Typing Post-tutorial Survey</a>
+### <a href="https://ntusurvey.onlinesurveys.ac.uk/genomic-epidemiology-and-strain-typing-post-tutorial-surve" target="_blank">Genomic Epidemiology And Strain Typing Post-tutorial Survey</a>
 
 
 ## Other tutorials/tools
