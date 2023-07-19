@@ -59,4 +59,5 @@ Once finished the tutorial, take the post-learing quiz.<br />
 * [Introduction to MLST as it applies to E. coli](https://www.happykhan.com/posts/intro-mlst-ecoli/)
 * [Grapetree](https://github.com/achtman-lab/GrapeTree) for building minimum spanning trees for any alellic information
 	* [Grapetree conda install link](https://anaconda.org/bioconda/grapetree)
-	* [Grapetree implemented in BigsDB](https://bigsdb.readthedocs.io/en/latest/data_analysis/grapetree.html#) 
+	* [Tutorial via Enterobase](https://enterobase.readthedocs.io/en/latest/grapetree/grapetree-tutorial-1-sa.html)
+	* [Implementation in BigsDB](https://bigsdb.readthedocs.io/en/latest/data_analysis/grapetree.html#) 
