@@ -57,3 +57,6 @@ Once finished the tutorial, take the post-learing quiz.<br />
 ## Other tutorials/tools
 * [Sourmash](https://sourmash.readthedocs.io/en/latest/index.html) for assigning samples to clusters and typing strains at species and sub-species levels
 * [Introduction to MLST as it applies to E. coli](https://www.happykhan.com/posts/intro-mlst-ecoli/)
+* [Grapetree](https://github.com/achtman-lab/GrapeTree) for building minimum spanning trees for any alellic information
+	* [Grapetree conda install link](https://anaconda.org/bioconda/grapetree)
+	* [Grapetree implemented in BigsDB](https://bigsdb.readthedocs.io/en/latest/data_analysis/grapetree.html#) 
