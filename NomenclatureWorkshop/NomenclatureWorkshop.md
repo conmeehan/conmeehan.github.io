@@ -12,7 +12,7 @@ key: page-PathogenCourse
 
 This workshop contains a set of tutorials for undertaking basic analyses for species level and within-species level delineation and nomenclature analyses<br />
 It is made to be lightweight, with each tutorial capable of running on a laptop. <br/>
-Most analyses can be run either through Galaxy or UNIX environment. If you are not familiar with using UNIX I suggest taking the following tutorials from my [Pathogenic Genomics Course](https://conmeehan.github.io/PathogenDataCourse/PathogenDataCourse)  <br/>
+Most analyses can be run either through Galaxy or UNIX environment. If you wish to do the UNIX-based approaches and are not familiar with using UNIX, I suggest taking the following tutorials from my [Pathogenic Genomics Course](https://conmeehan.github.io/PathogenDataCourse/PathogenDataCourse)  <br/>
 * [Concepts in computer programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming)
 * [The UNIX shell](https://conmeehan.github.io/PathogenDataCourse/UNIXshell)
 
@@ -38,6 +38,25 @@ If you do reuse or adapt the material, please let me know as I am always eager t
 
 
 ## Tutorials 
+### Species level delineation
+* [Using BLAST to type a 16S rRNA gene sequence (via NCBI website)]()
+* [ANI analysis using fastANI  (via Galaxy)]()
+* [dDDH analysis using the GGDC (via webserver)]()
+### Within-species delineation
+* [Typing bacteria using MLST (via UNIX)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/TypingBacteria_MLST_UNIX)
+* [Typing bacteria using MLST (via Galaxy)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/TypingBacteria_MLST_Galaxy)
+
+### Phylogenomics
+* [Building a pangenome using Roary (via Galaxy)]()
+* [Building a pangenome using Roary (via Galaxy)]()
+* [Maximum likelihood phylogenetic tree building with RAxML-ng (via UNIX/conda)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/MLPhylogenetics_RAxML-NG)
+* [Maximum likelihood phylogenetic tree building with RAxML-ng (via webserver)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/MLPhylogenetics_RAxML-NG_Web)
+  * Uses a graphical interface for building phylogenetic trees
+* [Visualising phylogenies using ggtree in R](https://conmeehan.github.io/PathogenDataCourse/Worksheets/VisualisePhylogenetics_ggtree)
+* [Visualising phylogenies using the iTOL web interface](https://itol.embl.de/video_tutorial.cgi)
+  * A set of video tutorials by the makers of iTOL
+
+
 
 
 
