@@ -37,14 +37,16 @@ If you do reuse or adapt the material, please let me know as I am always eager t
 * [Download slides here](https://conmeehan.github.io/NomenclatureWorkshop/SlideSets/NomenclatureAnalysis.pptx)
 
 
-## Tutorials 
+## Worksheets 
 ### Species level delineation
 * [Using BLAST to type a 16S rRNA gene sequence (via NCBI website)](https://conmeehan.github.io/NomenclatureWorkshop/Worksheets/NCBI_BLAST_16S)
 * [ANI analysis using fastANI (via Galaxy)]()
 * [dDDH analysis using the GGDC (via webserver)]()
 ### Within-species delineation
 * [Typing bacteria using MLST (via UNIX)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/TypingBacteria_MLST_UNIX)
+  * This is part of the [Bacterial genomic epidemiology and strain typing](https://conmeehan.github.io/PathogenDataCourse/GenomicEpiTyping) tutorial of the [Pathogenic Genomics Course](https://conmeehan.github.io/PathogenDataCourse/PathogenDataCourse). It assumes that previous assembly steps have been done but you can use the sample data supplied in the worksheet instead.
 * [Typing bacteria using MLST (via Galaxy)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/TypingBacteria_MLST_Galaxy)
+  * This is part of the [Bacterial genomic epidemiology and strain typing](https://conmeehan.github.io/PathogenDataCourse/GenomicEpiTyping) tutorial of the [Pathogenic Genomics Course](https://conmeehan.github.io/PathogenDataCourse/PathogenDataCourse). It assumes that previous assembly steps have been done but you can use the sample data supplied in the worksheet instead.
 
 ### Phylogenomics
 * [Building a pangenome using Roary (via Galaxy)]()
