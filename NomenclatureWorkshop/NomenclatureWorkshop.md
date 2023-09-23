@@ -39,7 +39,7 @@ If you do reuse or adapt the material, please let me know as I am always eager t
 
 ## Tutorials 
 ### Species level delineation
-* [Using BLAST to type a 16S rRNA gene sequence (via NCBI website)]()
+* [Using BLAST to type a 16S rRNA gene sequence (via NCBI website)](https://conmeehan.github.io/NomenclatureWorkshop/Worksheets/NCBI_BLAST_16S)
 * [ANI analysis using fastANI  (via Galaxy)]()
 * [dDDH analysis using the GGDC (via webserver)]()
 ### Within-species delineation
