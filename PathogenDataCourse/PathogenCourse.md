@@ -18,7 +18,7 @@ That means it is fine to reuse, distribute, adapt and build upon the material fo
 If you do reuse or adapt the material, please let me know as I am always eager to hear if the material is useful. My contact details can be found on my [Nottingham trent University staff page](https://www.ntu.ac.uk/staff-profiles/science-technology/conor-meehan). <br />
 
 
-Each tutorial has a lecture or explanation of the topic with associated practice worksheets and sample asnwers.<br />
+Each tutorial has a lecture or explanation of the topic with associated practice worksheets and sample answers.<br />
 It is suggested that you do these in order, or at least the concepts in computer programming, UNIX tutorials and R tutorial before the other topics, if you wish to do the terminal and/or R-based worksheets (there are Galaxy and web-based alternatives for many if you do not). <br />
 ## Topics (each is a hyperlink to its own page):
 ### [Concepts in computer programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming)
