@@ -1,6 +1,8 @@
 header:   
 - title: About
   url: /about.html
+- title: Nomenclature Workshop
+  url: /NomenclatureWorkshop/NomenclatureWorkshop.html
 - title: Pathogen genomics course
   url: /PathogenDataCourse/PathogenCourse.html
 side:
@@ -8,6 +10,8 @@ side:
     children:
     - title: Pathogen genomics course
       url: /PathogenDataCourse/PathogenCourse.html
+    - title: Nomenclature Workshop
+      url: /NomenclatureWorkshop/NomenclatureWorkshop.html
     - title: UNIX tutorial
       url: /UNIXtutorial
     - title: adv. UNIX tutorial
