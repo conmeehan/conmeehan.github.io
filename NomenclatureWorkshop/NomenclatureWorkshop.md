@@ -40,8 +40,10 @@ If you do reuse or adapt the material, please let me know as I am always eager t
 ## Worksheets 
 ### Species level delineation
 * [Using BLAST to type a 16S rRNA gene sequence (via NCBI website)](https://conmeehan.github.io/NomenclatureWorkshop/Worksheets/NCBI_BLAST_16S)
-* [ANI analysis using fastANI (via Galaxy)]()
-* [dDDH analysis using the GGDC (via webserver)]()
+* [ANI analysis using fastANI (via Galaxy)](https://conmeehan.github.io/NomenclatureWorkshop/Worksheets/fastANI_Galaxy)
+  * A UNIX version of this tutorial will be added soon
+* [dDDH analysis using the GGDC (via webserver)](https://conmeehan.github.io/NomenclatureWorkshop/Worksheets/GGDC_Webserver)
+
 ### Within-species delineation
 * [Typing bacteria using MLST (via UNIX)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/TypingBacteria_MLST_UNIX)
   * This is part of the [Bacterial genomic epidemiology and strain typing](https://conmeehan.github.io/PathogenDataCourse/GenomicEpiTyping) tutorial of the [Pathogenic Genomics Course](https://conmeehan.github.io/PathogenDataCourse/PathogenDataCourse). It assumes that previous assembly steps have been done but you can use the sample data supplied in the worksheet instead.
@@ -50,11 +52,14 @@ If you do reuse or adapt the material, please let me know as I am always eager t
 
 ### Phylogenomics
 * [Building a pangenome using Roary (via Galaxy)]()
-* [Building a pangenome using Roary (via Galaxy)]()
+  * A UNIX version of this tutorial will be added soon
 * [Maximum likelihood phylogenetic tree building with RAxML-ng (via UNIX/conda)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/MLPhylogenetics_RAxML-NG)
+  * This is part of the [Introduction to phylogenetics](https://conmeehan.github.io/PathogenDataCourse/IntroToPhylogenetics) tutorial of the [Pathogenic Genomics Course](https://conmeehan.github.io/PathogenDataCourse/PathogenDataCourse). It assumes that a previous alignment worksheet has been done but you can use the alignment produced by the pangenome worksheet above.
 * [Maximum likelihood phylogenetic tree building with RAxML-ng (via webserver)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/MLPhylogenetics_RAxML-NG_Web)
   * Uses a graphical interface for building phylogenetic trees
+  * This is part of the [Introduction to phylogenetics](https://conmeehan.github.io/PathogenDataCourse/IntroToPhylogenetics) tutorial of the [Pathogenic Genomics Course](https://conmeehan.github.io/PathogenDataCourse/PathogenDataCourse). It assumes that a previous alignment worksheet has been done but you can use the alignment produced by the pangenome worksheet above.
 * [Visualising phylogenies using ggtree in R](https://conmeehan.github.io/PathogenDataCourse/Worksheets/VisualisePhylogenetics_ggtree)
+  * This is part of the [Introduction to phylogenetics](https://conmeehan.github.io/PathogenDataCourse/IntroToPhylogenetics) tutorial of the [Pathogenic Genomics Course](https://conmeehan.github.io/PathogenDataCourse/PathogenDataCourse). It uses data from this tutorial but you can use your own phylogenetic tree data instead.
 * [Visualising phylogenies using the iTOL web interface](https://itol.embl.de/video_tutorial.cgi)
   * A set of video tutorials by the makers of iTOL
 
