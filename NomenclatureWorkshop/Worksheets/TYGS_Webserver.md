@@ -29,13 +29,15 @@ key: page-NCBI_BLAST
 4.	We will include type strains in our comparisons so leave the rest of the options as they are
 5.	Type your email address into the box at the bottom of the page and then click 'Submit query'
 6.	This can take a long time (about an hour sometimes but usually less)
-	* If you want to start analysing instead of waiting you can download the final report produced by TYGS [here]()
+	* If you want to start analysing instead of waiting you can download the final report produced by TYGS [here](https://conmeehan.github.io/NomenclatureWorkshop/Datasets/TYGS_job_results.pdf)
 7.	Once finished, click the link sent to your email and then click 'results' at the top right.
 8.	You can download a full PDF (like the one linked in step 6) by clicking 'Download PDF Report'
+9.	Click on the 'Identification' button to see the species assignments based on comparisons to the type strains
+	* This is table 2 in the PDF file
 9.	Click on 'Pairwise comparisons' to see the dDDH results
 	* This is table 3 in the PDF file
 	* Download this as an Excel file by clicking the button at the top right for easier analysis	
-		* A copy of this excel file can be downloaded [here]()
+		* A copy of this excel file can be downloaded [here](https://conmeehan.github.io/NomenclatureWorkshop/Datasets/Type_Strain_Genome_Server_Pairwise_Comprisons.xlsx)
 10.	It is recommended to use the dDDH (d4, in %) (5th column in the webserver and the PDF).
 	* Over 70% is a likely intra-species match
 11. Using the filter function on the top left of the table on the webserver (or sorting data function in excel) to find the top match for each of our 6 strains
