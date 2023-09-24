@@ -62,16 +62,3 @@ If you do reuse or adapt the material, please let me know as I am always eager t
   * This is part of the [Introduction to phylogenetics](https://conmeehan.github.io/PathogenDataCourse/IntroToPhylogenetics) tutorial of the [Pathogenic Genomics Course](https://conmeehan.github.io/PathogenDataCourse/PathogenDataCourse). It uses data from this tutorial but you can use your own phylogenetic tree data instead.
 * [Visualising phylogenies using the iTOL web interface](https://itol.embl.de/video_tutorial.cgi)
   * A set of video tutorials by the makers of iTOL
-
-
-
-
-
-
-
-## Additional (related) useful tutorials and resources (by other people)
-* [Galaxy tutorials](https://training.galaxyproject.org/)
-   * Various tutorials from introduction to advanced analyses using the Galaxy portal.
-   * Many of the Galaxy tutorials in this workshop comes from this set of tutorials.
-
-
