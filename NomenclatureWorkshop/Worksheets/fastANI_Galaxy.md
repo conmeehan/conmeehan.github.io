@@ -19,7 +19,7 @@ key: page-Galaxy_Bakta
 *	An understanding of how fastANI works: [https://www.nature.com/articles/s41467-018-07641-9](https://www.nature.com/articles/s41467-018-07641-9)
 
 ## Dataset
-*	This demonstration uses a [set of closely related bacterial whole genome sequences](https://conmeehan.github.io/NomenclatureWorkshop/Datasets/GenomeFastaFiles.zip)
+*	This demonstration uses the [fasta files of a set of closely related bacterial whole genome sequences](https://conmeehan.github.io/NomenclatureWorkshop/Datasets/GenomeFastaFiles.zip)
 	*	Download this dataset and unzip it to a folder on your computer. 
 
 ## Steps
