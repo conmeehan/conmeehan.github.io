@@ -51,7 +51,7 @@ If you do reuse or adapt the material, please let me know as I am always eager t
   * This is part of the [Bacterial genomic epidemiology and strain typing](https://conmeehan.github.io/PathogenDataCourse/GenomicEpiTyping) tutorial of the [Pathogenic Genomics Course](https://conmeehan.github.io/PathogenDataCourse/PathogenDataCourse). It assumes that previous assembly steps have been done but you can use the sample data supplied in the worksheet instead.
 
 ### Phylogenomics
-* [Building a pangenome using Roary (via Galaxy)]()
+* [Building a pangenome using Roary (via Galaxy)](https://conmeehan.github.io/NomenclatureWorkshop/Worksheets/Roary_Galaxy)
   * A UNIX version of this tutorial will be added soon
 * [Maximum likelihood phylogenetic tree building with RAxML-ng (via UNIX/conda)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/MLPhylogenetics_RAxML-NG)
   * This is part of the [Introduction to phylogenetics](https://conmeehan.github.io/PathogenDataCourse/IntroToPhylogenetics) tutorial of the [Pathogenic Genomics Course](https://conmeehan.github.io/PathogenDataCourse/PathogenDataCourse). It assumes that a previous alignment worksheet has been done but you can use the alignment produced by the pangenome worksheet above.
