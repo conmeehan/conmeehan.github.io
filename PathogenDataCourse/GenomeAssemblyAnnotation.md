@@ -88,11 +88,11 @@ Non-coding
 
 ## Worksheets
 ### UNIX shell approaches
-[SPAdes for bacterial and viral genome assembly (short reads)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAssembly_SPAdes)
-[Flye for bacterial and viral genome assembly (Long reads)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAssembly_Flye)
-[BUSCO and Bandage for genome completeness and quality checking](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeQC_BUSCO_Bandage)
-[Bakta for genome annotation](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAnnotation_Bakta)
-[Snippy for reference mapping (SNP calling)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeMapping_Snippy)
+* [SPAdes for bacterial and viral genome assembly (short reads)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAssembly_SPAdes)
+* [Flye for bacterial and viral genome assembly (Long reads)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAssembly_Flye)
+* [BUSCO and Bandage for genome completeness and quality checking](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeQC_BUSCO_Bandage)
+* [Bakta for genome annotation](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeAnnotation_Bakta)
+* [Snippy for reference mapping (SNP calling)](https://conmeehan.github.io/PathogenDataCourse/Worksheets/GenomeMapping_Snippy)
 
 ### Galaxy approaches
 * [Bacterial genome assembly using Galaxy](https://training.galaxyproject.org/training-material/topics/assembly/)
