@@ -22,7 +22,7 @@ An understanding of computer programming basics such as variables, selection, it
 A basic understanding of UNIX shell. This is covered in [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial).
 
 ## Using printf instead of echo
-`echo` is a very sueful command for printing strings to screen. However, it adds a newline character to the end of th string automatically, which can be annoying when printing to file (see below). It also does not allow for multiple liens to be printed together. <br />
+`echo` is a very useful command for printing strings to screen. However, it adds a newline character to the end of th string automatically, which can be annoying when printing to file (see below). It also does not allow for multiple liens to be printed together. <br />
 A more powerful tool for printing to screen or file is `printf`. For example, to print a string to screen with multiple newlines (\n characters are used for this) you can use
 ```console
 printf "hello\nworld\n"
@@ -185,10 +185,12 @@ printf "sample1\nsample2\nsample3\n" >sampleList.txt
 You can see that this now has 3 lines, with one sample name on each (view this with `cat sampleList.txt`)
 
 We can now, for example, use a loop to go through this file, line by line, and make directories from these names. This is done like so:
+(NOTE: the \` around cat sampleList.txt is not a single apostrophe, it is a backtick, usually found on the left of the keyboard)
 ```console
 for name in `cat sampleList.txt`; do mkdir ${name}; done
 ```
 Note that the file had no spaces on any of the lines. If there is a space, the loop will treat it as a new item (i.e. "sample1" is one item but "sample 1" is 2 items).
+
 
 ## If/else statements and logic (boolean) operators
 Conditional control of tasks can be achieved in UNIX using the if else statements. It is suggested you familiarise yourself with selection statements as outlined in the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenGenomicsCourse/ConceptsInComputerProgramming.md) tutorial.<br />
