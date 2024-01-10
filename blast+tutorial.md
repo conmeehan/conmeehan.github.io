@@ -15,7 +15,7 @@ The objective of this tutorial is to get accustomed with performing BLAST search
 ## Suggested prerequisites
 * It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming) and [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) tutorials before starting.
 * A knowledge of NCBI and the BLAST algoirthm is useful. You can find slides on this in the [Biological Databases and BLAST](https://conmeehan.github.io/PathogenDataCourse/BiologicalDBsandBLAST) tutorial.
-* Installing BLAST+ through conda is easiest so its suggested you have followed the [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/CondaInstallAndUse) tutorial.
+* Installing BLAST+ through conda is easiest so its suggested you have followed the [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/Worksheets/CondaInstallAndUse) tutorial.
 
 ## BLAST+ overview
 
