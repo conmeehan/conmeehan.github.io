@@ -181,6 +181,8 @@ mkdir myfolder
 to make a new folder called myfolder. Type ls and then enter. You should now see 'myfolder' in the list.<br>
 
 Creating files can be done in many ways. The most common method is to use a command line text editor. Here we will use nano but there are many others (emacs, vi etc) that are more powerful.<br>
+NOTE: if nano is not installed on your computer, but you have conda installed, you can install nano via conda as outlined in the [Conda tutorial](https://conmeehan.github.io/PathogenGenomicsCourse/condaSetupTutorial.html).<br>
+
 Create a file called file1.txt in the unix folder by typing<br>
 ```console
 nano file1.txt
@@ -190,6 +192,10 @@ Write in here ‘this is the contents of file1.txt’.<br>
 Save the file by pressing ctrl-o (press control and then press o). This will prompt you at the bottom of the screen to confirm the file name and you can press return/enter to confirm this.<br>
 Exit nano by pressing ctrl-x (and hitting return/enter). This will return you to your prompt.<br>
 If you list the contents of your current directory (using ls) you should see file1.txt is now there.<br>
+If you don't have nano or conda to install it, you can create this file with this content by using the echo and redirect commands like this:
+```console
+echo ‘this is the contents of file1.txt’ >file1.txt
+```
 
 ## Copying, renaming, and moving files
 The copy command (`cp`) is used to copy files to new places. This command has 2 targets: the file you want to copy and where you want to copy it to. The command basic syntax is 
