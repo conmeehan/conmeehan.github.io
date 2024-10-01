@@ -71,7 +71,7 @@ There are some keys that are used a lot in UNIX commands but can be difficult to
 * ~ (tilde)
 * / (forward slash)
 * \ (back slash)
-* | (vertical bar or pipe)
+* \| (vertical bar or pipe)
 * \# (hash or number or gate sign)
 * $ (dollar sign)
 * \* (asterisk)
