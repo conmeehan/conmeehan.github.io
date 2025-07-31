@@ -14,7 +14,7 @@ The objective of this tutorial is to get accustomed with performing BLAST search
 
 ## Suggested prerequisites
 * It is recommended that you have followed the [Concepts in Computer Programming](https://conmeehan.github.io/PathogenDataCourse/ConceptsInComputerProgramming) and [UNIX tutorial (basics)](https://conmeehan.github.io/UNIXtutorial) tutorials before starting.
-* A knowledge of NCBI and the BLAST algoirthm is useful. You can find slides on this in the [Biological Databases and BLAST](https://conmeehan.github.io/PathogenDataCourse/BiologicalDBsandBLAST) tutorial.
+* A knowledge of NCBI and the BLAST algoirthm is useful. You can find slides on this in the [Biological Databases and BLAST](https://conmeehan.github.io/PathogenDataCourse/BiologicalDBsAndBLAST) tutorial.
 * Installing BLAST+ through conda is easiest so its suggested you have followed the [Setting up and using conda](https://conmeehan.github.io/PathogenDataCourse/Worksheets/CondaInstallAndUse) tutorial.
 
 ## BLAST+ overview
@@ -106,7 +106,7 @@ Often if we are working with many sequences we want to make it easier to get the
 blastp -query proteins.fasta -db pdbaa/pdbaa -out proteins_blastp_1align.txt -num_alignments 1
 ```
 If you look in this file we can see that all the descriptions are retained but now we only have 1 alignment per query sequence. 
-* Another way to limit the results is to set an e-value cut-off. See the  [Biological Databases and BLAST](https://conmeehan.github.io/PathogenDataCourse/BiologicalDBsandBLAST) tutorial for explanation of e-value. 
+* Another way to limit the results is to set an e-value cut-off. See the  [Biological Databases and BLAST](https://conmeehan.github.io/PathogenDataCourse/BiologicalDBsAndBLAST) tutorial for explanation of e-value. 
 * In the help output of each program you can see the default e-value (listed under ‘general search options’). You can see it is quite high (10). It is **not** recommended that you use the default cut-off as this is much too permissive and will likely return false positive hits.
 *. We will retain only those hits with an e-value of 1e-30 or higher. We use the `-evalue` flag for this. Lets combines the above alignment display restriction with an evalue restriction. This done by typing:
 ```c
